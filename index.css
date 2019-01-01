@@ -3,6 +3,11 @@
     background-color: bisque;
 }
 
+.media {
+    width: 24px;
+    height: 24px;
+    background-size: 100px;
+}
 
 .topnav {
     background-color: #333;
@@ -10,6 +15,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .topnav a {
