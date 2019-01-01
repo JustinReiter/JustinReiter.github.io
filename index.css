@@ -9,6 +9,29 @@
     background-size: 100px;
 }
 
+.fa {
+    padding: 12px 12px 12px 12px;
+}
+
+.glyphicon-file {
+    padding: 12px 12px 12px 12px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+
+
 .topnav {
     background-color: #333;
     overflow: hidden;
