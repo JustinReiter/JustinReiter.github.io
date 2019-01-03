@@ -46,7 +46,9 @@
     margin: 4px 4px 4px 4px;
 }
 
-
+.html .body {
+    height: 100%;
+}
 
 .topnav {
     background-color: #333;
