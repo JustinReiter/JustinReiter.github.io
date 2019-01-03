@@ -10,3 +10,6 @@ function typeName() {
         setTimeout(typeName, speed);
     }
 }
+
+
+window.onload = typeName();
