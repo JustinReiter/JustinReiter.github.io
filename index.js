@@ -5,7 +5,7 @@ function typeName() {
     let speed = 50;
     let name = "I am Justin Reiter";
     if (document.getElementById("name").innerHTML === "Hello!") {
-
+        setTimeout(null, 2000);
         document.getElementById("name").innerHTML = "";
     }
     if (i < name.length) {
