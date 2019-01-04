@@ -50,6 +50,11 @@
     height: 100%;
 }
 
+
+#me {
+    border-radius: 35%;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
