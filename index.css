@@ -24,6 +24,12 @@
 
 }
 
+#card {
+    background-color: lightgray;
+    margin: 6px 0px 6px 0px;
+    padding: 6px 6px 6px 6px;
+}
+
 .fab {
     font-size: 1.5em;
 }
