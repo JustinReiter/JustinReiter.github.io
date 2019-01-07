@@ -1,4 +1,10 @@
 
+#aboutme {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background: lightgray;
+}
+
 
 #body {
     background-color: bisque;
