@@ -95,6 +95,10 @@
     border-radius: 35%;
 }
 
+.particles {
+    background: black;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;

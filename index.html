@@ -13,48 +13,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="stats.js"></script>
 </head>
 <body onload="typeName();" id="body">
-<div class="topnav" id="topnav">
-    <a href="#body">Home</a>
-    <a href="#aboutme">About Me</a>
-    <a href="#projects">Personal Projects</a>
-    <a href="javascript:void(0);" class="icon" onclick="navBar()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
-    <br><br><br>
-    <div class="container" id="home">
-        <div class="row">
-            <h1 id="name">Hello!</h1>
-        </div>
-        <div class="row">
-            <h3>Software Engineering 2023 - University of Waterloo</h3>
-        </div>
-        <div class="row">
-            <div class=""></div>
-        </div>
-        <div class="btn-group row">
-            <a target="_blank" href="http://bit.ly/ReiterLinkedin" class="fab fa-linkedin social" aria-label="Linkedin"></a>
-            <a target="_blank" href="http://bit.ly/ReiterGithub" class="fab fa-github social" aria-label="Github"></a>
-            <a target="_blank" href="http://bit.ly/ReiterResume" class="fas fa-file-alt social" aria-label="Resume" download="Justin Reiter - Resume"></a>
-        </div>
-    </div>
-    <br><br>
-    <div class="container card" id="aboutme">
-        <div class="row">
-            <div class="col-sm-6">
-                <h4>About Me</h4>
-                <p>
-                    I am currently a 1B Software Engineering student at the University of Waterloo. I have proficience in Java and have experience programming in C, C++, JavaScript. In the past, I have developed websites with the use of Wordpress as well as HTML and CSS. Some of my interests include sports such as baseball, and I am always interested in pursuing new topics both in and outside of programming.
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <img src="img/me.png" alt="Me" id="me">
-            </div>
-        </div>
+    <div class="topnav" id="topnav">
+        <a href="#body">Home</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#projects">Personal Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBar()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
+    <div class="particles" id="particles-js">
+        <br><br><br>
+        <div class="container" id="home">
+            <div class="row">
+                <h1 id="name">Hello!</h1>
+            </div>
+            <div class="row">
+                <h3>Software Engineering 2023 - University of Waterloo</h3>
+            </div>
+            <div class="row">
+                <div class=""></div>
+            </div>
+            <div class="btn-group row">
+                <a target="_blank" href="http://bit.ly/ReiterLinkedin" class="fab fa-linkedin social" aria-label="Linkedin"></a>
+                <a target="_blank" href="http://bit.ly/ReiterGithub" class="fab fa-github social" aria-label="Github"></a>
+                <a target="_blank" href="http://bit.ly/ReiterResume" class="fas fa-file-alt social" aria-label="Resume" download="Justin Reiter - Resume"></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="container card" id="aboutme">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>About Me</h4>
+                    <p>
+                        I am currently a 1B Software Engineering student at the University of Waterloo. I have proficience in Java and have experience programming in C, C++, JavaScript. In the past, I have developed websites with the use of Wordpress as well as HTML and CSS. Some of my interests include sports such as baseball, and I am always interested in pursuing new topics both in and outside of programming.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <section>
+                        <img src="img/me.png" alt="Me" id="me" >
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container" id="projects">
         <br><br><h4>Projects</h4>
         <div class="row">
@@ -120,4 +127,5 @@
         </h4>
     </div>
 </body>
+
 </html>
