@@ -20,10 +20,6 @@
     color: lightgray;
 }
 
-.button-resume {
-
-}
-
 #card {
     background-color: lightgray;
     margin: 6px 0px 6px 0px;
@@ -33,15 +29,16 @@
 .fab {
     font-size: 1.5em;
 }
- .fa {
-     font-size: 1.5em;
- }
 
- .fab:hover {
-     opacity: 0.7;
- }
+.fas {
+    font-size: 1.5em;
+}
 
-.fa:hover {
+.fab:hover {
+ opacity: 0.7;
+}
+
+.fas:hover {
     opacity: 0.7;
 }
 
@@ -51,17 +48,35 @@
 
 .fa-linkedin {
     text-align: center;
-    background: #007bb5;
-    color: white;
-    padding-top: 10px;
+    background: white;
+    color: deepskyblue;
+    padding-top: 12px;
     width: 48px;
     height: 48px;
     margin: 4px 4px 4px 4px;
+    border-radius: 50%;
 }
 
 .fa-github {
     text-align: center;
     margin: 4px 4px 4px 4px;
+    width: 48px;
+    height: 48px;
+    padding-top: 11px;
+    background: white;
+    color: deepskyblue;
+    border-radius: 50%;
+}
+
+.fa-file-alt {
+    text-align: center;
+    margin: 4px 4px 4px 4px;
+    width: 48px;
+    height: 48px;
+    padding-top: 12px;
+    background: white;
+    color: deepskyblue;
+    border-radius: 50%;
 }
 
 .html .body {
@@ -80,6 +95,10 @@
     position: fixed;
     top: 0;
     z-index: 1;
+}
+
+.social:hover {
+        text-decoration: none;
 }
 
 
