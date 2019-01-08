@@ -33,6 +33,10 @@
     padding: 6px 6px 6px 6px;
 }
 
+.container {
+    width: 100%;
+}
+
 .fab {
     font-size: 1.5em;
 }
@@ -86,6 +90,10 @@
     border-radius: 50%;
 }
 
+.full-width {
+    width: 100%;
+}
+
 .html .body {
     height: 100%;
 }
@@ -95,8 +103,16 @@
     border-radius: 35%;
 }
 
+.dark-bg {
+    color: white;
+}
+
 .particles {
     background: black;
+    position: absolute;
+    bottom: inherit;
+    width: 100%;
+    z-index: -100;
 }
 
 .topnav {
