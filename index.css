@@ -179,4 +179,8 @@
     #me {
         width: 95%;
     }
+
+    .dark-bg {
+        color: black;
+    }
 }
