@@ -163,7 +163,7 @@
 
 
 /* Right-aligned section inside the top navigation */
-.topnav-right {
+#topnav-right {
     float: right;
 }
 
