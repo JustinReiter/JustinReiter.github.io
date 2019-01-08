@@ -107,10 +107,6 @@
     border-radius: 35%;
 }
 
-.dark-bg {
-    color: white;
-}
-
 .particles {
     background: black;
     position: absolute;
@@ -155,6 +151,12 @@
 
 .topnav .icon {
     display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .dark-bg {
+        color: white;
+    }
 }
 
 @media screen and (max-width: 600px) {
