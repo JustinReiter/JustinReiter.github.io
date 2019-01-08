@@ -92,6 +92,7 @@
 
 .full-width {
     width: 100%;
+    margin-bottom:24px;
 }
 
 .html .body {
@@ -110,7 +111,7 @@
 .particles {
     background: black;
     position: absolute;
-    bottom: inherit;
+    bottom: 0px;
     width: 100%;
     z-index: -100;
 }
