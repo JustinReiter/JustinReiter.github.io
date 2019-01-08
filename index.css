@@ -95,6 +95,9 @@
     margin-bottom:24px;
 }
 
+.html {
+    scroll-behavior: smooth;
+}
 .html .body {
     height: 100%;
 }
