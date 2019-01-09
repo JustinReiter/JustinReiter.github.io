@@ -5,6 +5,9 @@
     background: lightgray;
 }
 
+.bg-theme {
+    opacity: 1;
+}
 
 #body {
     background-color: bisque;
@@ -118,13 +121,20 @@
 #me {
     border-radius: 35%;
 }
+#particles-js {
+    z-index: -20;
+    top: 0px;
+    background: black;
+}
+
 
 .particles {
     background: black;
     position: absolute;
     bottom: 0px;
     width: 100%;
-    z-index: -100;
+    z-index: 0;
+    background: rgba(0,0,0,0);
 }
 
 /* Temporarily taken down for footer
