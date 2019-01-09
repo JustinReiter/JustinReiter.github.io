@@ -131,7 +131,7 @@
 .particles {
     background: black;
     position: absolute;
-    bottom: 0px;
+    margin-top: 128px;
     width: 100%;
     z-index: 0;
     background: rgba(0,0,0,0);
