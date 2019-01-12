@@ -24,21 +24,23 @@ function navBar() {
     }
 }
 
+/* Temporary removal for different method
 function setParticles() {
 
     var fm = document.querySelector('#aboutme');
     let compStyles = window.getComputedStyle(fm);;
     console.log(compStyles.getPropertyValue("bottom"));
-    fm.setAttribute('particles-div', 'bottom: ' + compStyles.getPropertyValue("height"));
-    fm.setAttribute('particles-js', 'bottom:  ' + compStyles.getPropertyValue("height"));
+    fm.setAttribute('particles-div', 'bottom: ' + compStyles.getPropertyValue("bottom"));
+    fm.setAttribute('particles-js', 'bottom:  ' + compStyles.getPropertyValue("bottom"));
     fm.setAttribute('particles-div', 'z-index: -1000');
     fm.setAttribute('particles-js', 'z-index: -999');
+    fm.setAttribute('aboutme', 'bottom: ' + compStyles.getPropertyValue("bottom"));
 }
-
+*/
 
 function wrapperOnload() {
     typeName();
-    setParticles();
+    // setParticles();
 }
 
 window.onload = wrapperOnload;

@@ -6,6 +6,7 @@
     max-height: 1000px;
     bottom: 1000px;
     z-index: 100;
+    height: auto;
 }
 
 .bg-theme {
@@ -220,6 +221,10 @@
 
     #me {
         width: 95%;
+    }
+
+    .dark-bg {
+        color: white;
     }
 
 }
