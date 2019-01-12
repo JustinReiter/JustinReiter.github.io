@@ -108,6 +108,9 @@
 .full-width {
     width: 100%;
     margin-bottom:24px;
+    overflow: auto;
+
+
 }
 
 .html {
@@ -125,6 +128,7 @@
     z-index: -20;
     top: 0px;
     background: black;
+    overflow: auto;
 }
 
 
@@ -214,4 +218,5 @@
     #me {
         width: 95%;
     }
+
 }

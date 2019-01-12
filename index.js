@@ -10,11 +10,10 @@ function typeName() {
     }
     if (i < name.length) {
         document.getElementById("name").innerHTML += name.charAt(i);
-        i++
+        i++;
         setTimeout(typeName, speed);
     }
 }
-window.onload = typeName;
 
 function navBar() {
     var x = document.getElementById("topnav");
@@ -24,5 +23,19 @@ function navBar() {
         x.className = "topnav";
     }
 }
+
+function setParticles() {
+    var length = parseInt(document.getElementById("aboutme").style.bottom, 10);
+    console.log(length);
+    document.getElementById("particles-div").style.bottom = length + 48 +"px";
+}
+
+
+function wrapperOnload() {
+    typeName();
+    setParticles();
+}
+
+window.onload = wrapperOnload;
 
 

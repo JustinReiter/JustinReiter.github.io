@@ -18,7 +18,7 @@
     <script src="stats.js"></script>
     <script src="jquery.min.js"></script>
 </head>
-<body onload="typeName();" id="body">
+<body onload="wrapperOnload()" id="body">
     <div class="topnav">
         <a href="#body">Justin Reiter</a>
         <div class="topnav-centered" id="topnav">
@@ -33,8 +33,7 @@
             </a>
         </div>
     </div>
-
-    <div class="fluid-container full-width">
+    <div class="fluid-container full-width" id="particles-div">
         <div class="fluid-container" id="particles-js">
             <div class="particles fluid-container">
                 <div class="container bg-theme" id="home">
