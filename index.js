@@ -25,9 +25,14 @@ function navBar() {
 }
 
 function setParticles() {
-    var fm = document.getElementById('aboutme');
-    fm.setAttribute('particles-div', 'height: ' + document.getElementById('aboutme').style.bottom);
-    fm.setAttribute('particles-js', 'height:  ' + document.getElementById('aboutme').style.bottom);
+
+    var fm = document.querySelector('#aboutme');
+    let compStyles = window.getComputedStyle(fm);;
+    console.log(compStyles.getPropertyValue("bottom"));
+    fm.setAttribute('particles-div', 'bottom: ' + compStyles.getPropertyValue("height"));
+    fm.setAttribute('particles-js', 'bottom:  ' + compStyles.getPropertyValue("height"));
+    fm.setAttribute('particles-div', 'z-index: -1000');
+    fm.setAttribute('particles-js', 'z-index: -999');
 }
 
 

@@ -3,6 +3,9 @@
     padding-bottom: 24px;
     padding-top: 24px;
     background: lightgray;
+    max-height: 1000px;
+    bottom: 1000px;
+    z-index: 100;
 }
 
 .bg-theme {
@@ -109,6 +112,7 @@
     width: 100%;
     margin-bottom:24px;
     overflow: auto;
+    height: 100%;
 
 }
 
@@ -123,13 +127,13 @@
 #me {
     border-radius: 35%;
 }
+
 #particles-js {
     z-index: -20;
     top: 0px;
     background: black;
     overflow: auto;
 }
-
 
 .particles {
     background: black;
