@@ -25,9 +25,9 @@ function navBar() {
 }
 
 function setParticles() {
-    var length = parseInt(document.getElementById("aboutme").style.bottom, 10);
-    console.log(length);
-    document.getElementById("particles-div").style.bottom = length + 48 +"px";
+    var fm = document.getElementById('aboutme');
+    fm.setAttribute('particles-div', 'height: ' + document.getElementById('aboutme').style.bottom);
+    fm.setAttribute('particles-js', 'height:  ' + document.getElementById('aboutme').style.bottom);
 }
 
 
