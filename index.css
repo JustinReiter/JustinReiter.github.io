@@ -2,10 +2,13 @@
 #aboutme {
     padding-bottom: 24px;
     padding-top: 24px;
-    background: lightgray;
-    position: relative;
-    height: 100%;
 
+    background: lightgray;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+
+    margin: auto;
 }
 
 .bg-theme {
@@ -37,6 +40,7 @@
     background-color: lightgray;
     margin: 6px 0px 6px 0px;
     padding: 6px 6px 6px 6px;
+    display: inline-block;
 }
 
 .container {
@@ -62,11 +66,6 @@
 .button:hover {
     opacity: 0.7;
 }
-
-/*
-.fluid-container {
-    height: auto;
-}*/
 
 .fa-linkedin {
     text-align: center;
@@ -136,6 +135,9 @@
     height: 100%;
 }
 
+#home {
+    text-align: left;
+}
 
 #me {
     border-radius: 35%;
@@ -145,7 +147,6 @@
     z-index: -20;
     top: 0px;
     background: black;
-    overflow: auto;
     height: auto;
 }
 
@@ -160,8 +161,14 @@
 }
 
 #particles-div {
-    height: 100%;
-    position: relative;
+    heigh: auto;
+    width: 100%;
+    position: static;
+    display: inline-block;
+    box-sizing:border-box;
+    clear: both;
+    overflow: auto;
+    text-align: center;
 }
 
 /* Temporarily taken down for footer
