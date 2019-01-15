@@ -7,7 +7,6 @@
     width: 100%;
     height: 100%;
     display: inline-block;
-
     margin: auto;
 }
 
@@ -147,12 +146,15 @@
 }
 
 #particles-js {
-    z-index: -20;
+    z-index: 0;
     top: 0px;
     background: black;
     height: auto;
     text-align: center;
     position: relative;
+    width: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 .particles {
@@ -192,6 +194,10 @@
     position: fixed;
     top: 0;
     z-index: 1;
+}
+
+.social {
+    z-index: 1000;
 }
 
 .social:hover {
