@@ -2,10 +2,10 @@
 #aboutme {
     padding-bottom: 24px;
     padding-top: 24px;
-
+    text-align: left;
     background: lightgray;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: inline-block;
 
     margin: auto;
@@ -131,6 +131,7 @@
 .html {
     scroll-behavior: smooth;
 }
+
 .html .body {
     height: 100%;
 }
@@ -141,6 +142,8 @@
 
 #me {
     border-radius: 35%;
+    height: 300px;
+    width: 300px;
 }
 
 #particles-js {
@@ -148,28 +151,34 @@
     top: 0px;
     background: black;
     height: auto;
+    text-align: center;
+    position: relative;
 }
 
 .particles {
     background: black;
     position: absolute;
-    margin-top: 128px;
+    padding-top: 64px;
     width: 100%;
-    z-index: 0;
-    background: rgba(0,0,0,0);
     height: auto;
+    z-index: 0;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+
 }
 
+/*
 #particles-div {
-    heigh: auto;
+    height: auto;
     width: 100%;
     position: static;
     display: inline-block;
     box-sizing:border-box;
     clear: both;
     overflow: auto;
-    text-align: center;
+
 }
+*/
 
 /* Temporarily taken down for footer
 #projects {
