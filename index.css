@@ -268,4 +268,8 @@
         color: white;
     }
 
+    #particles-js {
+        height: 100%;
+    }
+
 }
