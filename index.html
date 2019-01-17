@@ -13,13 +13,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="stats.js"></script>
     <script src="jquery.min.js"></script>
+
+    <script>
+
+    </script>
 </head>
+
 <body onload="wrapperOnload()" id="body">
+
+    <!-- TOP NAV -->
     <div class="topnav">
         <a href="#body">Justin Reiter</a>
         <div class="topnav-centered" id="topnav">
@@ -34,6 +42,8 @@
             </a>
         </div>
     </div>
+
+    <!-- PARTICLES AND ABOUT ME SECTION -->
     <!--<div class="fluid-container particles"> -->
         <div class="fluid-container" id="particles-js">
             <div class="particles fluid-container">
@@ -74,6 +84,8 @@
         </div>
     <!-- </div> -->
 
+
+    <!-- PROJECTS -->
     <div class="container" id="projects">
         <br><br><h4>Projects</h4>
         <div class="row">
@@ -133,16 +145,39 @@
             </div>
         </div>
     </div>
-    <!-- Temporarily taken down
+
+    <div ng-app="contactForm" ng-controller="formCtrl" id="email-form" style="text-align: center; margin-top: 64px">
+        <form class="form-group" style="width: 512px; text-align: center; align-content: center; overflow-y: scrolling; display: inline-block; background: lightgray; padding-left: 85px; padding-right: 85px; padding-top: 32px; padding-bottom: 32px;">
+            <h4>Contact Me!</h4>
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" class="form-control" id="name" ng-model="user.name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" ng-model="user.email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" ng-model="user.subject" required>
+            </div>
+            <div class="form-group">
+                <label for="desc">Description:</label>
+                <textarea type="text" class="form-control" id="desc" ng-model="user.desc" rows="5" required></textarea>
+            </div>
+            <button ng-click="submit()" id="formButton">Submit</button>
+        </form>
+    </div>
+
+
     <div class="footer" id="footer">
         <h4 id="contact">
             Contact me!
         </h4>
         <a href="mailto:jdreiter@uwaterloo.ca">JDReiter@uwaterloo.ca</a>
-        <br><br><br>
-        <p>Made by Justin Reiter</p>
+        <br><br>
+        <p>Made by Justin Reiter &copy; 2019</p>
     </div>
-    -->
 </body>
 
 </html>
