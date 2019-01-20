@@ -145,28 +145,29 @@
             </div>
         </div>
     </div>
-
-    <div ng-app="contactForm" ng-controller="formCtrl" id="email-form" style="text-align: center; margin-top: 64px">
-        <form class="form-group" style="width: 512px; text-align: center; align-content: center; overflow-y: scrolling; display: inline-block; background: lightgray; padding-left: 85px; padding-right: 85px; padding-top: 32px; padding-bottom: 32px;">
-            <h4>Contact Me!</h4>
+    <div ng-app="" ng-init="user={name: 'Joe Random', email='example@example.com'}">
+    <div ng-app="contactForm" ng-controller="formCtrl" id="email-form" style="text-align: center; margin-top: 64px" >
+        <form class="form-group gForm" method="POST" action="https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec" style="width: 512px; text-align: center; align-content: center; overflow-y: scrolling; display: inline-block; background: lightgray; padding-left: 85px; padding-right: 85px; padding-top: 32px; padding-bottom: 32px;">
+            <h4>Hello {{ user.name }}!</h4>
             <div class="form-group">
                 <label for="name">Name: </label>
-                <input type="text" class="form-control" id="name" ng-model="user.name" required>
+                <input type="text" class="form-control" id="name" ng-model="user.name" name="name" placeholder="Joe Random" required>
             </div>
             <div class="form-group">
                 <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email" ng-model="user.email" required>
+                <input type="email" class="form-control" id="email" ng-model="user.email" name="email" placeholder="example@example.com" required>
             </div>
             <div class="form-group">
                 <label for="subject">Subject:</label>
-                <input type="text" class="form-control" id="subject" ng-model="user.subject" required>
+                <input type="text" class="form-control" id="subject" ng-model="user.subject" name="subject" placeholder="Subject" required>
             </div>
             <div class="form-group">
                 <label for="desc">Description:</label>
-                <textarea type="text" class="form-control" id="desc" ng-model="user.desc" rows="5" required></textarea>
+                <textarea type="text" class="form-control" id="desc" ng-model="user.desc" rows="5" name="description" placeholder="Description" required></textarea>
             </div>
             <button ng-click="submit()" id="formButton">Submit</button>
         </form>
+    </div>
     </div>
 
 
