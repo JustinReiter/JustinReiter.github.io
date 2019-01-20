@@ -15,7 +15,7 @@
 }
 
 #body {
-    background-color: bisque;
+    background-color: lightblue;
     /*background: linear-gradient(1deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
 }
 
@@ -112,14 +112,12 @@
 
 .footer {
     text-align: center;
-    margin-top: 24px;
-    padding-top: 12px;
-    padding-bottom: 0px;
-    background: whitesmoke;
+    padding-bottom: 12px;
+    background: #17181c;
     position: relative;
     bottom: 0px;
     width: 100%;
-    height: 136px;
+    height: 100%;
 }
 
 .full-width {

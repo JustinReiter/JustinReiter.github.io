@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -35,8 +35,8 @@
         </div>
         <div class="topnav-right" id="topnav-right">
             <a href="#body">Home</a>
-            <a href="#aboutme">About Me</a>
             <a href="#projects">Personal Projects</a>
+            <a href="#contact">Contact Me</a>
             <a href="javascript:void(0);" class="icon" onclick="navBar()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -145,13 +145,13 @@
             </div>
         </div>
     </div>
-    <div ng-app="" ng-init="user={name: 'Joe Random', email='example@example.com'}">
-    <div ng-app="contactForm" ng-controller="formCtrl" id="email-form" style="text-align: center; margin-top: 64px" >
+    <div ng-app="" ng-init="user={name: 'Joe Random', email='example@example.com'}" id="contact">
+    <div ng-app="contactForm" id="email-form" style="text-align: center; margin-top: 64px" >
         <form class="form-group gForm" method="POST" action="https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec" style="width: 512px; text-align: center; align-content: center; overflow-y: scrolling; display: inline-block; background: lightgray; padding-left: 85px; padding-right: 85px; padding-top: 32px; padding-bottom: 32px;">
-            <h4>Hello {{ user.name }}!</h4>
+            <h4>Hello {{ name }}!</h4>
             <div class="form-group">
                 <label for="name">Name: </label>
-                <input type="text" class="form-control" id="name" ng-model="user.name" name="name" placeholder="Joe Random" required>
+                <input type="text" class="form-control" id="name" ng-model="name" name="name" placeholder="Joe Random" required>
             </div>
             <div class="form-group">
                 <label for="email">Email address:</label>
@@ -172,12 +172,8 @@
 
 
     <div class="footer" id="footer">
-        <h4 id="contact">
-            Contact me!
-        </h4>
-        <a href="mailto:jdreiter@uwaterloo.ca">JDReiter@uwaterloo.ca</a>
         <br><br>
-        <p>Made by Justin Reiter &copy; 2019</p>
+        <p color="white">Made by Justin Reiter &copy; 2019</p>
     </div>
 </body>
 
