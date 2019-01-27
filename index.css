@@ -55,6 +55,10 @@
     width: 100%;
 }
 
+.dark-bg {
+    color: white;
+}
+
 .fa-linkedin {
     text-align: center;
     background: white;
@@ -217,6 +221,16 @@
     margin-bottom: 172px;
 }*/
 
+.project-links {
+    color: black;
+    z-index: 1000;
+    background: Transparent;
+}
+
+.project-links:hover {
+    text-decoration: none;
+}
+
 .social {
     z-index: 1000;
 }
@@ -256,12 +270,6 @@
 
 .topnav .icon {
     display: none;
-}
-
-@media screen and (min-width: 600px) {
-    .dark-bg {
-        color: white;
-    }
 }
 
 @media screen and (max-width: 600px) {
