@@ -273,16 +273,6 @@
         width: 95%;
     }
 
-    #particles-js {
-        height: 100%;
-        position: static;
-        padding-bottom: 110%;
-    }
-
-    .particles {
-        position: absolute;
-    }
-
     #projects {
         position: static;
     }
