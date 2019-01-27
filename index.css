@@ -170,21 +170,29 @@
     background-size: 100px;
 }
 
-#particles-js {
-    z-index: 0;
-    background: black;
+#particles-background {
     height: auto;
     text-align: center;
     position: relative;
+    padding-bottom: 128px;
+}
+
+#particles-js {
+    z-index: 0;
+    background: black;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
     width: 100%;
 }
 
 .particles {
     background: black;
-    position: absolute;
+    position: relative;
     padding-top: 64px;
     width: 100%;
-    height: auto;
+    height: 100%;
     z-index: 0;
     display: inline-block;
     background: rgba(0,0,0,0);
