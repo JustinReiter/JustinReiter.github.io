@@ -10,6 +10,11 @@
     margin: auto;
 }
 
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 .bg-theme {
     opacity: 1;
 }
@@ -17,12 +22,6 @@
 #body {
     background-color: lightblue;
     /*background: linear-gradient(1deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
-}
-
-.media {
-    width: 24px;
-    height: 24px;
-    background-size: 100px;
 }
 
 .button {
@@ -33,6 +32,10 @@
 
 .button-github {
     color: lightgray;
+}
+
+.button:hover {
+    opacity: 0.7;
 }
 
 #card {
@@ -50,26 +53,6 @@
 
 .container {
     width: 100%;
-}
-
-.fab {
-    font-size: 1.5em;
-}
-
-.fas {
-    font-size: 1.5em;
-}
-
-.fab:hover {
- opacity: 0.7;
-}
-
-.fas:hover {
-    opacity: 0.7;
-}
-
-.button:hover {
-    opacity: 0.7;
 }
 
 .fa-linkedin {
@@ -116,31 +99,29 @@
     border-radius: 50%;
 }
 
+.fab {
+    font-size: 1.5em;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fas {
+    font-size: 1.5em;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
 .footer {
     text-align: center;
     padding-bottom: 12px;
     background: #17181c;
     position: relative;
-    bottom: 0px;
     width: 100%;
     height: 100%;
-}
-
-.full-width {
-    width: 100%;
-    margin-bottom:24px;
-}
-
-.html {
-    scroll-behavior: smooth;
-}
-
-.html .body {
-    height: 100%;
-}
-
-#home {
-    text-align: left;
 }
 
 #formButton {
@@ -160,15 +141,37 @@
     opacity: 0.7;
 }
 
+.full-width {
+    width: 100%;
+    margin-bottom:24px;
+}
+
+#home {
+    text-align: left;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.html .body {
+    height: 100%;
+}
+
 #me {
     border-radius: 35%;
     height: 300px;
     width: 300px;
 }
 
+.media {
+    width: 24px;
+    height: 24px;
+    background-size: 100px;
+}
+
 #particles-js {
     z-index: 0;
-    top: 0px;
     background: black;
     height: auto;
     text-align: center;
@@ -206,6 +209,14 @@
     margin-bottom: 172px;
 }*/
 
+.social {
+    z-index: 1000;
+}
+
+.social:hover {
+    text-decoration: none;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -214,15 +225,6 @@
     top: 0;
     z-index: 1;
 }
-
-.social {
-    z-index: 1000;
-}
-
-.social:hover {
-        text-decoration: none;
-}
-
 
 .topnav a {
     float: left;
@@ -239,15 +241,9 @@
     color: black;
 }
 
-
 /* Right-aligned section inside the top navigation */
 #topnav-right {
     float: right;
-}
-
-.active {
-    background-color: #4CAF50;
-    color: white;
 }
 
 .topnav .icon {
@@ -261,30 +257,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+    .dark-bg {
+        color: white;
     }
 
     #me {
         width: 95%;
-    }
-
-    .dark-bg {
-        color: white;
     }
 
     #particles-js {
@@ -299,6 +277,31 @@
 
     #projects {
         position: static;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
 }
