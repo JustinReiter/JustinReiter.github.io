@@ -42,6 +42,12 @@
     display: inline-block;
 }
 
+#contactForm {
+    background-color: #17181c;
+    color: white;
+}
+
+
 .container {
     width: 100%;
 }
