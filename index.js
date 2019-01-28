@@ -38,10 +38,21 @@ function setParticles() {
 }
 */
 
+
+function doSubmitForm() {
+    document.getElementById("contactForm").action = "https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec";
+    document.getElementById("contactForm").submit();
+    // window.open('','_self').close();
+}
+
+
 function wrapperOnload() {
     typeName();
     // setParticles();
 }
+
+
+
 
 window.onload = wrapperOnload;
 

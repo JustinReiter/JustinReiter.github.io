@@ -273,9 +273,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .dark-bg {
-        color: white;
-    }
 
     #me {
         width: 95%;
