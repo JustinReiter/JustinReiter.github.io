@@ -264,7 +264,7 @@
 }
 
 /* Right-aligned section inside the top navigation */
-#topnav {
+.topnav-right {
     float: right;
 }
 
