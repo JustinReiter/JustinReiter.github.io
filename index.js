@@ -15,6 +15,7 @@ function typeName() {
     }
 }
 
+
 function navBar() {
     var x = document.getElementById("topnav");
     if (x.className === "topnav") {

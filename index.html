@@ -21,7 +21,13 @@
     <script src="jquery.min.js"></script>
 
     <script>
-
+        $(document).ready(function() {
+            $(".menuItem").click(function() {
+                if (document.getElementById("topnav").className == "topnav responsive") {
+                    navBar();
+                }
+            })
+        })
     </script>
 </head>
 
@@ -31,9 +37,9 @@
     <div class="topnav" id="topnav">
         <a href="#body">Justin Reiter</a>
         <div class="topnav-right" id="topnav-right">
-            <a href="#body">Home</a>
-            <a href="#projects">Personal Projects</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#body" class="menuItem">Home</a>
+            <a href="#projects" class="menuItem">Personal Projects</a>
+            <a href="#contact" class="menuItem">Contact Me</a>
             <a href="javascript:void(0);" class="icon" onclick="navBar()">
                 <i class="fa fa-bars"></i>
             </a>
