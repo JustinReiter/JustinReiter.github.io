@@ -50,6 +50,7 @@
 #contactForm {
     background-color: #17181c;
     color: white;
+    text-wrap: none;
 }
 
 
