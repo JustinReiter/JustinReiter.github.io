@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/WarZone/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/WarZone/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/WarZoneMessaging/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/WarZoneMessaging/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/CourseTable/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/CourseTable/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="62" />
+            <state relative-caret-position="355">
+              <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -280,7 +275,7 @@
       <workItem from="1562300990543" duration="1203000" />
       <workItem from="1563829691043" duration="584000" />
       <workItem from="1564104476416" duration="1742000" />
-      <workItem from="1564702167330" duration="3118000" />
+      <workItem from="1564702167330" duration="4597000" />
     </task>
     <task id="LOCAL-00031" summary="Fix problems with particles.js layout">
       <created>1546907477197</created>
@@ -629,7 +624,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121521000" />
+    <option name="totallyTimeSpent" value="123000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -842,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="62" />
+        <state relative-caret-position="355">
+          <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
