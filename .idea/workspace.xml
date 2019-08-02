@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/WarZone/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/WarZone/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/WarZoneMessaging/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/WarZoneMessaging/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/CourseTable/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/CourseTable/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2397">
+              <caret line="141" column="92" selection-start-line="141" selection-start-column="92" selection-end-line="141" selection-end-column="92" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/WarZone/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="43" column="112" selection-start-line="43" selection-start-column="112" selection-end-line="43" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/WarZone/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/CourseTable/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="96" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http</find>
+      <find>z-index</find>
+      <find>token</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/particles.js/demo/index.html" />
+        <option value="$PROJECT_DIR$/particle.js/particles.js" />
+        <option value="$PROJECT_DIR$/jquery.min.js" />
+        <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/particles.json" />
+        <option value="$PROJECT_DIR$/particles/package.json" />
+        <option value="$PROJECT_DIR$/particles/app.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/particles.js" />
+        <option value="$PROJECT_DIR$/angular.js" />
+        <option value="$PROJECT_DIR$/angular.ts" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/projects/CourseTable/index.html" />
+        <option value="$PROJECT_DIR$/projects/WarZone/index.html" />
+        <option value="$PROJECT_DIR$/projects/WarZoneMessaging/manifest.json" />
+        <option value="$PROJECT_DIR$/projects/WarZoneMessaging/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-825" />
+    <option name="y" value="-20" />
+    <option name="width" value="2905" />
+    <option name="height" value="1110" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JustinReiter.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JustinReiter.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JustinReiter.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JustinReiter.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JustinReiter.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JustinReiter.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="WarZoneMessaging" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\particles" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\particles.js" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZoneMessaging" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZone" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" nameIsGenerated="true" port="9229">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="" />
+      <created>1545250173598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545250173598</updated>
+      <workItem from="1545250175023" duration="3434000" />
+      <workItem from="1546304623712" duration="14961000" />
+      <workItem from="1546556863192" duration="11858000" />
+      <workItem from="1546833139221" duration="2886000" />
+      <workItem from="1546899001146" duration="9049000" />
+      <workItem from="1546916232606" duration="615000" />
+      <workItem from="1546918696763" duration="1712000" />
+      <workItem from="1546920466540" duration="169000" />
+      <workItem from="1546986710113" duration="4071000" />
+      <workItem from="1547161613820" duration="2314000" />
+      <workItem from="1547256289612" duration="4366000" />
+      <workItem from="1547260843872" duration="1855000" />
+      <workItem from="1547263026605" duration="6583000" />
+      <workItem from="1547431375179" duration="2108000" />
+      <workItem from="1547512207565" duration="10762000" />
+      <workItem from="1547613682506" duration="2297000" />
+      <workItem from="1547668202988" duration="95000" />
+      <workItem from="1547689184358" duration="6459000" />
+      <workItem from="1547915330697" duration="1190000" />
+      <workItem from="1548012754757" duration="4499000" />
+      <workItem from="1548049838355" duration="488000" />
+      <workItem from="1548554893335" duration="9596000" />
+      <workItem from="1548634000193" duration="2858000" />
+      <workItem from="1548653762703" duration="310000" />
+      <workItem from="1548739048712" duration="262000" />
+      <workItem from="1552017790346" duration="733000" />
+      <workItem from="1553135347897" duration="2267000" />
+      <workItem from="1553219968638" duration="1169000" />
+      <workItem from="1553221197716" duration="213000" />
+      <workItem from="1553221493008" duration="1190000" />
+      <workItem from="1553222732901" duration="703000" />
+      <workItem from="1553610102853" duration="1986000" />
+      <workItem from="1553613661901" duration="597000" />
+      <workItem from="1553631964187" duration="1219000" />
+      <workItem from="1562300990543" duration="1203000" />
+      <workItem from="1563829691043" duration="584000" />
+      <workItem from="1564104476416" duration="1742000" />
+      <workItem from="1564702167330" duration="3118000" />
+    </task>
+    <task id="LOCAL-00031" summary="Fix problems with particles.js layout">
+      <created>1546907477197</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1546907477197</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fix bugs with spacing of particle-js div element">
+      <created>1546908408774</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1546908408774</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add particles-js files">
+      <created>1546908507783</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1546908507783</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Implement smooth scroll">
+      <created>1546909038546</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1546909038546</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Implement colour change for white text on small devices">
+      <created>1546909249196</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1546909249196</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Implement colour change for white text on small devices">
+      <created>1546909511493</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1546909511493</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Convert to HTTPS">
+      <created>1546919065691</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1546919065691</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add skeleton for footer">
+      <created>1546920344337</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1546920344337</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Comment footer styling temporarily">
+      <created>1546920390530</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1546920390530</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update menu links to right-aligned">
+      <created>1546920624774</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1546920624774</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fix absolute sizing of particles-js to fit div element with interactions">
+      <created>1547006510880</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1547006510880</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix spacing of content over particles-js">
+      <created>1547007516604</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1547007516604</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Remove change of text colour of particles-js content">
+      <created>1547007707250</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1547007707250</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Disable image drag">
+      <created>1547008002675</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1547008002676</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Modify bottom property on set particles div">
+      <created>1547258614075</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1547258614076</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Modify bottom property on set particles div">
+      <created>1547260613244</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1547260613244</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Modify bottom property on set particles div">
+      <created>1547263207155</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1547263207155</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Convert js method for resizing components to purely css">
+      <created>1547313438792</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1547313438792</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add email button to website and update css styling for div elements">
+      <created>1547431702959</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1547431702959</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Remove absolute styling for particles div">
+      <created>1547525492029</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1547525492029</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Temporary fix to particles div not spanning aboutme div">
+      <created>1547527010097</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1547527010097</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Fix particles text not allowing highlight">
+      <created>1547528009179</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1547528009179</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Fix mobile device sizing temporarily">
+      <created>1547528759384</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1547528759384</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Fix particles have scrolling on smaller screen">
+      <created>1547528844138</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1547528844138</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Fix layout on smaller screens to not overlap">
+      <created>1547615273542</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1547615273542</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Open new tab on github source code links">
+      <created>1547668281648</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1547668281649</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Implement form and footer">
+      <created>1547701581471</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1547701581472</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Add script implementation for email response">
+      <created>1548016037003</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1548016037004</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Implementation of form and modification of background colours">
+      <created>1548019040024</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1548019040024</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Adjust relative links and add in different method of contact">
+      <created>1548050113449</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1548050113450</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Modify colours">
+      <created>1548557309968</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1548557309969</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Reorganize lexicographically main stylesheet">
+      <created>1548557958006</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1548557958006</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Fix form title to be reasonably responsive with exclamation point">
+      <created>1548560836566</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1548560836566</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Fix spacing on particles-js to remove overlapping">
+      <created>1548564608677</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1548564608677</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Remove prior css styling on small screens">
+      <created>1548564818369</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1548564818369</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Modify styling to fix minor bugs">
+      <created>1548567528301</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1548567528301</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Create backbone for making elegant completed form page instead of showing tokens in script">
+      <created>1548635462487</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1548635462488</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Fix code for google script not submitting form">
+      <created>1548636850360</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1548636850360</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Fix responsive topnav on mobile">
+      <created>1548654057463</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1548654057464</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Fix alignment of topnav on mobile">
+      <created>1548739230537</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1548739230537</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Update link to resume">
+      <created>1552019005070</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1552019005070</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Fix bug with topnav not fixed at top on mobile">
+      <created>1553136658877</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1553136658878</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Collapse responsive navbar on item click">
+      <created>1553138378554</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1553138378554</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Adjust styling on footer and background">
+      <created>1553220900095</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1553220900096</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Adjust styling on footer and background">
+      <created>1553221119605</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1553221119605</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Update form to reset fields on send">
+      <created>1553222464050</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1553222464050</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Fix form sending proper information">
+      <created>1553223400455</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1553223400456</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Update meta tags">
+      <created>1553610531934</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1553610531934</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Add new project for Warlight bot">
+      <created>1562301720027</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1562301720029</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="121521000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22339723" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25212464" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.3268206" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.49947312" visible="true" weight="0.3268206" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14864865" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25222024" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.3268206" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.49947312" visible="true" weight="0.3268206" />
+      <window_info anchor="bottom" id="TypeScript" order="12" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix particles have scrolling on smaller screen" />
+    <MESSAGE value="Fix layout on smaller screens to not overlap" />
+    <MESSAGE value="Open new tab on github source code links" />
+    <MESSAGE value="Implement form and footer" />
+    <MESSAGE value="Add script implementation for email response" />
+    <MESSAGE value="Implementation of form and modification of background colours" />
+    <MESSAGE value="Adjust relative links and add in different method of contact" />
+    <MESSAGE value="Modify colours" />
+    <MESSAGE value="Reorganize lexicographically main stylesheet" />
+    <MESSAGE value="Fix form title to be reasonably responsive with exclamation point" />
+    <MESSAGE value="Fix spacing on particles-js to remove overlapping" />
+    <MESSAGE value="Remove prior css styling on small screens" />
+    <MESSAGE value="Modify styling to fix minor bugs" />
+    <MESSAGE value="Create backbone for making elegant completed form page instead of showing tokens in script" />
+    <MESSAGE value="Fix code for google script not submitting form" />
+    <MESSAGE value="Fix responsive topnav on mobile" />
+    <MESSAGE value="Fix alignment of topnav on mobile" />
+    <MESSAGE value="Update link to resume" />
+    <MESSAGE value="Fix bug with topnav not fixed at top on mobile" />
+    <MESSAGE value="Collapse responsive navbar on item click" />
+    <MESSAGE value="Adjust styling on footer and background" />
+    <MESSAGE value="Update form to reset fields on send" />
+    <MESSAGE value="Fix form sending proper information" />
+    <MESSAGE value="Update meta tags" />
+    <MESSAGE value="Add new project for Warlight bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new project for Warlight bot" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/img/favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/particle.js/demo/index.html" />
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/particles.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/particles.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-944">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular.js" />
+    <entry file="file://$PROJECT_DIR$/particles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="1200" column="57" selection-start-line="1200" selection-start-column="57" selection-end-line="1200" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular.ts" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="92" selection-start-line="141" selection-start-column="92" selection-end-line="141" selection-end-column="92" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/WarZone/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/CourseTable/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="96" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/WarZone/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="43" column="112" selection-start-line="43" selection-start-column="112" selection-end-line="43" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/WarZoneMessaging/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
