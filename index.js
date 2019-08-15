@@ -46,8 +46,6 @@ function wrapperOnload() {
 }
 
 
-
-
 window.onload = wrapperOnload;
 
 
