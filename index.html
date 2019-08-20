@@ -37,7 +37,7 @@
 <body onload="wrapperOnload()" id="body">
 
     <!-- TOP NAV -->
-    <div class="topnav" id="topnav">
+    <nav class="topnav" id="topnav">
         <a href="#body">Justin Reiter</a>
         <div class="topnav-right" id="topnav-right">
             <a href="#body" class="menuItem">Home</a>
@@ -47,7 +47,7 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-    </div>
+    </nav>
 
     <!-- PARTICLES AND ABOUT ME SECTION -->
     <!--<div class="fluid-container particles"> -->
@@ -70,6 +70,11 @@
                         <a target="_blank" href="http://bit.ly/ReiterResumeNew" class="fas fa-file-alt social" aria-label="Resume" download="Justin Reiter - Resume"></a>
                         <a target="_blank" href="#contact" class="fas fa-envelope social" aria-label="Email"></a>
                     </div>
+                    <div class="hover-coop">
+                        <h5>
+                            I am currently in search for a co-op position for Jan 2019 - Apr 2019
+                        </h5>
+                    </div>
                 </div>
                 <br><br>
                 <div class="container card bg-theme" id="aboutme">
@@ -77,22 +82,42 @@
                         <div class="col-sm-6">
                             <h4 style="text-align: center;">About Me</h4>
                             <p style="padding-left: 2%">
-                                I am currently a 2A Software Engineering student at the University of Waterloo. I have proficience in Java and have experience programming in C, C++, C# and JavaScript. In the past, I have developed websites with the use of Wordpress as well as from scratch with HTML and CSS. Some of my interests include sports such as baseball and Formula 1, and I am always interested in pursuing new topics both in and outside of programming.
+                                I am currently a 2A Software Engineering student at the University of Waterloo.
+                                <br><br>
+                                I have proficient with Java, C#, C++ and HTML, and have additional experience programming in JavaScript. Currently I am interested in Artificial Intelligence as well as IoT. My current projects include enhancing this website, and creating an intelligent bot to play WarZone.
+                                <br><br>
+                                I am always interested in learning something new, whether it is a new language, library, algorithm or outside of programming.
                             </p>
-                            <p style="padding-left: 2%">
-                                Proficient in: Java, C#, C++, C, HTML<br>
-                                Experience with: JavaScript<br>
-                                Libraries + Frameworks: Apache (POI), BootStrap, AngularJS, Firebase
-                            </p>
-                            <h6 style="padding-top: 2%">
-                                I am currently in search for a co-op position for Jan 2019 - Apr 2019
-                            </h6>
                         </div>
-                        <div class="col-sm-6" style="text-align: center">
-                            <section class="img-protection">
+                        <div class="col-sm-6">
+                            <section class="img-protection" style="text-align: center">
                                 <img src="img/me.png" alt="Me" id="me" draggable="false">
                             </section>
                         </div>
+                    </div>
+                    <div class="row" style="padding-top: 2%;">
+                        <div class="col-sm-2"></div>
+                        <table class="table table-bordered col-sm-8">
+                            <tbody>
+                                <tr>
+                                    <td>Proficient in:</td>
+                                    <td>Java, C#, C++, HTML, BASH</td>
+                                </tr>
+                                <tr>
+                                    <td>Experience with:</td>
+                                    <td>JavaScript, C</td>
+                                </tr>
+                                <tr>
+                                    <td>Libraries + Frameworks:</td>
+                                    <td>Apache (POI), BootStrap, AngularJS, Firebase, Arrive.JS</td>
+                                </tr>
+                                <tr>
+                                    <td>Tools:</td>
+                                    <td>OpenShift, Nexus, GitHub (API), Git, Visual Studios, JetBrains Suite</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-sm-2"></div>
                     </div>
                 </div>
             </div>
@@ -113,13 +138,14 @@
                     <div class="card-footer"><a target="_blank" href="http://bit.ly/ReiterWarlight" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class ="col-sm-4">
                 <div class="card" id="card">
-                    <div class="card-header"><h5>Decast <span class="badge badge-primary">C++</span></h5></div>
+                    <div class="card-header"><h5>Personal Website <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">JS</span> <span class="badge badge-primary">BootStrap4</span> <span class="badge badge-primary">Firebase</span></h5></div>
                     <p class="card-body">
-                        A project created in SE101 to convert a Raspberry PI into an infrared controller, with access to Amazon Web Services and controllable from Apple Devices. Built using C++ with use of LIRC for infrared interface and Amazon Lambda for communication between phone and Raspberry PI.
+                        Website built using GitHub Pages. This website is built using various languages and frameworks. The website is built from scratch and combines BootStrap4. Contact form is built using AngularJS and uses Firebase + Google App Scripts to immediately notify me and store data. Javascript is used for handling the process of information and improving responsiveness.
                     </p>
-                    <div class="card-footer"><a target="_blank" href="http://bit.ly/ReiterDecast" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
+                    <div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTetris" class="fab fa-github project-links col-sm-12" aria-label="Github"></a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -133,22 +159,24 @@
             </div>
         </div>
         <div class="row">
-            <div class ="col-sm-4">
+            <div class="col-sm-4">
                 <div class="card" id="card">
-                    <div class="card-header"><h5>Personal Website <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">JS</span> <span class="badge badge-primary">BootStrap4</span> <span class="badge badge-primary">Firebase</span></h5></div>
+                    <div class="card-header"><h5>Decast <span class="badge badge-primary">C++</span></h5></div>
                     <p class="card-body">
-                        Website built using GitHub Pages. This website is built using various languages and frameworks. The website is built from scratch and combines BootStrap4. Contact form is built using AngularJS and uses Firebase + Google App Scripts to immediately notify me and store data. Javascript is used for handling the process of information and improving responsiveness.
+                        A project created in SE101 to convert a Raspberry PI into an infrared controller, with access to Amazon Web Services and controllable from Apple Devices. Built using C++ with use of LIRC for infrared interface and Amazon Lambda for communication between phone and Raspberry PI.
                     </p>
-                    <div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTetris" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
-                </div>
-                <div class="card" id="card">
-                    <div class="card-header"><h5>Tetris <span class="badge badge-primary">Java</span></h5></div>
-                    <p class="card-body">
-                        A tetris game built in Java with the use of Java Swing for the GUI. Currently a work in progress.
-                    </p>
-                    <div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTetris" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
+                    <div class="card-footer"><a target="_blank" href="http://bit.ly/ReiterDecast" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
                 </div>
             </div>
+            <!--<div class="col-sm-4">-->
+                <!--<div class="card" id="card">-->
+                    <!--<div class="card-header"><h5>Tetris <span class="badge badge-primary">Java</span></h5></div>-->
+                    <!--<p class="card-body">-->
+                        <!--A tetris game built in Java with the use of Java Swing for the GUI. Currently a work in progress.-->
+                    <!--</p>-->
+                    <!--<div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTetris" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>-->
+                <!--</div>-->
+            <!--</div>-->
             <div class="col-sm-4">
                 <div class="card" id="card">
                     <div class="card-header"><h5>Short/Cut <span class="badge badge-primary">Java</span></h5></div>
@@ -162,9 +190,9 @@
                 <div class="card" id="card">
                     <div class="card-header"><h5>Algorithm Practice <span class="badge badge-primary">Java</span></h5></div>
                     <p class="card-body">
-                        Implementation of a various algorithms for sorting and searching.
+                        Implementation of a various algorithms for sorting and searching.<br><br>Currently coded: Radix Sort, QuickSort, MergeSort, CountingSort
                     </p>
-                    <div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTSP" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
+                    <div class="card-footer"><a target="_blank" href="http://bit.ly/ReiterAlgos" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
                 </div>
             </div>
         </div>
@@ -175,6 +203,7 @@
         <div ng-app="contactForm" id="email-form" style="text-align: center; margin-top: 64px">
             <form class="form-group gForm" id="contactForm" style="width: auto; text-align: center; align-content: center; overflow-y: scrolling; display: inline-block; padding-left: 85px; padding-right: 85px; padding-top: 32px; padding-bottom: 32px;">
                 <h4>Hello{{ name == null ? "!" : "" }} {{ name }}{{ name != null ? "!" : "" }}</h4>
+                <p> I am built with AngularJS and Firebase :)</p>
                 <div class="form-group">
                     <label for="name">Name: </label>
                     <input type="text" class="form-control resetField" id="person" ng-model="name" name="person" placeholder="Joe Random" required>

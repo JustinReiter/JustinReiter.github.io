@@ -158,6 +158,12 @@
     text-align: left;
 }
 
+.hover-coop {
+    padding-top: 4%;
+    color:white;
+    text-align: center;
+}
+
 .html {
     scroll-behavior: smooth;
 }
@@ -231,7 +237,6 @@
 
 .project-links {
     color: black;
-    z-index: 1000;
     background: Transparent;
     font-size: 2em;
 }
