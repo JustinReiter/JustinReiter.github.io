@@ -51,6 +51,12 @@
     background-color: #17181c;
     color: white;
     text-wrap: none;
+    text-align: center;
+    width: auto;
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+    padding: 32px 85px;
 }
 
 
@@ -60,6 +66,17 @@
 
 .dark-bg {
     color: white;
+}
+
+.divider {
+    height: 100px;
+    background-color: black;
+    color: black;
+}
+
+#email-form {
+    text-align: center;
+    padding-top: 64px;
 }
 
 .fa-linkedin {
@@ -188,6 +205,14 @@
     background-size: 100px;
 }
 
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #particles-background {
     height: auto;
     text-align: center;
@@ -230,10 +255,9 @@
 }
 */
 
-/* Temporarily taken down for footer
 #projects {
-    margin-bottom: 172px;
-}*/
+    padding-top: 2%;
+}
 
 .project-links {
     color: black;
