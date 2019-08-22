@@ -13,13 +13,14 @@ var desc = document.getElementById("desc");
  * Saves a new post to the Firebase DB.
  */
 // [START write_fan_out]
-function writeNewPost(name, email, subject, desc) {
+function writeNewPost(name, email, subject, desc, date) {
   // A post entry.
   var postData = {
     name: name,
     email: email,
     subject: subject,
     desc: desc,
+    date: date,
   };
 
   // Get a key for a new Post.
@@ -34,13 +35,13 @@ function writeNewPost(name, email, subject, desc) {
 /**
  * Creates a new post for the current user.
  */
-function newPostForCurrentUser(nameF, emailF, subjectF, descF) {
+function newPostForCurrentUser(nameF, emailF, subjectF, descF, date) {
   return firebase.database().ref().once('value').then(function(snapshot) {
-    return writeNewPost(nameF, emailF, subjectF, descF);
+    return writeNewPost(nameF, emailF, subjectF, descF, date);
   });
 }
 
-function emailPostRequest(nameF, emailF, subjectF, descF) {
+function emailPostRequest(nameF, emailF, subjectF, descF, date) {
   var req = new XMLHttpRequest();
   var url = "https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec";
   req.open("POST", url, true);
@@ -51,7 +52,7 @@ function emailPostRequest(nameF, emailF, subjectF, descF) {
       console.log(json.email + ", " + json.name);
     }
   }
-  var post = JSON.stringify({"name" : nameF, "email" : emailF, "subject" : subjectF, "desc" : descF});
+  var post = JSON.stringify({"name" : nameF, "email" : emailF, "subject" : subjectF, "desc" : descF + "\n" + date,});
   req.send(post);
 }
 
@@ -66,7 +67,8 @@ window.addEventListener('load', function() {
     var descF = desc.value;
     console.log("NAME: " + nameF + "\nEMAIL: " + emailF + "\nSUBJECT: " + subjectF + "\nBODY: " + descF);
     if (nameF && emailF && subjectF && descF) {
-      newPostForCurrentUser(nameF, emailF, subjectF, descF);
+      var date = new Date();
+      newPostForCurrentUser(nameF, emailF, subjectF, descF, date.toString());
       // emailPostRequest(nameF, emailF, subjectF, descF);
       document.getElementById("person").value = '';
       email.value = '';
