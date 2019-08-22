@@ -231,8 +231,26 @@
                         <textarea type="text" class="form-control resetField" id="desc" ng-model="user.desc" rows="5" name="description" placeholder="Description" required></textarea>
                     </div>
                     <p>I will get back to you as soon as possible!</p>
-                    <button type="submit" id="formButton">Submit</button>
+                    <button type="submit" id="formButton" data-toggle="modal" data-target="#myModal">Submit</button>
                 </form>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Your request has been submitted!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Thank you for contacting me. I will get back to you as soon as possible :)
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

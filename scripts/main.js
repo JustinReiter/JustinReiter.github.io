@@ -68,7 +68,6 @@ window.addEventListener('load', function() {
     if (nameF && emailF && subjectF && descF) {
       newPostForCurrentUser(nameF, emailF, subjectF, descF);
       // emailPostRequest(nameF, emailF, subjectF, descF);
-      alert("Thank you, click 'ok' to send the form!");
       document.getElementById("person").value = '';
       email.value = '';
       subject.value = '';
