@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1205">
-              <caret line="266" column="66" lean-forward="true" selection-start-line="266" selection-start-column="66" selection-end-line="266" selection-end-column="66" />
+            <state relative-caret-position="168">
+              <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#h5#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="54" column="117" lean-forward="true" selection-start-line="54" selection-start-column="117" selection-end-line="54" selection-end-column="117" />
+            <state relative-caret-position="675">
+              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -69,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="176" column="20" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="276" column="10" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -126,9 +127,9 @@
         <option value="$PROJECT_DIR$/.firebaserc" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/projects/WarZone/index.html" />
-        <option value="$PROJECT_DIR$/index.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index.css" />
       </list>
     </option>
   </component>
@@ -263,21 +264,7 @@
       <workItem from="1565922304778" duration="102000" />
       <workItem from="1565922511444" duration="5341000" />
       <workItem from="1566070485354" duration="2783000" />
-      <workItem from="1566262306930" duration="11264000" />
-    </task>
-    <task id="LOCAL-00040" summary="Update menu links to right-aligned">
-      <created>1546920624774</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1546920624774</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Fix absolute sizing of particles-js to fit div element with interactions">
-      <created>1547006510880</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1547006510880</updated>
+      <workItem from="1566262306930" duration="13145000" />
     </task>
     <task id="LOCAL-00042" summary="Fix spacing of content over particles-js">
       <created>1547007516604</created>
@@ -608,11 +595,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566510300997</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Add date to firebase post">
+      <created>1566510468525</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1566510468525</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Include synaptic plasticity website under projects">
+      <created>1566524479659</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1566524479659</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158206000" />
+    <option name="totallyTimeSpent" value="160087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -643,7 +644,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix form title to be reasonably responsive with exclamation point" />
     <MESSAGE value="Fix spacing on particles-js to remove overlapping" />
     <MESSAGE value="Remove prior css styling on small screens" />
     <MESSAGE value="Modify styling to fix minor bugs" />
@@ -668,7 +668,8 @@
     <MESSAGE value="Minor fix for resizing elements" />
     <MESSAGE value="Replace alert with friendlier modal box" />
     <MESSAGE value="Add date to firebase post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add date to firebase post" />
+    <MESSAGE value="Include synaptic plasticity website under projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Include synaptic plasticity website under projects" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/img/favicon.png">
@@ -823,24 +824,17 @@
     <entry file="file://$PROJECT_DIR$/projects/WarZone/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.css">
+    <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="176" column="20" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="675">
+          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1205">
-          <caret line="266" column="66" lean-forward="true" selection-start-line="266" selection-start-column="66" selection-end-line="266" selection-end-column="66" />
+        <state relative-caret-position="168">
+          <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#h5#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -856,10 +850,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="54" column="117" lean-forward="true" selection-start-line="54" selection-start-column="117" selection-end-line="54" selection-end-column="117" />
+        <state relative-caret-position="731">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="276" column="10" selection-start-line="276" selection-start-column="10" selection-end-line="276" selection-end-column="10" />
         </state>
       </provider>
     </entry>

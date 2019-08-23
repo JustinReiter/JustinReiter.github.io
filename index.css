@@ -101,6 +101,17 @@
     border-radius: 50%;
 }
 
+.fa-external-link-alt {
+    text-align: center;
+    margin: 4px 4px 4px 4px;
+    width: 48px;
+    height: 48px;
+    padding-top: 11px;
+    background: white;
+    color: deepskyblue;
+    border-radius: 50%;
+}
+
 .fa-file-alt {
     text-align: center;
     margin: 4px 4px 4px 4px;
@@ -256,6 +267,15 @@
 
 }
 */
+
+.project-header {
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    margin-top: 6%;
+}
 
 #projects {
     padding-top: 2%;
