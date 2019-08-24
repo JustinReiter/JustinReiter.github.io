@@ -1,6 +1,7 @@
 
 #aboutme {
-    margin: 24px 2%;
+    margin-right: 2%;
+    margin-left: 2%;
     text-align: left;
     background: whitesmoke;
     width: 100%;
@@ -21,7 +22,6 @@
 
 #body {
     background-color: lightblue;
-    /*background: linear-gradient(1deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
 }
 
 .button {
@@ -43,6 +43,7 @@
     margin: 6px 0px 6px 0px;
     padding: 6px 6px 6px 6px;
     display: inline-block;
+    border-radius: 2%;
 }
 
 #contactForm {
@@ -55,6 +56,7 @@
     align-content: center;
     display: inline-block;
     padding: 32px 85px;
+    border-radius: 2%;
 }
 
 
@@ -270,7 +272,7 @@
 
 .project-header {
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 100%; /* Full width */
     padding: 20px; /* Some padding */
