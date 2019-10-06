@@ -71,7 +71,7 @@ function matchTeamMembers(team1, team2) {
         shuffleArray(extendedTeam2);
     } while (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups < 1000);
 
-    if (!isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups == 1000) {
+    if (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups == 1000) {
         console.log("Unresolved matchup collision");
     } else {
         console.log("Number of non-unique arrangements: " + nonUniqueMatchups);
