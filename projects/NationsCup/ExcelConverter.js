@@ -9,7 +9,9 @@ function readExcel() {
         var teams = convertExcelToObject(sheet);
 
         var matchups = [];
+
         for (let i = 0; i < teams.length - 1; i+=2) {
+            console.log(teams[i].team + " vs. " + teams[i+1].team);
             matchups.push(createMatchupObject(teams[i].team, teams[i+1].team, matchTeamMembers(teams[i].players, teams[i+1].players)));
         }
         convertObjectToExcel(matchups);
