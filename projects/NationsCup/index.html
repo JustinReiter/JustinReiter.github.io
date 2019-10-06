@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warzone Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Justin Reiter">
+    <meta name="keywords" content="Justin, Reiter, Waterloo">
+    <meta name="description" content="Personal website for Justin Reiter">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <script src="CreateMatchups.js"></script>
+    <script src="ExcelConverter.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".menuItem").click(function() {
+
+                if (document.getElementById("topnav").className == "topnav responsive") {
+                    navBar();
+                }
+            })
+            let el = document.getElementById("excelUploadInput");
+            if (el.addEventListener) {
+                el.addEventListener("change", readExcel, false);
+            } else if (el.attachEvent) {
+                el.attachEvent('onchange', readExcel);
+            }
+        });
+    </script>
+</head>
+<body id="body">
+<!-- TOP NAV -->
+<div class="topnav" id="topnav">
+    <a href="#body">Justin Reiter</a>
+    <div class="topnav-right" id="topnav-right">
+        <a href="#body" class="menuItem">Home</a>
+        <a href="#projects" class="menuItem">Personal Projects</a>
+        <a href="#contact" class="menuItem">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+<div class="fluid-container col-sm-12" id="wziframe">
+    <h1>Nations Cup MatchUp</h1>
+    <input type="file" name="files[]" id="excelUploadInput" multiple />
+</div>
+</body>
+</html>
