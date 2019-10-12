@@ -88,7 +88,10 @@ function doTestGame() {
             }
         }
     };
-    xmlHttp.open("POST", postUrl, true);
+
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+
+    xmlHttp.open("POST", proxyurl + postUrl, true);
     xmlHttp.setRequestHeader("Content-Type", "application/json");
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xmlHttp.send(JSON.stringify(createTestJSONData()));
