@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="321">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -326,21 +321,7 @@
       <workItem from="1570373271093" duration="7205000" />
       <workItem from="1570384156080" duration="114000" />
       <workItem from="1570813749712" duration="321000" />
-      <workItem from="1570891961985" duration="1324000" />
-    </task>
-    <task id="LOCAL-00055" summary="Fix layout on smaller screens to not overlap">
-      <created>1547615273542</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1547615273542</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Open new tab on github source code links">
-      <created>1547668281648</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1547668281649</updated>
+      <workItem from="1570891961985" duration="2208000" />
     </task>
     <task id="LOCAL-00057" summary="Implement form and footer">
       <created>1547701581471</created>
@@ -671,11 +652,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570384201045</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Add files for creating games">
+      <created>1570893390828</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1570893390829</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Add proxy to avoid CORS">
+      <created>1570893888063</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1570893888063</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190054000" />
+    <option name="totallyTimeSpent" value="190938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -706,8 +701,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update form to reset fields on send" />
-    <MESSAGE value="Fix form sending proper information" />
     <MESSAGE value="Update meta tags" />
     <MESSAGE value="Add new project for Warlight bot" />
     <MESSAGE value="Swap form to send post to firebase database" />
@@ -731,7 +724,9 @@
     <MESSAGE value="Fix navbar links on nations cup page" />
     <MESSAGE value="Fix matchups not being unique" />
     <MESSAGE value="Fix statement printing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix statement printing" />
+    <MESSAGE value="Add files for creating games" />
+    <MESSAGE value="Add proxy to avoid CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add proxy to avoid CORS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/img/favicon.png">
@@ -987,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        <state relative-caret-position="321">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>

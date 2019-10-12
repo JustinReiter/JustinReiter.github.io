@@ -79,7 +79,7 @@ function doTestGame() {
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             console.log(xmlHttp.responseText);
-            gameId = JSON.parse(xmlHttp.responseText).gameId;
+            gameId = JSON.parse(xmlHttp.responseText);
 
             if (gameId.hasOwnProperty("gameID")) {
                 console.log(gameId);
