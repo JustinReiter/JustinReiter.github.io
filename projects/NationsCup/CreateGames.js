@@ -1,4 +1,5 @@
 const postUrl = "https://www.warzone.com/API/CreateGame"
+const viewGameUrl = "https://www.warzone.com/MultiPlayer?GameID="
 const templateId = 1257165;
 const email = "Justin.Reiter.1@gmail.com";
 const apiToken = "7$B*e6v1*J0r6ay*8%^Y5o051umm$RiMZsKRgV!bXo$ASAZ";
@@ -11,11 +12,11 @@ const joitoken = "e%trkK6HhoJ2x$w$p6Rus2%6GaVhS2dNoNn1KjnhP3@Z";
 // Converts game details in packed object
 function createJSONData(playerMatch, team1, team2) {
     var object = {hostEmail: email, hostAPIToken: apiToken};
-    object.templateId = templateId;
+    object.templateID = templateId;
     object.gameName = "Nations Cup - " + team1 + " vs. " + team2;
     object.personalMessage = "This game is a part of the Nations Cup, run by Rento. Game is between: " + playerMatch[0].name + " in " + team1 + " and " + playerMatch[1].name + " in " + team2;
     object.Pace = "MultiDay";
-    object.DirectBookt = 4320.0;
+    object.DirectBoot = 4320.0;
     object.AutoBoot = 4320.0;
     object.BankingBootTimes = "null";
 
@@ -31,37 +32,35 @@ function createJSONData(playerMatch, team1, team2) {
 function createGame(playerMatch, team1, team2) {
 
     var xmlHttp = new XMLHttpRequest();
-    var gameId;
+    var gameID;
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             console.log(xmlHttp.responseText);
-            gameId = JSON.parse(xmlHttp.responseText).gameId;
+            gameID = JSON.parse(xmlHttp.responseText);
+
+            if (gameID.hasOwnProperty("gameID")) {
+                console.log(gameID.gameID);
+                playerMatch.push(viewGameUrl+gameID.gameID);
+            } else {
+                console.log("ERROR - createGame: " + playerMatch[0].name + " + " + playerMatch[1].name);
+            }
         }
     };
     xmlHttp.open("POST", postUrl, true);
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify(createJSONData(playerMatch, team1, team2)));
-
-    if (gameId.hasOwnProperty("gameID")) {
-        console.log(gameId);
-        gameIdArr.push(gameId);
-    } else {
-        console.log("ERROR - createGame: " + playerMatch[0].name + " + " + playerMatch[1].name);
-    }
-
-    return gameId;
 }
 
 
 
 // Converts game details in packed object
 function createTestJSONData() {
-    var object = {hostEmail: joiemail, hostAPIToken: joitoken};
-    object.templateId = templateId;
+    var object = {hostEmail: email, hostAPIToken: apiToken};
+    object.templateID = templateId;
     object.gameName = "Nations Cup - " + "team1" + " vs. " + "team2";
     object.personalMessage = "This game is a part of the Nations Cup, run by Rento. Game is between";
     object.Pace = "MultiDay";
-    object.DirectBookt = 4320.0;
+    object.DirectBoot = 4320.0;
     object.AutoBoot = 4320.0;
     object.BankingBootTimes = "null";
     object.PracticeGame = true;
@@ -80,9 +79,9 @@ function doTestGame() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             console.log(xmlHttp.responseText);
             gameId = JSON.parse(xmlHttp.responseText);
-
+            console.log(gameId);
             if (gameId.hasOwnProperty("gameID")) {
-                console.log(gameId);
+                console.log(gameId.gameID);
             } else {
                 console.log("ERROR");
             }

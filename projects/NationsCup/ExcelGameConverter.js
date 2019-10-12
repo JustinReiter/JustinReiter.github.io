@@ -1,4 +1,23 @@
 
+function isUpdated(matchups) {
+    for (let i = 0; i < matchups.length; i++) {
+        for (let j = 0; j < matchups[i].games.length; j++) {
+            if (matchups[i].games[j].length != 3) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+function timeOutFunction(matchups) {
+    if (isUpdated(matchups)) {
+        return;
+    } else {
+        setTimeout(timeOutFunction, 5000, matchups);
+    }
+}
+
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readMatchupsExcel() {
     var file = document.getElementById("excelUploadInput").files[0];
@@ -16,12 +35,11 @@ function readMatchupsExcel() {
             console.log(matchups[i].team1 + " vs. " + matchups[i].team2);
 
             for (let j = 0; j < matchups[i].games.length; j++) {
-                // TODO
-                var gameId = createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2);
-                matchups[i].games[j].push(gameId);
+                createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2);
             }
         }
 
+        setTimeout(timeOutFunction, 5000, matchups);
         // Convert and download final output
         convertObjectToGamesExcel(matchups);
     };

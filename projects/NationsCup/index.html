@@ -45,6 +45,13 @@
             } else if (el2.attachEvent) {
                 el2.attachEvent('onclick', doTestGame);
             }
+
+            let el3 = document.getElementById("excelGameUploadInput");
+            if (el3.addEventListener) {
+                el3.addEventListener("click", readMatchupsExcel, false);
+            } else if (el3.attachEvent) {
+                el3.attachEvent('onclick', readMatchupsExcel);
+            }
         });
     </script>
 </head>
