@@ -1,4 +1,4 @@
-function readExcel() {
+function readRawExcel() {
     var file = document.getElementById("excelUploadInput").files[0];
     var reader = new FileReader();
 
@@ -6,7 +6,7 @@ function readExcel() {
         var data = new Uint8Array(e.target.result);
         var wb = XLSX.read(data,{type:'array'});
         var sheet = wb.Sheets[wb.SheetNames[0]];
-        var teams = convertExcelToObject(sheet);
+        var teams = convertRawExcelToObject(sheet);
 
         var matchups = [];
 
@@ -14,24 +14,12 @@ function readExcel() {
             console.log(teams[i].team + " vs. " + teams[i+1].team);
             matchups.push(createMatchupObject(teams[i].team, teams[i+1].team, matchTeamMembers(teams[i].players, teams[i+1].players)));
         }
-        convertObjectToExcel(matchups);
+        convertObjectToMatchupsExcel(matchups);
     };
     reader.readAsArrayBuffer(file);
 }
 
-function createMatchupObject(teamName1, teamName2, matchups) {
-    return {team1: teamName1, team2: teamName2, games: matchups};
-}
-
-function createTeamObject(teamName, players) {
-    return {team: teamName, players: players};
-}
-
-function createPlayerObject(_name, _playerId) {
-    return {name: _name, playerId: _playerId};
-}
-
-function convertExcelToObject(sheet) {
+function convertRawExcelToObject(sheet) {
     var teams = [];
 
     var range = XLSX.utils.decode_range(sheet['!ref']);
@@ -54,7 +42,7 @@ function convertExcelToObject(sheet) {
     return teams;
 }
 
-function convertObjectToExcel(matchups) {
+function convertObjectToMatchupsExcel(matchups) {
     var wb = XLSX.utils.book_new();
     wb.Props = {
         Title: "Nations Cup Mathcups",

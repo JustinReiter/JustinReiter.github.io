@@ -1,14 +1,6 @@
 // https://cdnjs.cloudflare.com/ajax/libs/exceljs/2.0.1/exceljs.min.js
 // <input type="file" id="files" name="files[]" multiple />
 
-function createPlayerObject(_name, _playerId) {
-    return {name: _name, playerId: _playerId};
-}
-
-function createPlayerMatchUp(player1, player2) {
-    return [player1, player2];
-}
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

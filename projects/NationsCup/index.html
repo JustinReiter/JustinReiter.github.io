@@ -18,8 +18,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+    <script src="ObjectDeclaration.js"></script>
     <script src="CreateMatchups.js"></script>
     <script src="ExcelConverter.js"></script>
+    <script src="CreateGames.js"></script>
+    <script src="ExcelGameConverter.js"></script>
     <script>
         $(document).ready(function() {
             $(".menuItem").click(function() {
@@ -28,11 +31,19 @@
                     navBar();
                 }
             })
+
             let el = document.getElementById("excelUploadInput");
             if (el.addEventListener) {
-                el.addEventListener("change", readExcel, false);
+                el.addEventListener("change", readRawExcel, false);
             } else if (el.attachEvent) {
-                el.attachEvent('onchange', readExcel);
+                el.attachEvent('onchange', readRawExcel);
+            }
+
+            let el2 = document.getElementById("testGameBtn");
+            if (el2.addEventListener) {
+                el2.addEventListener("click", doTestGame, false);
+            } else if (el2.attachEvent) {
+                el2.attachEvent('onclick', doTestGame);
             }
         });
     </script>
@@ -73,15 +84,39 @@
             </div>
         </div>
     </div>
+
+    <div class="container bg-theme">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 style="margin-top: 10%">Hello, Welcome to the Nations Cup Page!</h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 4%">
+            <div class="col-sm-12">
+                <h5 class="">This second box will create the game matchups given the file from the previous input</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="file" name="files[]" id="excelGameUploadInput" multiple />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <br><button class="btn btn-primary" id="testGameBtn">Test Game</button>
+                <p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to ensure "Unresolved matchup collision" does not appear. If it does, either place the file into the input again or fix the collision manually according to the team names above the statement</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 
-<div class="footer" id="footer">
-    <br>
-    <h5>Want to contact me directly?</h5>
-    <p>JDReiter@uwaterloo.ca</p>
-    <br>
-    <p>Made by Justin Reiter &copy; 2019</p>
-</div>
+<!--<div class="footer" id="footer">-->
+    <!--<br>-->
+    <!--<h5>Want to contact me directly?</h5>-->
+    <!--<p>JDReiter@uwaterloo.ca</p>-->
+    <!--<br>-->
+    <!--<p>Made by Justin Reiter &copy; 2019</p>-->
+<!--</div>-->
 </body>
 </html>
