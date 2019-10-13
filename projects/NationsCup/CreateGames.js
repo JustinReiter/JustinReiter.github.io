@@ -10,9 +10,9 @@ const proxyurl = "https://cors-anywhere.herokuapp.com/";
 // Converts game details in packed object
 function createJSONData(playerMatch, team1, team2) {
     var object = {hostEmail: document.getElementById("emailInput").value, hostAPIToken: document.getElementById("apitokenInput").value.replace(/\\&/g, "\\&")};
-    object.templateID = templateId;
+    object.templateID = document.getElementById("templateInput").value;
     object.gameName = "Nations Cup - " + team1 + " vs. " + team2;
-    object.personalMessage = "This game is a part of the Nations Cup, run by Rento. Game is between: " + playerMatch[0].name + " in " + team1 + " and " + playerMatch[1].name + " in " + team2;
+    object.personalMessage = "This game is a part of the Nations Cup, run by Rento (https://docs.google.com/spreadsheets/d/1op7iJ_XRTSNty4ON1xr6WvUJcL8Yp5Y4aI8DnmZIuH4/edit#gid=0). Game is between: " + playerMatch[0].name + " in " + team1 + " and " + playerMatch[1].name + " in " + team2;
     object.players = [];
     for (var i = 0; i < playerMatch.length; i++) {
         object.players.push({token: playerMatch[i].playerId.substr(playerMatch[i].playerId.indexOf("=") + 1), team: "None"});
@@ -44,49 +44,4 @@ function createGame(playerMatch, team1, team2) {
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xmlHttp.send(JSON.stringify(createJSONData(playerMatch, team1, team2)));
     return gameID;
-}
-
-
-
-// Converts game details in packed object
-function createTestJSONData() {
-    var object = {hostEmail: email, hostAPIToken: apiToken};
-    object.templateID = templateId;
-    object.gameName = "Nations Cup - " + "team1" + " vs. " + "team2";
-    object.personalMessage = "This game is a part of the Nations Cup, run by Rento. Game is between";
-    object.Pace = "MultiDay";
-    object.DirectBoot = 4320.0;
-    object.AutoBoot = 4320.0;
-    object.BankingBootTimes = "null";
-    object.PracticeGame = true;
-
-    object.players = [];
-    // JustinR17
-    object.players.push({token: "1277277659", team: "None"});
-    // Nigel
-    object.players.push({token: "54111929746", team: "None"});
-
-    return object;
-}
-
-function doTestGame() {
-    var xmlHttp = new XMLHttpRequest();
-    var gameId;
-    xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            console.log(xmlHttp.responseText);
-            gameId = JSON.parse(xmlHttp.responseText);
-            console.log(gameId);
-            if (gameId.hasOwnProperty("gameID")) {
-                console.log(gameId.gameID);
-            } else {
-                console.log("ERROR");
-            }
-        }
-    };
-
-    xmlHttp.open("POST", proxyurl + postUrl, true);
-    xmlHttp.setRequestHeader("Content-Type", "application/json");
-    xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xmlHttp.send(JSON.stringify(createTestJSONData()));
 }

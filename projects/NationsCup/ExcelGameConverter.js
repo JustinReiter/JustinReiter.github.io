@@ -94,7 +94,7 @@ function convertObjectToGamesExcel(matchups) {
 
     var dataArray = [];
     for (let i = 0; i < matchups.length; i++) {
-        dataArray.push([matchups[i].team1,,matchups[i].team2]);
+        dataArray.push([matchups[i].team1,,matchups[i].team2,,"Game Links"]);
         for (let j = 0; j < matchups[i].games.length; j++) {
             dataArray.push([matchups[i].games[j][0].name, matchups[i].games[j][0].playerId, matchups[i].games[j][1].name, matchups[i].games[j][1].playerId, matchups[i].games[j][2]]);
         }
