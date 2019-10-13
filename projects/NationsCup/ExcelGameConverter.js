@@ -36,12 +36,12 @@ function readMatchupsExcel() {
 
             for (let j = 0; j < matchups[i].games.length; j++) {
                 // Create games for each matchup and append gameid to end of matchups[i].games
-                createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2);
+                matchups[i].games[j].push(createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2));
             }
         }
 
-        // Recursively wait for async functions to complete
-        setTimeout(timeOutFunction, 5000, matchups);
+        // // Recursively wait for async functions to complete
+        // setTimeout(timeOutFunction, 5000, matchups);
         // Convert and download final output
         convertObjectToGamesExcel(matchups);
     };
@@ -66,13 +66,13 @@ function convertMatchupsExcelToObject(sheet) {
 
     var matchups = [];
     for (var R = range.s.r; R < range.e.r; R+=14) {
-        var team1 = sheet[XLSX.utils.encode_cell({c:0, r:R})];
-        var team2 = sheet[XLSX.utils.encode_cell({c:2, r:R})];
+        var team1 = sheet[XLSX.utils.encode_cell({c:0, r:R})].v;
+        var team2 = sheet[XLSX.utils.encode_cell({c:2, r:R})].v;
         var games = [];
 
         for (let i = 1; i < 13; i++) {
-            var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})], sheet[XLSX.utils.encode_cell({c:1, r:R+i})]);
-            var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})], sheet[XLSX.utils.encode_cell({c:3, r:R+i})]);
+            var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:1, r:R+i})].v);
+            var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:3, r:R+i})].v);
             games.push(createPlayerMatchUp(player1, player2));
         }
         matchups.push(createMatchupObject(team1, team2, games));
@@ -115,5 +115,5 @@ function convertObjectToGamesExcel(matchups) {
         return buf;
     }
 
-    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'NationsCupMatchups.xlsx');
+    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'NationsCupGames.xlsx');
 }
