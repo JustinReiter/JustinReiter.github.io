@@ -48,18 +48,6 @@ function readMatchupsExcel() {
     reader.readAsArrayBuffer(file);
 }
 
-function createMatchupObject(teamName1, teamName2, matchups) {
-    return {team1: teamName1, team2: teamName2, games: matchups};
-}
-
-function createPlayerMatchUp(player1, player2) {
-    return [player1, player2];
-}
-
-function createPlayerObject(_name, _playerId) {
-    return {name: _name, playerId: _playerId};
-}
-
 // Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]
 function convertMatchupsExcelToObject(sheet) {
     var range = XLSX.utils.decode_range(sheet['!ref']);
