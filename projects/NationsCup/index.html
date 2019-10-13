@@ -55,7 +55,7 @@
         });
     </script>
 </head>
-<body id="body">
+<body class="bg"id="body">
 <!-- TOP NAV -->
 <div class="topnav" id="topnav">
     <a href="/#body">Justin Reiter</a>
@@ -92,10 +92,10 @@
         </div>
     </div>
 
-    <div class="container bg-theme">
+    <div class="container bg bg-theme">
         <div class="row">
             <div class="col-sm-12">
-                <h1 style="margin-top: 10%">Hello, Welcome to the Nations Cup Page!</h1>
+                <h1 style="margin-top: 10%">Nations Cup Game Creation</h1>
             </div>
         </div>
         <div class="row" style="margin-top: 4%">
@@ -110,20 +110,24 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
+                <label for="emailInput">WZ Email:</label>
+                <input type="text" class="form-control" id="emailInput">
+                <label for="apitokenInput">WZ API Token:</label>
+                <input type="text" class="form-control" id="apitokenInput">
                 <br><button class="btn btn-primary" id="testGameBtn">Test Game</button>
-                <p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to ensure "Unresolved matchup collision" does not appear. If it does, either place the file into the input again or fix the collision manually according to the team names above the statement</p>
+                <p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to see the status of all of the games created. If successful, you will see the game id and the player maatchups. If unsuccessful, "ERROR - createGame: playerX vs playerY" will appear</p>
             </div>
         </div>
     </div>
 </div>
 
 
-<!--<div class="footer" id="footer">-->
-    <!--<br>-->
-    <!--<h5>Want to contact me directly?</h5>-->
-    <!--<p>JDReiter@uwaterloo.ca</p>-->
-    <!--<br>-->
-    <!--<p>Made by Justin Reiter &copy; 2019</p>-->
-<!--</div>-->
+<div class="footer" id="footer">
+    <br>
+    <h5>Want to contact me directly?</h5>
+    <p>JDReiter@uwaterloo.ca</p>
+    <br>
+    <p>Made by Justin Reiter &copy; 2019</p>
+</div>
 </body>
 </html>

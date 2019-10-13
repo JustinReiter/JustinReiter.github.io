@@ -26,7 +26,6 @@
 
 html, #body {
     background-color: lightblue;
-    height: 100%;
     /*background: linear-gradient(1deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);*/
 }
 
@@ -132,7 +131,7 @@ html, #body {
     padding-bottom: 12px;
     background: #17181c;
     color: white;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
 }
 

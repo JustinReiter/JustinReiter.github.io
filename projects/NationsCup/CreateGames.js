@@ -11,7 +11,7 @@ const joitoken = "e%trkK6HhoJ2x$w$p6Rus2%6GaVhS2dNoNn1KjnhP3@Z";
 
 // Converts game details in packed object
 function createJSONData(playerMatch, team1, team2) {
-    var object = {hostEmail: email, hostAPIToken: apiToken};
+    var object = {hostEmail: document.getElementById("emailInput"), hostAPIToken: document.getElementById("apitokenInput")};
     object.templateID = templateId;
     object.gameName = "Nations Cup - " + team1 + " vs. " + team2;
     object.personalMessage = "This game is a part of the Nations Cup, run by Rento. Game is between: " + playerMatch[0].name + " in " + team1 + " and " + playerMatch[1].name + " in " + team2;
@@ -30,7 +30,6 @@ function createJSONData(playerMatch, team1, team2) {
 
 // Creates games given a single match from ExcelGameConverter ([p1 : {name, id}, p2])
 function createGame(playerMatch, team1, team2) {
-
     var xmlHttp = new XMLHttpRequest();
     var gameID;
     xmlHttp.onreadystatechange = function() {

@@ -41,18 +41,19 @@ function newPostForCurrentUser(nameF, emailF, subjectF, descF, date) {
   });
 }
 
-function emailPostRequest(nameF, emailF, subjectF, descF, date) {
+function emailPostRequest(nameF, emailF, subjectF, descF) {
   var req = new XMLHttpRequest();
-  var url = "https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec";
+  var url = "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbySQ_bAV6reSUpzLj3VAtE5l1V4MIhfoojeXHAjnyCzB2HvYA/exec";
   req.open("POST", url, true);
-  req.setRequestHeader("Content-type", "multipart/form-data");
+  req.setRequestHeader("Content-Type", "application/JSON");
+  req.setRequestHeader("Access-Control-Allow-Origin", "*");
   req.onreadystatechange = function () {
     if (req.readyState == 4 && req.status == 200) {
-      var json = JSON.parse(req.responseText);
-      console.log(json.email + ", " + json.name);
+      var json = req.response;
+      console.log(json);
     }
   }
-  var post = JSON.stringify({"name" : nameF, "email" : emailF, "subject" : subjectF, "desc" : descF + "\n" + date,});
+  var post = JSON.stringify({name : nameF, email : emailF, subject : subjectF, desc : descF});
   req.send(post);
 }
 
