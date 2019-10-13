@@ -20,7 +20,7 @@ function timeOutFunction(matchups) {
 
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readMatchupsExcel() {
-    var file = document.getElementById("excelUploadInput").files[0];
+    var file = document.getElementById("excelGameUploadInput").files[0];
     var reader = new FileReader();
 
     reader.onload = function(e) {
@@ -35,10 +35,12 @@ function readMatchupsExcel() {
             console.log(matchups[i].team1 + " vs. " + matchups[i].team2);
 
             for (let j = 0; j < matchups[i].games.length; j++) {
+                // Create games for each matchup and append gameid to end of matchups[i].games
                 createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2);
             }
         }
 
+        // Recursively wait for async functions to complete
         setTimeout(timeOutFunction, 5000, matchups);
         // Convert and download final output
         convertObjectToGamesExcel(matchups);
@@ -58,16 +60,14 @@ function createPlayerObject(_name, _playerId) {
     return {name: _name, playerId: _playerId};
 }
 
-// Creates object containing each team matchups [[team1, team2, games : [p1, p2, gameurl], ...]
+// Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]
 function convertMatchupsExcelToObject(sheet) {
-    var teams = [];
-
     var range = XLSX.utils.decode_range(sheet['!ref']);
 
     var matchups = [];
-    for (var R = range.s.r; R <= range.e.r + 1; R+=14) {
+    for (var R = range.s.r; R < range.e.r; R+=14) {
         var team1 = sheet[XLSX.utils.encode_cell({c:0, r:R})];
-        var team2 = sheet[XLSX.utils.encode_cell({c:3, r:R})];
+        var team2 = sheet[XLSX.utils.encode_cell({c:2, r:R})];
         var games = [];
 
         for (let i = 1; i < 13; i++) {

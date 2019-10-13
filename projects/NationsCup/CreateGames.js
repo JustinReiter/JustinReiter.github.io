@@ -22,7 +22,7 @@ function createJSONData(playerMatch, team1, team2) {
 
     object.players = [];
     for (var i = 0; i < playerMatch.length; i++) {
-        object.players.push({token: playerMatch[i].playerId, team: "None"});
+        object.players.push({token: playerMatch[i].playerId.substr(playerMatch[i].playerId.indexOf("=") + 1), team: "None"});
     }
 
     return object;
@@ -39,16 +39,19 @@ function createGame(playerMatch, team1, team2) {
             gameID = JSON.parse(xmlHttp.responseText);
 
             if (gameID.hasOwnProperty("gameID")) {
-                console.log(gameID.gameID);
+                // Game succesfully created
+                console.log(gameID.gameID + " - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
                 playerMatch.push(viewGameUrl+gameID.gameID);
             } else {
+                // Game not created successfully
+                playerMatch.push("ERROR - Not created");
                 console.log("ERROR - createGame: " + playerMatch[0].name + " + " + playerMatch[1].name);
             }
         }
     };
     xmlHttp.open("POST", postUrl, true);
-    xmlhttp.setRequestHeader("Content-Type", "application/json");
-    xmlhttp.send(JSON.stringify(createJSONData(playerMatch, team1, team2)));
+    xmlHttp.setRequestHeader("Content-Type", "application/json");
+    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, team1, team2)));
 }
 
 
@@ -66,7 +69,9 @@ function createTestJSONData() {
     object.PracticeGame = true;
 
     object.players = [];
+    // JustinR17
     object.players.push({token: "1277277659", team: "None"});
+    // Nigel
     object.players.push({token: "54111929746", team: "None"});
 
     return object;
