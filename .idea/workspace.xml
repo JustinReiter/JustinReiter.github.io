@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,13 +29,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/NationsCup/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="157" column="80" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="80" />
+            <state relative-caret-position="221">
+              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
               <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -78,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/NationsCup/MonitorGames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -166,9 +167,9 @@
         <option value="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" />
-        <option value="$PROJECT_DIR$/projects/NationsCup/index.html" />
         <option value="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" />
+        <option value="$PROJECT_DIR$/projects/NationsCup/index.html" />
       </list>
     </option>
   </component>
@@ -321,21 +322,7 @@
       <workItem from="1570813749712" duration="321000" />
       <workItem from="1570891961985" duration="7677000" />
       <workItem from="1570937821844" duration="3426000" />
-      <workItem from="1570990929834" duration="16071000" />
-    </task>
-    <task id="LOCAL-00066" summary="Modify styling to fix minor bugs">
-      <created>1548567528301</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1548567528301</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Create backbone for making elegant completed form page instead of showing tokens in script">
-      <created>1548635462487</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1548635462488</updated>
+      <workItem from="1570990929834" duration="16435000" />
     </task>
     <task id="LOCAL-00068" summary="Fix code for google script not submitting form">
       <created>1548636850360</created>
@@ -666,11 +653,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571011545967</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Create Skeleton for game reports">
+      <created>1571012471206</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1571012471206</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Finalize game report feature">
+      <created>1571012537941</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1571012537941</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215904000" />
+    <option name="totallyTimeSpent" value="216268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -701,7 +702,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace alert with friendlier modal box" />
     <MESSAGE value="Add date to firebase post" />
     <MESSAGE value="Include synaptic plasticity website under projects" />
     <MESSAGE value="Adjust styling for softer edges and more readability" />
@@ -726,7 +726,8 @@
     <MESSAGE value="Publish new nations cup page" />
     <MESSAGE value="Remove unneeded code" />
     <MESSAGE value="Create Skeleton for game reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Skeleton for game reports" />
+    <MESSAGE value="Finalize game report feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize game report feature" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/img/favicon.png">
@@ -979,12 +980,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/NationsCup/MonitorGames.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/NationsCup/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="157" column="80" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="80" />
+        <state relative-caret-position="221">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -998,13 +1005,6 @@
             <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#5971#5977#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/NationsCup/MonitorGames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
         </state>
       </provider>
     </entry>

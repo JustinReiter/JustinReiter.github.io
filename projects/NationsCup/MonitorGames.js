@@ -15,7 +15,6 @@ function monitorGame(playerMatch) {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             response = JSON.parse(xmlHttp.responseText);
             progress.push(response.state);
-            console.log(response);
             console.log(response.state + " - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
             if (response.state == "Finished") {
                 // Game finished
