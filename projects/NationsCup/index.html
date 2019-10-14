@@ -23,6 +23,8 @@
     <script src="ExcelConverter.js"></script>
     <script src="CreateGames.js"></script>
     <script src="ExcelGameConverter.js"></script>
+    <script src="MonitorGames.js"></script>
+    <script src="ExcelMonitorConverter.js"></script>
     <script>
         $(document).ready(function() {
             $(".menuItem").click(function() {
@@ -39,11 +41,18 @@
                 el.attachEvent('onclick', readRawExcel);
             }
 
-            let el3 = document.getElementById("createGameBtn");
+            let el2 = document.getElementById("createGameBtn");
+            if (el2.addEventListener) {
+                el2.addEventListener("click", readMatchupsExcel, false);
+            } else if (el2.attachEvent) {
+                el2.attachEvent('onclick', readMatchupsExcel);
+            }
+
+            let el3 = document.getElementById("monitorGameBtn");
             if (el3.addEventListener) {
-                el3.addEventListener("click", readMatchupsExcel, false);
+                el3.addEventListener("click", readGamesExcel, false);
             } else if (el3.attachEvent) {
-                el3.attachEvent('onclick', readMatchupsExcel);
+                el3.attachEvent('onclick', readGamesExcel);
             }
         });
     </script>
@@ -126,6 +135,43 @@
         <div class="row">
             <div class="col-sm-12">
                 <br><p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to see the status of all of the games created. If successful, you will see the game id and the player matchups. If unsuccessful, "ERROR - error" will appear where error will be replaced by the setting that is not unlcoked by at least one of the players.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg bg-theme">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 style="margin-top: 10%">Nations Cup Game Report</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 4%">
+            <div class="col-sm-12">
+                <h5 class="">This third box will parse each game and output a report on winners</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <label for="emailMonitorInput">WZ Email:</label>
+                <input type="text" class="form-control" id="emailMonitorInput">
+                <br><label for="apitokenMonitorInput">WZ API Token:</label>
+                <input type="text" class="form-control" id="apitokenMonitorInput">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <br><label for="excelMonitorUploadInput">Excel file input:</label>
+                <input type="file" name="files[]" id="excelMonitorUploadInput" multiple />
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" id="monitorGameBtn">Create Game Report!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <br><p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to see the status of all of the games.</p>
             </div>
         </div>
     </div>
