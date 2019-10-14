@@ -26,15 +26,16 @@ function monitorGame(playerMatch) {
                     }
                 }
             } else {
-                // Game not finished
+                // Game not finished or found
                 console.log("In Progress");
                 progress.push("In Progress");
             }
         }
     };
 
-    var gameURL = proxyFeedUrl+postFeedUrl+playerMatch[2].substr(playerMatch[2].indexOf("=") + 1)+"?"+createMonitorJSONData();
-    xmlHttp.open("GET", gameURL, false);
-    xmlHttp.send(null);
+    var gameURL = proxyFeedUrl+postFeedUrl+playerMatch[2].substr(playerMatch[2].indexOf("=") + 1);
+    xmlHttp.open("POST", gameURL, false);
+    xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+    xmlHttp.send(createMonitorJSONData());
     return progress;
 }
