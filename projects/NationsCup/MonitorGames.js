@@ -1,5 +1,5 @@
 const postFeedUrl = "https://www.warzone.com/API/GameFeed?GameID=";
-const proxyFeedUrl = "https://cors-anywhere.herokuapp.com/";
+const proxyFeedUrl = "https://warzone-cors-anywhere.herokuapp.com/";
 
 // Converts game details in packed object
 function createMonitorJSONData() {

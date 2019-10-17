@@ -4,8 +4,6 @@
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,37 +52,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js">
+        <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="34">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/NationsCup/MonitorGames.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -150,9 +130,9 @@
         <option value="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/index.html" />
         <option value="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" />
-        <option value="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" />
         <option value="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" />
+        <option value="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" />
       </list>
     </option>
   </component>
@@ -167,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,6 +179,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,14 +286,9 @@
       <workItem from="1570891961985" duration="7677000" />
       <workItem from="1570937821844" duration="3426000" />
       <workItem from="1570990929834" duration="16991000" />
-      <workItem from="1571274877839" duration="1746000" />
-    </task>
-    <task id="LOCAL-00069" summary="Fix responsive topnav on mobile">
-      <created>1548654057463</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1548654057464</updated>
+      <workItem from="1571274877839" duration="2247000" />
+      <workItem from="1571277543507" duration="605000" />
+      <workItem from="1571281268104" duration="28000" />
     </task>
     <task id="LOCAL-00070" summary="Fix alignment of topnav on mobile">
       <created>1548739230537</created>
@@ -651,17 +626,24 @@
       <option name="project" value="LOCAL" />
       <updated>1571013205415</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Improve console readability">
+      <created>1571276697270</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1571276697271</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218570000" />
+    <option name="totallyTimeSpent" value="219704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18926175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19463088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -686,7 +668,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Include synaptic plasticity website under projects" />
     <MESSAGE value="Adjust styling for softer edges and more readability" />
     <MESSAGE value="Add new resume" />
     <MESSAGE value="Update Readme" />
@@ -711,7 +692,8 @@
     <MESSAGE value="Create Skeleton for game reports" />
     <MESSAGE value="Finalize game report feature" />
     <MESSAGE value="Fix minor styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix minor styling" />
+    <MESSAGE value="Improve console readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve console readability" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/img/favicon.png">
@@ -919,16 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="35" selection-end-line="77" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -940,6 +912,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="35" selection-end-line="77" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -963,31 +959,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js">
+    <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/NationsCup/MonitorGames.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/NationsCup/CreateGames.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>

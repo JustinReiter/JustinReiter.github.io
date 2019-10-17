@@ -1,6 +1,6 @@
 const postUrl = "https://www.warzone.com/API/CreateGame"
 const viewGameUrl = "https://www.warzone.com/MultiPlayer?GameID="
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "https://warzone-cors-anywhere.herokuapp.com/";
 // curl -ks --data-urlencode "Email=justin.reiter.1@gmail.com" --data-urlencode "APIToken=$apitoken" POST https://www.warzone.com/API/GameIDFeed?LadderID=0
 
 
