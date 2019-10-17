@@ -14,20 +14,27 @@ function monitorGame(playerMatch) {
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             response = JSON.parse(xmlHttp.responseText);
-            progress.push(response.state);
-            console.log(response.state + " - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
-            if (response.state == "Finished") {
-                // Game finished
-                for (let i = 0; i < response.players.length; i++) {
-                    if (response.players[i].state == "Won") {
-                        console.log("WON: " + response.players[i].name);
-                        progress.push(response.players[i].name);
+            console.log("\tGAME - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
+            if (response.hasOwnProperty("state")) {
+                console.log("\t\t" + response.state);
+                progress.push(response.state);
+                if (response.state == "Finished") {
+                    // Game finished
+                    for (let i = 0; i < response.players.length; i++) {
+                        if (response.players[i].state == "Won") {
+                            console.log("\t\t\tWON: " + response.players[i].name);
+                            progress.push(response.players[i].name);
+                        }
                     }
+                } else {
+                    // Game not finished or found
+                    console.log("\t\t\tIn Progress");
+                    progress.push("In Progress");
                 }
             } else {
-                // Game not finished or found
-                console.log("In Progress");
-                progress.push("In Progress");
+                console.log("\t\t\tERROR - " + response.error);
+                progress.push("ERROR");
+                progress.push(response.error);
             }
         }
     };

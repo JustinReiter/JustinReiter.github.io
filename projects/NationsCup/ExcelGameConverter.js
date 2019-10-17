@@ -1,23 +1,3 @@
-
-function isUpdated(matchups) {
-    for (let i = 0; i < matchups.length; i++) {
-        for (let j = 0; j < matchups[i].games.length; j++) {
-            if (matchups[i].games[j].length != 3) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-
-function timeOutFunction(matchups) {
-    if (isUpdated(matchups)) {
-        return;
-    } else {
-        setTimeout(timeOutFunction, 5000, matchups);
-    }
-}
-
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readMatchupsExcel() {
     var file = document.getElementById("excelGameUploadInput").files[0];
@@ -32,7 +12,7 @@ function readMatchupsExcel() {
         var matchups = convertMatchupsExcelToObject(sheet);
 
         for (let i = 0; i < matchups.length; i++) {
-            console.log(matchups[i].team1 + " vs. " + matchups[i].team2);
+            console.log("TEAM - " + matchups[i].team1 + " vs. " + matchups[i].team2);
 
             for (let j = 0; j < matchups[i].games.length; j++) {
                 // Create games for each matchup and append gameid to end of matchups[i].games

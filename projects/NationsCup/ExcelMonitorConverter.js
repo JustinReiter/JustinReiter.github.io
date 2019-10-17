@@ -12,7 +12,7 @@ function readGamesExcel() {
         var matchups = convertMatchupsExcelToObject(sheet);
 
         for (let i = 0; i < matchups.length; i++) {
-            console.log(matchups[i].team1 + " vs. " + matchups[i].team2);
+            console.log("TEAM - " + matchups[i].team1 + " vs. " + matchups[i].team2);
 
             for (let j = 0; j < matchups[i].games.length; j++) {
                 // Create games for each matchup and append gameid to end of matchups[i].games

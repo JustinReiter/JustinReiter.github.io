@@ -27,11 +27,11 @@ function createGame(playerMatch, team1, team2) {
             gameID = JSON.parse(xmlHttp.responseText);
             if (gameID.hasOwnProperty("gameID")) {
                 // Game succesfully created
-                console.log(gameID.gameID + " - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
+                console.log("\t" + gameID.gameID + " - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
                 gameID = viewGameUrl+gameID.gameID;
             } else {
                 // Game not created successfully
-                console.log("ERROR - " + gameID.error + " - " + playerMatch[0].name + " + " + playerMatch[1].name);
+                console.log("\tERROR - " + gameID.error + " - " + playerMatch[0].name + " + " + playerMatch[1].name);
                 gameID = "ERROR - " + gameID.error;
             }
         }
