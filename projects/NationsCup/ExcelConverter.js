@@ -6,14 +6,18 @@ function readRawExcel() {
         var data = new Uint8Array(e.target.result);
         var wb = XLSX.read(data,{type:'array'});
         var sheet = wb.Sheets[wb.SheetNames[0]];
+
+        // Read inputted excel file and convert to object
+        /// team: teamName, players: []
         var teams = convertRawExcelToObject(sheet);
 
         var matchups = [];
-
+        // Create matchups based on adjacent teams being matched
         for (let i = 0; i < teams.length - 1; i+=2) {
             console.log(teams[i].team + " vs. " + teams[i+1].team);
             matchups.push(createMatchupObject(teams[i].team, teams[i+1].team, matchTeamMembers(teams[i].players, teams[i+1].players)));
         }
+        // Convert final results with game matchups to excel file
         convertObjectToMatchupsExcel(matchups);
     };
     reader.readAsArrayBuffer(file);

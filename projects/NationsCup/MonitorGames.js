@@ -15,6 +15,7 @@ function monitorGame(playerMatch) {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             response = JSON.parse(xmlHttp.responseText);
             console.log("\tGAME - " + playerMatch[0].name + " vs. " + playerMatch[1].name);
+            // If state property received, check if game is over
             if (response.hasOwnProperty("state")) {
                 console.log("\t\t" + response.state);
                 progress.push(response.state);
@@ -27,11 +28,12 @@ function monitorGame(playerMatch) {
                         }
                     }
                 } else {
-                    // Game not finished or found
+                    // Game not finished
                     console.log("\t\t\tIn Progress");
                     progress.push("In Progress");
                 }
             } else {
+                // Error received
                 console.log("\t\t\tERROR - " + response.error);
                 progress.push("ERROR");
                 progress.push(response.error);
