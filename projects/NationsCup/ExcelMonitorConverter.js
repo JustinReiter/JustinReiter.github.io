@@ -9,7 +9,7 @@ function readGamesExcel() {
         var sheet = wb.Sheets[wb.SheetNames[0]];
 
         // Get [[team1, team2, games : [p1, p2, gameurl], ...]
-        var matchups = convertMatchupsExcelToObject(sheet);
+        var matchups = convertGameExcelToObject(sheet);
 
         for (let i = 0; i < matchups.length; i++) {
             console.log("TEAM - " + matchups[i].team1 + " vs. " + matchups[i].team2);
@@ -23,7 +23,7 @@ function readGamesExcel() {
         }
 
         // Convert and download final output
-        convertObjectToGamesExcel(matchups);
+        convertObjectToOutputExcel(matchups);
     };
     reader.readAsArrayBuffer(file);
 }
@@ -33,7 +33,7 @@ function createPlayerLinkMatchUp(player1, player2, gameLink) {
 }
 
 // Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]
-function convertMatchupsExcelToObject(sheet) {
+function convertGameExcelToObject(sheet) {
     var range = XLSX.utils.decode_range(sheet['!ref']);
 
     var matchups = [];
@@ -55,7 +55,7 @@ function convertMatchupsExcelToObject(sheet) {
 }
 
 // Convert matchups object ([team1, team2, games : [p1, p2, gameurl]]) to excel after game creation
-function convertObjectToGamesExcel(matchups) {
+function convertObjectToOutputExcel(matchups) {
     var wb = XLSX.utils.book_new();
     wb.Props = {
         Title: "Nations Cup Games",
