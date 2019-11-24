@@ -37,6 +37,15 @@ function matchTeamMembers(team1, team2) {
         extendedTeam2.push(team2[i % team2.length]);
     }
 
+    if (extendedTeam1.length == 10) {
+        extendedTeam1.push(team1[0]);
+        extendedTeam1.push(team1[1]);
+    }
+    if (extendedTeam2.length == 10) {
+        extendedTeam2.push(team2[0]);
+        extendedTeam2.push(team2[1]);
+    }
+
     // Fill leftover slots if # of players in team is < 6
     while (extendedTeam1.length < 12) {
         let val = Math.floor(Math.random() * team1.length);
