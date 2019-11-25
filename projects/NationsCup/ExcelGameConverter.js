@@ -3,6 +3,20 @@ var isTestMode = false;
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readMatchupsExcel() {
     var file = document.getElementById("excelGameUploadInput").files[0];
+
+    if (noInputFileCheck(file)) {
+        return CreateError("GameCreationDiv", "GameCreationError: No input file detected.");
+    }
+
+    var object = {HostEmail: document.getElementById("emailInput").value, HostAPIToken: document.getElementById("apitokenInput").value.replace(/\\&/g, "\\&")};
+    object.TemplateID = document.getElementById("templateInput").value;
+
+    for (let key in object){
+        if (object.hasOwnProperty(key) && noInputTextCheck(object[key])) {
+            return CreateError("GameCreationDiv", "GameCreationError: Bad " + key + " value.");
+        }
+    }
+
     var reader = new FileReader();
 
     reader.onload = function(e) {

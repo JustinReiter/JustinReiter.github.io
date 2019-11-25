@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Add logic for 5 player teams to remove random assignment">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Implement simple error checking on input">
+      <change afterPath="$PROJECT_DIR$/projects/NationsCup/InputCheck.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,14 +153,8 @@
       <workItem from="1572786291615" duration="1319000" />
       <workItem from="1573356320182" duration="928000" />
       <workItem from="1574618348764" duration="730000" />
-      <workItem from="1574640461970" duration="4782000" />
-    </task>
-    <task id="LOCAL-00076" summary="Update form to reset fields on send">
-      <created>1553222464050</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1553222464050</updated>
+      <workItem from="1574640461970" duration="4966000" />
+      <workItem from="1574704829700" duration="3453000" />
     </task>
     <task id="LOCAL-00077" summary="Fix form sending proper information">
       <created>1553223400455</created>
@@ -498,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574618863236</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Small aesthetic changes for improved readability">
+      <created>1574648085414</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1574648085415</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix error with player matchup creation" />
     <MESSAGE value="Fix styling on project page" />
     <MESSAGE value="Fix navbar links on nations cup page" />
     <MESSAGE value="Fix matchups not being unique" />
@@ -543,6 +543,7 @@
     <MESSAGE value="Fix ambiguous function names" />
     <MESSAGE value="Update main page" />
     <MESSAGE value="Add logic for 5 player teams to remove random assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logic for 5 player teams to remove random assignment" />
+    <MESSAGE value="Small aesthetic changes for improved readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small aesthetic changes for improved readability" />
   </component>
 </project>

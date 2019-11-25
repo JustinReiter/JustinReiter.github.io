@@ -1,5 +1,8 @@
 function readRawExcel() {
     var file = document.getElementById("excelUploadInput").files[0];
+    if (noInputFileCheck(file)) {
+        return CreateError("MatchCreationDiv", "MatchPairCreationError: No input file detected.");
+    }
     var reader = new FileReader();
 
     reader.onload = function(e) {
