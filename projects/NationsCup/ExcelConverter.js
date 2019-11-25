@@ -49,7 +49,7 @@ function convertRawExcelToObject(sheet) {
 function convertObjectToMatchupsExcel(matchups) {
     var wb = XLSX.utils.book_new();
     wb.Props = {
-        Title: "Nations Cup Mathcups",
+        Title: "Nations Cup Matchups",
         Subject: "Game Matchups",
         Author: "Justin Reiter",
         CreatedDate: new Date()

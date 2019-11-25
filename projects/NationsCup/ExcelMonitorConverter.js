@@ -16,7 +16,7 @@ function readGamesExcel() {
 
             for (let j = 0; j < matchups[i].games.length; j++) {
                 // Create games for each matchup and append gameid to end of matchups[i].games
-                let arr = monitorGame(matchups[i].games[j])
+                let arr = monitorGame(matchups[i].games[j]);
                 matchups[i].games[j].push(arr[0]);
                 matchups[i].games[j].push(arr[1]);
             }
@@ -58,7 +58,7 @@ function convertGameExcelToObject(sheet) {
 function convertObjectToOutputExcel(matchups) {
     var wb = XLSX.utils.book_new();
     wb.Props = {
-        Title: "Nations Cup Games",
+        Title: "Nations Cup Game Progress",
         Subject: "Game Progress Report",
         Author: "Justin Reiter",
         CreatedDate: new Date()

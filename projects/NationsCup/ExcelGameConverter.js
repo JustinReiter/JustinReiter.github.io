@@ -1,3 +1,5 @@
+var isTestMode = false;
+
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readMatchupsExcel() {
     var file = document.getElementById("excelGameUploadInput").files[0];
@@ -20,12 +22,15 @@ function readMatchupsExcel() {
             }
         }
 
-        // // Recursively wait for async functions to complete
-        // setTimeout(timeOutFunction, 5000, matchups);
         // Convert and download final output
         convertObjectToGamesExcel(matchups);
     };
-    reader.readAsArrayBuffer(file);
+
+    if (isTestMode) {
+        console.log("\t" + testGame());
+    } else {
+        reader.readAsArrayBuffer(file);
+    }
 }
 
 // Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]

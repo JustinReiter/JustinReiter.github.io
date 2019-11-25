@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Add logic for 5 player teams to remove random assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +39,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
   </component>
   <component name="ProjectId" id="1U4aUgtifPzzE7Qwacd4BPAxXNF" />
   <component name="PropertiesComponent">
@@ -154,14 +152,8 @@
       <workItem from="1571798873150" duration="702000" />
       <workItem from="1572786291615" duration="1319000" />
       <workItem from="1573356320182" duration="928000" />
-      <workItem from="1574618348764" duration="476000" />
-    </task>
-    <task id="LOCAL-00075" summary="Adjust styling on footer and background">
-      <created>1553221119605</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1553221119605</updated>
+      <workItem from="1574618348764" duration="730000" />
+      <workItem from="1574640461970" duration="4782000" />
     </task>
     <task id="LOCAL-00076" summary="Update form to reset fields on send">
       <created>1553222464050</created>
@@ -499,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573357177803</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Add logic for 5 player teams to remove random assignment">
+      <created>1574618863235</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1574618863236</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,14 +509,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix team lineup in output" />
     <MESSAGE value="Fix error with player matchup creation" />
     <MESSAGE value="Fix styling on project page" />
     <MESSAGE value="Fix navbar links on nations cup page" />
@@ -542,6 +542,7 @@
     <MESSAGE value="Comment code" />
     <MESSAGE value="Fix ambiguous function names" />
     <MESSAGE value="Update main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update main page" />
+    <MESSAGE value="Add logic for 5 player teams to remove random assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logic for 5 player teams to remove random assignment" />
   </component>
 </project>
