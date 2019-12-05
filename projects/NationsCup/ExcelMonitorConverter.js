@@ -30,8 +30,9 @@ function readGamesExcel() {
             for (let j = 0; j < matchups[i].games.length; j++) {
                 // Create games for each matchup and append gameid to end of matchups[i].games
                 let arr = monitorGame(matchups[i].games[j]);
-                matchups[i].games[j].push(arr[0]);
-                matchups[i].games[j].push(arr[1]);
+                for (let k = 0; k < arr.length; k++) {
+                    matchups[i].games[j].push(arr[k]);
+                }
             }
         }
 
@@ -80,9 +81,13 @@ function convertObjectToOutputExcel(matchups) {
 
     var dataArray = [];
     for (let i = 0; i < matchups.length; i++) {
-        dataArray.push([matchups[i].team1,,matchups[i].team2,,"Game Links","Status","Winner"]);
+        dataArray.push([matchups[i].team1,,matchups[i].team2,,"Game Links","Status","Winner", "Win Condition"]);
         for (let j = 0; j < matchups[i].games.length; j++) {
-            dataArray.push([matchups[i].games[j][0].name, matchups[i].games[j][0].playerId, matchups[i].games[j][1].name, matchups[i].games[j][1].playerId, matchups[i].games[j][2], matchups[i].games[j][3], matchups[i].games[j][4]]);
+            if (matchups[i].games[j].length == 5) {
+                dataArray.push([matchups[i].games[j][0].name, matchups[i].games[j][0].playerId, matchups[i].games[j][1].name, matchups[i].games[j][1].playerId, matchups[i].games[j][2], matchups[i].games[j][3], matchups[i].games[j][4]]);
+            } else {
+                dataArray.push([matchups[i].games[j][0].name, matchups[i].games[j][0].playerId, matchups[i].games[j][1].name, matchups[i].games[j][1].playerId, matchups[i].games[j][2], matchups[i].games[j][3], matchups[i].games[j][4], matchups[i].games[j][5]]);
+            }
         }
         dataArray.push([]);
     }

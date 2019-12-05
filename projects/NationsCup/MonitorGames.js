@@ -21,12 +21,16 @@ function monitorGame(playerMatch) {
                 progress.push(response.state);
                 if (response.state == "Finished") {
                     // Game finished
+                    let winCondition = "";
                     for (let i = 0; i < response.players.length; i++) {
                         if (response.players[i].state == "Won") {
                             console.log("\t\t\tWON: " + response.players[i].name);
                             progress.push(response.players[i].name);
+                        } else {
+                            winCondition = response.players[i].state;
                         }
                     }
+                    progress.push(winCondition);
                 } else {
                     // Game not finished
                     console.log("\t\t\tIn Progress");

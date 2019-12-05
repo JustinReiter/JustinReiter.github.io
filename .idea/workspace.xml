@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Implement simple error checking on input">
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/InputCheck.js" afterDir="false" />
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelMonitorConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,14 +151,9 @@
       <workItem from="1573356320182" duration="928000" />
       <workItem from="1574618348764" duration="730000" />
       <workItem from="1574640461970" duration="4966000" />
-      <workItem from="1574704829700" duration="3453000" />
-    </task>
-    <task id="LOCAL-00077" summary="Fix form sending proper information">
-      <created>1553223400455</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1553223400456</updated>
+      <workItem from="1574704829700" duration="3706000" />
+      <workItem from="1575224900242" duration="53000" />
+      <workItem from="1575571306092" duration="1467000" />
     </task>
     <task id="LOCAL-00078" summary="Update meta tags">
       <created>1553610531934</created>
@@ -499,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574648085415</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Implement simple error checking on input">
+      <created>1574720477468</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1574720477470</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix styling on project page" />
     <MESSAGE value="Fix navbar links on nations cup page" />
     <MESSAGE value="Fix matchups not being unique" />
     <MESSAGE value="Fix statement printing" />
@@ -544,6 +542,7 @@
     <MESSAGE value="Update main page" />
     <MESSAGE value="Add logic for 5 player teams to remove random assignment" />
     <MESSAGE value="Small aesthetic changes for improved readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small aesthetic changes for improved readability" />
+    <MESSAGE value="Implement simple error checking on input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement simple error checking on input" />
   </component>
 </project>
