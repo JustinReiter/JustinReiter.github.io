@@ -31,6 +31,21 @@ function monitorGame(playerMatch) {
                         }
                     }
                     progress.push(winCondition);
+                } else if (response.state == "WaitingForPlayers") {
+                    let declineFlag = false;
+                    for (let i = 0; i < response.players.length; i++) {
+                        if (response.players[i].state == "Declined") {
+                            // Player(s) declined the game
+                            console.log("\t\t\tDECLINED: " + response.players[i].name);
+                            progress.push("Declined: " + response.players[i].name);
+                            declineFlag = true;
+                        }
+                    }
+                    if (!declineFlag) {
+                        // Game not finished
+                        console.log("\t\t\tIn Progress");
+                        progress.push("In Progress");
+                    }
                 } else {
                     // Game not finished
                     console.log("\t\t\tIn Progress");
