@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Implement check for declined players">
+      <change afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/MonitorGames.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,14 +157,8 @@
       <workItem from="1575571306092" duration="1596000" />
       <workItem from="1576425261858" duration="31000" />
       <workItem from="1576885997238" duration="62000" />
-      <workItem from="1577157162667" duration="469000" />
-    </task>
-    <task id="LOCAL-00079" summary="Add new project for Warlight bot">
-      <created>1562301720027</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1562301720029</updated>
+      <workItem from="1577157162667" duration="620000" />
+      <workItem from="1578192225241" duration="3052000" />
     </task>
     <task id="LOCAL-00080" summary="Swap form to send post to firebase database">
       <created>1565911721837</created>
@@ -500,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575572833560</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Implement check for declined players">
+      <created>1577157691058</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1577157691059</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix matchups not being unique" />
     <MESSAGE value="Fix statement printing" />
     <MESSAGE value="Add files for creating games" />
     <MESSAGE value="Add proxy to avoid CORS" />
@@ -545,6 +547,7 @@
     <MESSAGE value="Small aesthetic changes for improved readability" />
     <MESSAGE value="Implement simple error checking on input" />
     <MESSAGE value="Implement win condition for finished games" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement win condition for finished games" />
+    <MESSAGE value="Implement check for declined players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement check for declined players" />
   </component>
 </project>
