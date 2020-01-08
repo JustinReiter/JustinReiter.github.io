@@ -50,7 +50,7 @@ function convertStatsExcelToObject(sheet) {
             var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:1, r:R+i})].v);
             var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:3, r:R+i})].v);
             let winner = sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v != "In Progress" ? sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v : -1;
-            games.push(createPlayerMatchUp(player1, player2, winner));
+            games.push(createStatsPlayerMatchUp(player1, player2, winner));
         }
         matchups.push(createMatchupObject(team1, team2, games));
     }
@@ -63,11 +63,11 @@ function convertObjectToStatsExcel(matchups) {
     var wb = XLSX.utils.book_new();
     wb.Props = {
         Title: "Nations Cup Games",
-        Subject: "Game Matchups",
+        Subject: "Game Stats",
         Author: "Justin Reiter",
         CreatedDate: new Date()
     };
-    wb.SheetNames.push("Game Matchups");
+    wb.SheetNames.push("Game Stats");
 
     var dataArray = [];
     for (let i = 0; i < matchups.length; i++) {
@@ -79,7 +79,7 @@ function convertObjectToStatsExcel(matchups) {
     }
 
     var ws = XLSX.utils.aoa_to_sheet(dataArray);
-    wb.Sheets["Game Matchups"] = ws;
+    wb.Sheets["Game Stats"] = ws;
 
     var wbout = XLSX.write(wb, {bookType: 'xlsx', type: 'binary'});
 
@@ -92,5 +92,5 @@ function convertObjectToStatsExcel(matchups) {
         return buf;
     }
 
-    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'NationsCupGames.xlsx');
+    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'NationsCupStats.xlsx');
 }

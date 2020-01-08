@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Implement check for declined players">
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ObjectDeclaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,14 +157,8 @@
       <workItem from="1576425261858" duration="31000" />
       <workItem from="1576885997238" duration="62000" />
       <workItem from="1577157162667" duration="620000" />
-      <workItem from="1578192225241" duration="3052000" />
-    </task>
-    <task id="LOCAL-00080" summary="Swap form to send post to firebase database">
-      <created>1565911721837</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1565911721838</updated>
+      <workItem from="1578192225241" duration="3673000" />
+      <workItem from="1578448539815" duration="2677000" />
     </task>
     <task id="LOCAL-00081" summary="Modify projects section for bootstrap compliance">
       <created>1565926313254</created>
@@ -503,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577157691059</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Setup skeleton for statistic analysis of games">
+      <created>1578196772560</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1578196772560</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix statement printing" />
     <MESSAGE value="Add files for creating games" />
     <MESSAGE value="Add proxy to avoid CORS" />
     <MESSAGE value="Fix response object text" />
@@ -548,6 +547,7 @@
     <MESSAGE value="Implement simple error checking on input" />
     <MESSAGE value="Implement win condition for finished games" />
     <MESSAGE value="Implement check for declined players" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement check for declined players" />
+    <MESSAGE value="Setup skeleton for statistic analysis of games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup skeleton for statistic analysis of games" />
   </component>
 </project>
