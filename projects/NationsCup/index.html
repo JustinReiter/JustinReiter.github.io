@@ -55,6 +55,13 @@
             } else if (el3.attachEvent) {
                 el3.attachEvent('onclick', readGamesExcel);
             }
+
+            let el4 = document.getElementById("statsGameBtn");
+            if (el4.addEventListener) {
+                el4.addEventListener("click", readStatsExcel, false);
+            } else if (el4.attachEvent) {
+                el4.attachEvent('onclick', readStatsExcel);
+            }
         });
     </script>
 </head>
@@ -173,6 +180,35 @@
         <div class="row">
             <div class="col-sm-12">
                 <br><p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to see the status of all of the games.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg bg-theme" id="GameStatsDiv" style="padding-bottom: 2%">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 style="margin-top: 4%">Nations Cup Stats Analysis</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%">
+            <div class="col-sm-12">
+                <h5 class="">This fourth box will analyze rounds given the output excel of the game progress scripts and produce a multi-sheet report ranking players on win rate, win count, and undefeated.</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <br><label for="excelStatsUploadInput">Excel file input:</label>
+                <input type="file" name="files[]" id="excelStatsUploadInput" multiple />
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" id="statsGameBtn">Create Stats Report!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <br><p class="" style="margin-left: 2%; margin-right: 2%">Press ctrl+shift+i and check console to see the status the scripts (jk there is nothing yet).</p>
             </div>
         </div>
     </div>
