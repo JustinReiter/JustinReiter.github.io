@@ -4,7 +4,6 @@
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,14 +159,7 @@
       <workItem from="1578192225241" duration="3673000" />
       <workItem from="1578448539815" duration="3301000" />
       <workItem from="1578536739244" duration="4608000" />
-      <workItem from="1578620307908" duration="2529000" />
-    </task>
-    <task id="LOCAL-00083" summary="Change descriptions to current">
-      <created>1566266218423</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1566266218425</updated>
+      <workItem from="1578620307908" duration="2670000" />
     </task>
     <task id="LOCAL-00084" summary="Add parallax effect">
       <created>1566268341853</created>
@@ -505,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578541206710</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Finalize stats script for covering edge cases">
+      <created>1578629410593</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1578629410595</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix response object text" />
     <MESSAGE value="Modify live create games for proper settings" />
     <MESSAGE value="Disable game creation" />
     <MESSAGE value="Update files for revising small bugs" />
@@ -550,6 +548,7 @@
     <MESSAGE value="Setup skeleton for statistic analysis of games" />
     <MESSAGE value="Create initial calculations for stats" />
     <MESSAGE value="Modularize excel file read/write for stats analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modularize excel file read/write for stats analysis" />
+    <MESSAGE value="Finalize stats script for covering edge cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize stats script for covering edge cases" />
   </component>
 </project>

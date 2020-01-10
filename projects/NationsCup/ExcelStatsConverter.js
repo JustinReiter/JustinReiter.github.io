@@ -1,6 +1,6 @@
 // Main function for reading output of matchup creation, creating games, and outputting matchups with game ids
 function readStatsExcel() {
-    var file = document.getElementById("excelGameUploadInput").files[0];
+    var file = document.getElementById("excelStatsUploadInput").files[0];
 
     if (noInputFileCheck(file)) {
         return CreateError("GameStatsDiv", "GameStatsError: No input file detected.");
