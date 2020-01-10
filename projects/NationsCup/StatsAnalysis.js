@@ -24,7 +24,7 @@ function analyzeMatchups(wb, matches) {
     let rowData = [["Rank", "Player ID", "Player Name", "Team", "Wins", "Losses", "Win Rate"]];
     let rankCounter = 1;
     for (const [k, v] of sortedWinRateArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, v.winRate()]);
+        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate())]);
     }
     addNewSheet(wb, "Top Win Rate", rowData);
 
@@ -34,15 +34,16 @@ function analyzeMatchups(wb, matches) {
     let sortedWinCountArr = new Map([...map.entries()].sort((a, b) => {
         return a[1].winCount > b[1].winCount ? 1 : -1;
     }));
-    for (const [k, v] of sortedWinRateArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, v.winRate()]);
+    for (const [k, v] of sortedWinCountArr.entries()) {
+        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate())]);
     }
     addNewSheet(wb, "Top Win Count", rowData);
 
     // Sheet for undefeated players
     rowData.length = 0;
     rankCounter = 1;
-    for (const [k, v] of sortedWinRateArr.entries()) {
+    rowData.push(["Rank", "Player ID", "Player Name", "Team", "Win Count"]);
+    for (const [k, v] of sortedWinCountArr.entries()) {
         if (v.winCount == v.gameCount) {
             rowData.push([rankCounter++, k, v.name, v.team, v.winCount]);
         }

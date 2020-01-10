@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,14 +159,8 @@
       <workItem from="1577157162667" duration="620000" />
       <workItem from="1578192225241" duration="3673000" />
       <workItem from="1578448539815" duration="3301000" />
-      <workItem from="1578536739244" duration="4089000" />
-    </task>
-    <task id="LOCAL-00082" summary="Initial changes for updating profile for new projects">
-      <created>1566075486042</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1566075486043</updated>
+      <workItem from="1578536739244" duration="4608000" />
+      <workItem from="1578620307908" duration="2529000" />
     </task>
     <task id="LOCAL-00083" summary="Change descriptions to current">
       <created>1566266218423</created>
@@ -505,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578451645602</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Modularize excel file read/write for stats analysis">
+      <created>1578541206708</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1578541206710</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add proxy to avoid CORS" />
     <MESSAGE value="Fix response object text" />
     <MESSAGE value="Modify live create games for proper settings" />
     <MESSAGE value="Disable game creation" />
@@ -550,6 +549,7 @@
     <MESSAGE value="Implement check for declined players" />
     <MESSAGE value="Setup skeleton for statistic analysis of games" />
     <MESSAGE value="Create initial calculations for stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create initial calculations for stats" />
+    <MESSAGE value="Modularize excel file read/write for stats analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modularize excel file read/write for stats analysis" />
   </component>
 </project>

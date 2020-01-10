@@ -22,7 +22,7 @@ function readStatsExcel() {
 
         let matchups = [];
         for (const name of wb.sheetNames) {
-            let sheet = wb.Sheets[wb.SheetNames[0]];
+            let sheet = wb.Sheets[name];
             // Get [[team1, team2, games : [p1, p2, gameurl], ...]
             matchups.concat(convertStatsExcelToObject(sheet));
         }
@@ -47,8 +47,10 @@ function convertStatsExcelToObject(sheet) {
         for (let i = 1; i < 13; i++) {
             var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:1, r:R+i})].v);
             var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:3, r:R+i})].v);
-            let winner = sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v != "In Progress" ? sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v : -1;
-            games.push(createStatsPlayerMatchUp(player1, player2, winner));
+            let winner = sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v != "In Progress" ? sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v : -1;
+            if (winner != -1) {
+                games.push(createStatsPlayerMatchUp(player1, player2, winner));
+            }
         }
         matchups.push(createMatchupObject(team1, team2, games));
     }
