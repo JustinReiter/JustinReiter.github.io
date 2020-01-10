@@ -8,6 +8,8 @@ function readStatsExcel() {
 
     var reader = new FileReader();
 
+    console.log("Starting file read... Too lazy for more output so this is all you get.");
+
     reader.onload = function(e) {
         let data = new Uint8Array(e.target.result);
         let wb = XLSX.read(data,{type:'array'});
@@ -21,8 +23,9 @@ function readStatsExcel() {
         };
 
         let matchups = [];
-        for (const name of wb.sheetNames) {
-            let sheet = wb.Sheets[name];
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+            let sheet = wb.Sheets[wb.SheetNames[i]];
             // Get [[team1, team2, games : [p1, p2, gameurl], ...]
             matchups.concat(convertStatsExcelToObject(sheet));
         }
@@ -32,6 +35,7 @@ function readStatsExcel() {
         // Convert and download final output
         saveWorkbook(finalWb);
     };
+    reader.readAsArrayBuffer(file);
 }
 
 // Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]
