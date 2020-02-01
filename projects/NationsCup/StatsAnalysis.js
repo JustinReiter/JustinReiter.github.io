@@ -48,7 +48,7 @@ function analyzeMatchups(wb, matches) {
             rowData.push([rankCounter++, k, v.name, v.team, v.winCount]);
         }
     }
-    addNewSheet(wb, "Undefeated Players (By Win Count)", rowData);
+    addNewSheet(wb, "Undefeated Players", rowData);
 }
 
 function createPlayerStatObj(name, team, winCount, gameCount) {

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,14 +148,7 @@
       <workItem from="1578536739244" duration="4608000" />
       <workItem from="1578620307908" duration="2700000" />
       <workItem from="1578629638907" duration="1306000" />
-      <workItem from="1580568833360" duration="65000" />
-    </task>
-    <task id="LOCAL-00087" summary="Replace alert with friendlier modal box">
-      <created>1566434607055</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1566434607055</updated>
+      <workItem from="1580568833360" duration="648000" />
     </task>
     <task id="LOCAL-00088" summary="Add date to firebase post">
       <created>1566510300997</created>
@@ -493,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578630794084</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Fix typo in NC stats script">
+      <created>1580569010625</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1580569010626</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update email contact form" />
     <MESSAGE value="Convert to sync and finalize script" />
     <MESSAGE value="Publish new nations cup page" />
     <MESSAGE value="Remove unneeded code" />
@@ -538,6 +537,7 @@
     <MESSAGE value="Update reference to input file for stats script" />
     <MESSAGE value="Add reference to js files for stats" />
     <MESSAGE value="Fix bugs with sheet iteration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs with sheet iteration" />
+    <MESSAGE value="Fix typo in NC stats script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in NC stats script" />
   </component>
 </project>
