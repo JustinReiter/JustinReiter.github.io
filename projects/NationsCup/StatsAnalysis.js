@@ -12,19 +12,19 @@ function analyzeMatchups(wb, matches) {
             }
             map.get(matches[i].games[j][0].playerId).gameCount++;
             map.get(matches[i].games[j][1].playerId).gameCount++;
-            map.get(matches[i].games[j][2]).winCount++;
+            map.get(matches[i].games[j][2] === matches[i].games[j][0].name ? matches[i].games[j][0].playerId : matches[i].games[j][1].playerId).winCount++;
         }
     }
 
     let sortedWinRateArr = new Map([...map.entries()].sort((a, b) => {
-        return Number(a[1].winRate()) > Number(b[1].winRate()) ? 1 : -1;
+        return Number(a[1].winRate) < Number(b[1].winRate) ? 1 : -1;
     }));
 
     // Sheet for top win rate
-    let rowData = [["Rank", "Player ID", "Player Name", "Team", "Wins", "Losses", "Win Rate"]];
+    let rowData = [["Rank", "Player ID", "Player Name", "Team", "Wins", "Games", "Win Rate"]];
     let rankCounter = 1;
     for (const [k, v] of sortedWinRateArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate())]);
+        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate)]);
     }
     addNewSheet(wb, "Top Win Rate", rowData);
 
@@ -32,10 +32,10 @@ function analyzeMatchups(wb, matches) {
     rowData.length = 1;
     rankCounter = 1;
     let sortedWinCountArr = new Map([...map.entries()].sort((a, b) => {
-        return a[1].winCount > b[1].winCount ? 1 : -1;
+        return a[1].winCount < b[1].winCount ? 1 : -1;
     }));
     for (const [k, v] of sortedWinCountArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate())]);
+        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate)]);
     }
     addNewSheet(wb, "Top Win Count", rowData);
 
@@ -50,9 +50,8 @@ function analyzeMatchups(wb, matches) {
     }
     addNewSheet(wb, "Undefeated Players", rowData);
 }
-
 function createPlayerStatObj(name, team, winCount, gameCount) {
-    return {name: name, team: team, winCount: winCount, gameCount: gameCount, winRate() {(this.winCount / this.gameCount).toFixed(4)}};
+    return {name: name, team: team, winCount: Number(winCount), gameCount: Number(gameCount), get winRate() {return (this.winCount / this.gameCount).toFixed(4);}};
 }
 
 function addNewSheet(wb, sheetName, dataArray) {

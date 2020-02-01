@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,14 +149,7 @@
       <workItem from="1578536739244" duration="4608000" />
       <workItem from="1578620307908" duration="2700000" />
       <workItem from="1578629638907" duration="1306000" />
-      <workItem from="1580568833360" duration="648000" />
-    </task>
-    <task id="LOCAL-00088" summary="Add date to firebase post">
-      <created>1566510300997</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1566510300997</updated>
+      <workItem from="1580568833360" duration="2875000" />
     </task>
     <task id="LOCAL-00089" summary="Add date to firebase post">
       <created>1566510468525</created>
@@ -493,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580569010626</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Reduce sheet name size">
+      <created>1580569568190</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1580569568190</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Convert to sync and finalize script" />
     <MESSAGE value="Publish new nations cup page" />
     <MESSAGE value="Remove unneeded code" />
     <MESSAGE value="Create Skeleton for game reports" />
@@ -538,6 +538,7 @@
     <MESSAGE value="Add reference to js files for stats" />
     <MESSAGE value="Fix bugs with sheet iteration" />
     <MESSAGE value="Fix typo in NC stats script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in NC stats script" />
+    <MESSAGE value="Reduce sheet name size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reduce sheet name size" />
   </component>
 </project>

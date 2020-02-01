@@ -27,8 +27,10 @@ function readStatsExcel() {
         for (let i = 0; i < wb.SheetNames.length; i++) {
             let sheet = wb.Sheets[wb.SheetNames[i]];
             // Get [[team1, team2, games : [p1, p2, gameurl], ...]
-            matchups.concat(convertStatsExcelToObject(sheet));
+            matchups = matchups.concat(convertStatsExcelToObject(sheet));
         }
+
+        console.log(`Final Matchups Object:\n${JSON.stringify(matchups, null, 4)}`);
 
         analyzeMatchups(finalWb, matchups);
 
@@ -48,10 +50,11 @@ function convertStatsExcelToObject(sheet) {
         var team2 = sheet[XLSX.utils.encode_cell({c:2, r:R})].v;
         var games = [];
 
+        console.log(`Matchup: ${team1} vs ${team2}`);
         for (let i = 1; i < 13; i++) {
             var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:1, r:R+i})].v);
             var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:3, r:R+i})].v);
-            let winner = sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v != "In Progress" ? sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v : -1;
+            let winner = sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v === "Finished" ? sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v : -1;
             if (winner != -1) {
                 games.push(createStatsPlayerMatchUp(player1, player2, winner));
             }
