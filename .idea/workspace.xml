@@ -147,14 +147,8 @@
       <workItem from="1578448539815" duration="3301000" />
       <workItem from="1578536739244" duration="4608000" />
       <workItem from="1578620307908" duration="2700000" />
-      <workItem from="1578629638907" duration="1119000" />
-    </task>
-    <task id="LOCAL-00086" summary="Minor fix for resizing elements">
-      <created>1566340160154</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1566340160155</updated>
+      <workItem from="1578629638907" duration="1306000" />
+      <workItem from="1580568833360" duration="65000" />
     </task>
     <task id="LOCAL-00087" summary="Replace alert with friendlier modal box">
       <created>1566434607055</created>
@@ -492,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578629706220</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Fix bugs with sheet iteration">
+      <created>1578630794084</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1578630794084</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update files for revising small bugs" />
     <MESSAGE value="Update email contact form" />
     <MESSAGE value="Convert to sync and finalize script" />
     <MESSAGE value="Publish new nations cup page" />
@@ -537,6 +537,7 @@
     <MESSAGE value="Finalize stats script for covering edge cases" />
     <MESSAGE value="Update reference to input file for stats script" />
     <MESSAGE value="Add reference to js files for stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add reference to js files for stats" />
+    <MESSAGE value="Fix bugs with sheet iteration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs with sheet iteration" />
   </component>
 </project>

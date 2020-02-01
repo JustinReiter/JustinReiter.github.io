@@ -30,7 +30,7 @@ function readStatsExcel() {
             matchups.concat(convertStatsExcelToObject(sheet));
         }
 
-        analyzeMatchups(finalWb, matches);
+        analyzeMatchups(finalWb, matchups);
 
         // Convert and download final output
         saveWorkbook(finalWb);
