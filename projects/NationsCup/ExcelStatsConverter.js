@@ -2,6 +2,7 @@
 function readStatsExcel() {
     var file = document.getElementById("excelStatsUploadInput").files[0];
 
+    // Check to make sure input file given
     if (noInputFileCheck(file)) {
         return CreateError("GameStatsDiv", "GameStatsError: No input file detected.");
     }
@@ -14,6 +15,7 @@ function readStatsExcel() {
         let data = new Uint8Array(e.target.result);
         let wb = XLSX.read(data,{type:'array'});
 
+        // Initialize values for workbook
         let finalWb = XLSX.utils.book_new();
         finalWb.Props = {
             Title: "Nations Cup Stats",
@@ -22,16 +24,16 @@ function readStatsExcel() {
             CreatedDate: new Date()
         };
 
+        // Get games from all sheets (1 round per sheet
         let matchups = [];
-
         for (let i = 0; i < wb.SheetNames.length; i++) {
             let sheet = wb.Sheets[wb.SheetNames[i]];
             // Get [[team1, team2, games : [p1, p2, gameurl], ...]
             matchups = matchups.concat(convertStatsExcelToObject(sheet));
         }
 
+        // Analyze games (finalWb will get sheets added in the function
         console.log(`Final Matchups Object:\n${JSON.stringify(matchups, null, 4)}`);
-
         analyzeMatchups(finalWb, matchups);
 
         // Convert and download final output
@@ -44,6 +46,7 @@ function readStatsExcel() {
 function convertStatsExcelToObject(sheet) {
     var range = XLSX.utils.decode_range(sheet['!ref']);
 
+    // Convert excel entries to an object
     var matchups = [];
     for (var R = range.s.r; R < range.e.r; R+=14) {
         var team1 = sheet[XLSX.utils.encode_cell({c:0, r:R})].v;

@@ -149,14 +149,8 @@
       <workItem from="1578536739244" duration="4608000" />
       <workItem from="1578620307908" duration="2700000" />
       <workItem from="1578629638907" duration="1306000" />
-      <workItem from="1580568833360" duration="2875000" />
-    </task>
-    <task id="LOCAL-00089" summary="Add date to firebase post">
-      <created>1566510468525</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1566510468525</updated>
+      <workItem from="1580568833360" duration="3329000" />
+      <workItem from="1580674589190" duration="416000" />
     </task>
     <task id="LOCAL-00090" summary="Include synaptic plasticity website under projects">
       <created>1566524479659</created>
@@ -494,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580569568190</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Finalize stats scripts for NC">
+      <created>1580571810697</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1580571810697</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Publish new nations cup page" />
     <MESSAGE value="Remove unneeded code" />
     <MESSAGE value="Create Skeleton for game reports" />
     <MESSAGE value="Finalize game report feature" />
@@ -539,6 +539,7 @@
     <MESSAGE value="Fix bugs with sheet iteration" />
     <MESSAGE value="Fix typo in NC stats script" />
     <MESSAGE value="Reduce sheet name size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reduce sheet name size" />
+    <MESSAGE value="Finalize stats scripts for NC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize stats scripts for NC" />
   </component>
 </project>

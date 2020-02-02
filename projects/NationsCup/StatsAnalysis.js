@@ -2,20 +2,28 @@
 
 function analyzeMatchups(wb, matches) {
     let map = new Map();
+
+    // Iterates through matches and sets player win/game count
     for (let i = 0; i < matches.length; i++) {
         for (let j = 0; j < matches[i].games.length; j++) {
+            // If p1 not in map, initialize values
             if (!map.has(matches[i].games[j][0].playerId)) {
                 map.set(matches[i].games[j][0].playerId, createPlayerStatObj(matches[i].games[j][0].name, matches[i].team1, 0, 0));
             }
+
+            // If p2 not in map, initialize values
             if (!map.has(matches[i].games[j][1].playerId)) {
                 map.set(matches[i].games[j][1].playerId, createPlayerStatObj(matches[i].games[j][1].name, matches[i].team2, 0, 0));
             }
+
+            // Add game to each player and increase winner's win count
             map.get(matches[i].games[j][0].playerId).gameCount++;
             map.get(matches[i].games[j][1].playerId).gameCount++;
             map.get(matches[i].games[j][2] === matches[i].games[j][0].name ? matches[i].games[j][0].playerId : matches[i].games[j][1].playerId).winCount++;
         }
     }
 
+    // Sort map of players according to win rate
     let sortedWinRateArr = new Map([...map.entries()].sort((a, b) => {
         return Number(a[1].winRate) < Number(b[1].winRate) ? 1 : -1;
     }));
@@ -50,10 +58,12 @@ function analyzeMatchups(wb, matches) {
     }
     addNewSheet(wb, "Undefeated Players", rowData);
 }
+
 function createPlayerStatObj(name, team, winCount, gameCount) {
     return {name: name, team: team, winCount: Number(winCount), gameCount: Number(gameCount), get winRate() {return (this.winCount / this.gameCount).toFixed(4);}};
 }
 
+// Add new sheet to workbook
 function addNewSheet(wb, sheetName, dataArray) {
     wb.SheetNames.push(sheetName);
     var ws = XLSX.utils.aoa_to_sheet(dataArray);
