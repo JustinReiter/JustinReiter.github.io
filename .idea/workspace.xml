@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelStatsConverter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/StatsAnalysis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,14 +149,11 @@
       <workItem from="1578620307908" duration="2700000" />
       <workItem from="1578629638907" duration="1306000" />
       <workItem from="1580568833360" duration="3329000" />
-      <workItem from="1580674589190" duration="416000" />
-    </task>
-    <task id="LOCAL-00090" summary="Include synaptic plasticity website under projects">
-      <created>1566524479659</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1566524479659</updated>
+      <workItem from="1580674589190" duration="595000" />
+      <workItem from="1582324922806" duration="1658000" />
+      <workItem from="1584923437427" duration="857000" />
+      <workItem from="1585089784822" duration="257000" />
+      <workItem from="1588966568471" duration="1369000" />
     </task>
     <task id="LOCAL-00091" summary="Include synaptic plasticity website under projects">
       <created>1566525363200</created>
@@ -495,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580571810697</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Add documentation to stats scripts">
+      <created>1580675028946</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1580675028947</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove unneeded code" />
     <MESSAGE value="Create Skeleton for game reports" />
     <MESSAGE value="Finalize game report feature" />
     <MESSAGE value="Fix minor styling" />
@@ -540,6 +542,7 @@
     <MESSAGE value="Fix typo in NC stats script" />
     <MESSAGE value="Reduce sheet name size" />
     <MESSAGE value="Finalize stats scripts for NC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize stats scripts for NC" />
+    <MESSAGE value="Add documentation to stats scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add documentation to stats scripts" />
   </component>
 </project>
