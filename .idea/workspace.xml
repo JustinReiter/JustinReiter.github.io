@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,14 +154,9 @@
       <workItem from="1582324922806" duration="1658000" />
       <workItem from="1584923437427" duration="857000" />
       <workItem from="1585089784822" duration="257000" />
-      <workItem from="1588966568471" duration="1369000" />
-    </task>
-    <task id="LOCAL-00091" summary="Include synaptic plasticity website under projects">
-      <created>1566525363200</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1566525363200</updated>
+      <workItem from="1588966568471" duration="1553000" />
+      <workItem from="1589505639591" duration="1966000" />
+      <workItem from="1590329933639" duration="507000" />
     </task>
     <task id="LOCAL-00092" summary="Adjust styling for softer edges and more readability">
       <created>1566612190465</created>
@@ -498,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580675028947</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Update new projects and information">
+      <created>1588968110147</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1588968110148</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Skeleton for game reports" />
     <MESSAGE value="Finalize game report feature" />
     <MESSAGE value="Fix minor styling" />
     <MESSAGE value="Improve console readability" />
@@ -543,6 +545,7 @@
     <MESSAGE value="Reduce sheet name size" />
     <MESSAGE value="Finalize stats scripts for NC" />
     <MESSAGE value="Add documentation to stats scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add documentation to stats scripts" />
+    <MESSAGE value="Update new projects and information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update new projects and information" />
   </component>
 </project>
