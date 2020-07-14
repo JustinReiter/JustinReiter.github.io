@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/ExcelStatsConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/InputCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/ObjectDeclaration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/StatsAnalysis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/LynxEaglePR/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,25 +31,26 @@
   <component name="ProjectId" id="1U4aUgtifPzzE7Qwacd4BPAxXNF" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/LynxEaglePR" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\LynxEaglePR" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\NationsCup" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\Firebase" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZoneMessaging" />
+      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZone" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\js" />
       <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io" />
       <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\particles" />
       <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\particles.js" />
       <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\img" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\NationsCup" />
-      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\Firebase" />
-      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZoneMessaging" />
-      <recent name="C:\Users\Justi\WebstormProjects\JustinReiter.github.io\projects\WarZone" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -156,14 +161,8 @@
       <workItem from="1585089784822" duration="257000" />
       <workItem from="1588966568471" duration="1553000" />
       <workItem from="1589505639591" duration="1966000" />
-      <workItem from="1590329933639" duration="507000" />
-    </task>
-    <task id="LOCAL-00092" summary="Adjust styling for softer edges and more readability">
-      <created>1566612190465</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1566612190467</updated>
+      <workItem from="1590329933639" duration="566000" />
+      <workItem from="1594699138751" duration="446000" />
     </task>
     <task id="LOCAL-00093" summary="Adjust styling for softer edges and more readability">
       <created>1566613851157</created>
@@ -501,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588968110148</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Update site to 2b without work experience">
+      <created>1590330485101</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1590330485103</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finalize game report feature" />
     <MESSAGE value="Fix minor styling" />
     <MESSAGE value="Improve console readability" />
     <MESSAGE value="Update proxy api to self-hosted" />
@@ -546,6 +551,7 @@
     <MESSAGE value="Finalize stats scripts for NC" />
     <MESSAGE value="Add documentation to stats scripts" />
     <MESSAGE value="Update new projects and information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update new projects and information" />
+    <MESSAGE value="Update site to 2b without work experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update site to 2b without work experience" />
   </component>
 </project>
