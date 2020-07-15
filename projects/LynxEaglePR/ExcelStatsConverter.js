@@ -25,16 +25,18 @@ function readStatsExcel() {
         };
 
         // Get games from all sheets (1 season per sheet)
-        let matchups = [];
+        let ranking = new Map();
         for (let i = 0; i < wb.SheetNames.length; i++) {
             let sheet = wb.Sheets[wb.SheetNames[i]];
-            // Get [[team1, team2, games : [p1, p2, gameurl], ...]
-            matchups = matchups.concat(convertStatsExcelToObject(sheet));
+
+            // Get {name : {player, wins, losses, seasonsPlayed, seasonsPlayedInA}}
+            convertStatsExcelToObject(sheet, ranking);
         }
 
+        console.log(`Size of rankings: ${ranking.size}`);
+
         // Analyze games (finalWb will get sheets added in the function
-        console.log(`Final Matchups Object:\n${JSON.stringify(matchups, null, 4)}`);
-        analyzeMatchups(finalWb, matchups);
+        analyzeRankings(finalWb, ranking);
 
         // Convert and download final output
         saveWorkbook(finalWb);
@@ -43,29 +45,41 @@ function readStatsExcel() {
 }
 
 // Creates object containing each team matchups [[team1, team2, games : [p1, p2], ...]
-function convertStatsExcelToObject(sheet) {
+function convertStatsExcelToObject(sheet, ranking) {
     var range = XLSX.utils.decode_range(sheet['!ref']);
 
     // Convert excel entries to an object
-    var matchups = [];
-    for (var R = range.s.r; R < range.e.r; R+=14) {
-        var team1 = sheet[XLSX.utils.encode_cell({c:0, r:R})].v;
-        var team2 = sheet[XLSX.utils.encode_cell({c:2, r:R})].v;
-        var games = [];
+    let isDivisionA;
+    console.log(`Size: ${range.s.r} to ${range.e.r}`);
+    for (var R = range.s.r; R < range.e.r; R++) {
+        let val = String(sheet[XLSX.utils.encode_cell({c:0, r:R})].v);
+        if (val.includes("Division")) {
+            isDivisionA = val === "Division A";
+        } else {
+            let player = sheet[XLSX.utils.encode_cell({c:1, r:R})].v;
 
-        console.log(`Matchup: ${team1} vs ${team2}`);
-        for (let i = 1; i < 13; i++) {
-            var player1 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:0, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:1, r:R+i})].v);
-            var player2 = createPlayerObject(sheet[XLSX.utils.encode_cell({c:2, r:R+i})].v, sheet[XLSX.utils.encode_cell({c:3, r:R+i})].v);
-            let winner = sheet[XLSX.utils.encode_cell({c:5, r:R+i})].v === "Finished" ? sheet[XLSX.utils.encode_cell({c:6, r:R+i})].v : -1;
-            if (winner != -1) {
-                games.push(createStatsPlayerMatchUp(player1, player2, winner));
+            if (player === "NA" || !player) {
+                continue;
+            }
+
+            let wins = sheet[XLSX.utils.encode_cell({c:2, r:R})].v;
+            let losses = sheet[XLSX.utils.encode_cell({c:3, r:R})].v;
+
+            if (!ranking.has(player)) {
+                ranking.set(player, createPlayerObject());
+            }
+
+            ranking.get(player).winCount += Number(wins);
+            ranking.get(player).lossCount += Number(losses);
+            ranking.get(player).seasonsPlayed += 1;
+
+            if (isDivisionA) {
+                ranking.get(player).winCountInA += Number(wins);
+                ranking.get(player).lossCountInA += Number(losses);
+                ranking.get(player).seasonsPlayedInA += 1;
             }
         }
-        matchups.push(createMatchupObject(team1, team2, games));
     }
-
-    return matchups;
 }
 
 // Convert matchups object ([team1, team2, games : [p1, p2, gameurl]]) to excel after game creation
@@ -81,5 +95,5 @@ function saveWorkbook(wb) {
         return buf;
     }
 
-    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'NationsCupStats.xlsx');
+    saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), 'Lynx-EaglePRStats.xlsx');
 }

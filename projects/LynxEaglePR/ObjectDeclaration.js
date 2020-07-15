@@ -1,19 +1,4 @@
-function createPlayerObject(_name, _playerId) {
-    return {name: _name, playerId: _playerId};
-}
-
-function createPlayerMatchUp(player1, player2) {
-    return [player1, player2];
-}
-
-function createStatsPlayerMatchUp(player1, player2, winner) {
-    return [player1, player2, winner];
-}
-
-function createMatchupObject(teamName1, teamName2, matchups) {
-    return {team1: teamName1, team2: teamName2, games: matchups};
-}
-
-function createTeamObject(teamName, players) {
-    return {team: teamName, players: players};
+// Used for Lynx & Eagle P/R League
+function createPlayerObject() {
+    return {seasonsPlayed: 0, seasonsPlayedInA: 0, winCountInA: 0, lossCountInA: 0, winCount: 0, lossCount: 0, get winRate() {return (this.winCount / (this.winCount + this.lossCount)).toFixed(4);}, get winRateInA() {return (this.winCountInA / (this.winCountInA + this.lossCountInA)).toFixed(4);}};
 }

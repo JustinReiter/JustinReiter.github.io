@@ -1,67 +1,60 @@
 // [{team1, team2, players: [[p1, p2, winner], []]}]
 
-function analyzeMatchups(wb, matches) {
-    let map = new Map();
-
-    // Iterates through matches and sets player win/game count
-    for (let i = 0; i < matches.length; i++) {
-        for (let j = 0; j < matches[i].games.length; j++) {
-            // If p1 not in map, initialize values
-            if (!map.has(matches[i].games[j][0].playerId)) {
-                map.set(matches[i].games[j][0].playerId, createPlayerStatObj(matches[i].games[j][0].name, matches[i].team1, 0, 0));
-            }
-
-            // If p2 not in map, initialize values
-            if (!map.has(matches[i].games[j][1].playerId)) {
-                map.set(matches[i].games[j][1].playerId, createPlayerStatObj(matches[i].games[j][1].name, matches[i].team2, 0, 0));
-            }
-
-            // Add game to each player and increase winner's win count
-            map.get(matches[i].games[j][0].playerId).gameCount++;
-            map.get(matches[i].games[j][1].playerId).gameCount++;
-            map.get(matches[i].games[j][2] === matches[i].games[j][0].name ? matches[i].games[j][0].playerId : matches[i].games[j][1].playerId).winCount++;
-        }
-    }
+function analyzeRankings(wb, rankings) {
 
     // Sort map of players according to win rate
-    let sortedWinRateArr = new Map([...map.entries()].sort((a, b) => {
-        return Number(a[1].winRate) < Number(b[1].winRate) ? 1 : -1;
+    let sortedWinRateArr = new Map([...rankings.entries()].sort((a, b) => {
+        return Number((a[1].winCount + a[1].lossCount) ? Number(a[1].winRate) : 0) < Number((b[1].winCount + b[1].lossCount) ? Number(b[1].winRate) : 0) ? 1 : -1;
     }));
 
     // Sheet for top win rate
-    let rowData = [["Rank", "Player ID", "Player Name", "Team", "Wins", "Games", "Win Rate"]];
+    let rowData = [["Rank", "Player Name", "Wins", "Losses", "Games", "Win Rate", "Seasons Played", "Seasons Played in A"]];
     let rankCounter = 1;
     for (const [k, v] of sortedWinRateArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate)]);
+        rowData.push([rankCounter++, k, v.winCount, v.lossCount, v.winCount + v.lossCount, (v.winCount + v.lossCount) ? Number(v.winRate) : 0, v.seasonsPlayed, v.seasonsPlayedInA]);
     }
     addNewSheet(wb, "Top Win Rate", rowData);
 
     // Sheet for top win count
     rowData.length = 1;
     rankCounter = 1;
-    let sortedWinCountArr = new Map([...map.entries()].sort((a, b) => {
+    let sortedWinCountArr = new Map([...rankings.entries()].sort((a, b) => {
         return a[1].winCount < b[1].winCount ? 1 : -1;
     }));
     for (const [k, v] of sortedWinCountArr.entries()) {
-        rowData.push([rankCounter++, k, v.name, v.team, v.winCount, v.gameCount, Number(v.winRate)]);
+        rowData.push([rankCounter++, k, v.winCount, v.lossCount, v.winCount + v.lossCount, (v.winCount + v.lossCount) ? Number(v.winRate) : 0, v.seasonsPlayed, v.seasonsPlayedInA]);
     }
     addNewSheet(wb, "Top Win Count", rowData);
 
-    // Sheet for undefeated players
-    rowData.length = 0;
+
+    // Sheet for top win rate in A
+    rowData = [["Rank", "Player Name", "Wins in A", "Losses in A", "Games in A", "Win Rate in A", "Seasons Played", "Seasons Played in A"]];
     rankCounter = 1;
-    rowData.push(["Rank", "Player ID", "Player Name", "Team", "Win Count"]);
-    for (const [k, v] of sortedWinCountArr.entries()) {
-        if (v.winCount == v.gameCount) {
-            rowData.push([rankCounter++, k, v.name, v.team, v.winCount]);
+    let sortedWinRateInAArr = new Map([...rankings.entries()].sort((a, b) => {
+        return Number((a[1].winCountInA + a[1].lossCountInA) ? Number(a[1].winRateInA) : 0) < Number((b[1].winCountInA + b[1].lossCountInA) ? Number(b[1].winRateInA) : 0) ? 1 : -1;
+    }));
+    for (const [k, v] of sortedWinRateInAArr.entries()) {
+        if (v.seasonsPlayedInA !== 0) {
+            rowData.push([rankCounter++, k, v.winCountInA, v.lossCountInA, v.winCountInA + v.lossCountInA, (v.winCountInA + v.lossCountInA) ? Number(v.winRateInA) : 0, v.seasonsPlayed, v.seasonsPlayedInA]);
         }
     }
-    addNewSheet(wb, "Undefeated Players", rowData);
+    addNewSheet(wb, "Top Win Rate in A", rowData);
+
+    // Sheet for top win count
+    rowData.length = 1;
+    rankCounter = 1;
+    let sortedWinCountInAArr = new Map([...rankings.entries()].sort((a, b) => {
+        return a[1].winCountInA < b[1].winCountInA ? 1 : -1;
+    }));
+    for (const [k, v] of sortedWinCountInAArr.entries()) {
+        if (v.seasonsPlayedInA !== 0) {
+            rowData.push([rankCounter++, k, v.winCountInA, v.lossCountInA, v.winCountInA + v.lossCountInA, (v.winCountInA + v.lossCountInA) ? Number(v.winRateInA) : 0, v.seasonsPlayed, v.seasonsPlayedInA]);
+        }
+    }
+    addNewSheet(wb, "Top Win Count in A", rowData);
 }
 
-function createPlayerStatObj(name, team, winCount, gameCount) {
-    return {name: name, team: team, winCount: Number(winCount), gameCount: Number(gameCount), get winRate() {return (this.winCount / this.gameCount).toFixed(4);}};
-}
+
 
 // Add new sheet to workbook
 function addNewSheet(wb, sheetName, dataArray) {
