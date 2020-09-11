@@ -30,6 +30,7 @@ function readStatsExcel() {
             let sheet = wb.Sheets[wb.SheetNames[i]];
 
             // Get {name : {player, wins, losses, seasonsPlayed, seasonsPlayedInA}}
+            console.log(`Sheet number: ${i}`);
             convertStatsExcelToObject(sheet, ranking);
         }
 
@@ -56,6 +57,9 @@ function convertStatsExcelToObject(sheet, ranking) {
         if (val.includes("Division")) {
             isDivisionA = val === "Division A";
         } else {
+            if (!sheet[XLSX.utils.encode_cell({c:1, r:R})]) {
+                continue;
+            }
             let player = sheet[XLSX.utils.encode_cell({c:1, r:R})].v;
 
             if (player === "NA" || !player) {
