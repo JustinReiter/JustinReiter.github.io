@@ -27,8 +27,6 @@ function matchTeamMembers(team1, team2) {
     var extendedTeam1 = [];
     var extendedTeam2 = [];
 
-    var matchedPlayers = new Map();
-
     // Populate final matchup arrays
     for (let i = 0; i < team1.length * 2; i++) {
         extendedTeam1.push(team1[i % team1.length]);
@@ -37,6 +35,7 @@ function matchTeamMembers(team1, team2) {
         extendedTeam2.push(team2[i % team2.length]);
     }
 
+    // Include the first two players in team if # of players in team is 5
     if (extendedTeam1.length == 10) {
         extendedTeam1.push(team1[0]);
         extendedTeam1.push(team1[1]);
@@ -46,26 +45,12 @@ function matchTeamMembers(team1, team2) {
         extendedTeam2.push(team2[1]);
     }
 
-    // Fill leftover slots if # of players in team is < 6
-    while (extendedTeam1.length < 12) {
-        let val = Math.floor(Math.random() * team1.length);
-        if (val >= team1.length) {
-            continue;
-        }
-        if (!(team1[val].playerId in matchedPlayers)) {
-            matchedPlayers[team1[val].playerId] = true;
-            extendedTeam1.push(team1[val]);
-        }
+    // Fill leftover slots if # of players in team is 4
+    for (let i = 0; i < team1.length; i++) {
+        extendedTeam1.push(team1[i]);
     }
-    while (extendedTeam2.length < 12) {
-        let val = Math.floor(Math.random() * team2.length);
-        if (val >= team2.length) {
-            continue;
-        }
-        if (!(team2[val].playerId in matchedPlayers)) {
-            matchedPlayers[team2[val].playerId] = true;
-            extendedTeam2.push(team2[val]);
-        }
+    for (let i = 0; i < team2.length; i++) {
+        extendedTeam2.push(team2[i]);
     }
 
     // Shuffle array until unique matchup... Only shuffle for a max of 1000 acceptable collisions
@@ -79,7 +64,7 @@ function matchTeamMembers(team1, team2) {
     if (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups == 1000) {
         console.log("\tUnresolved matchup collision");
     } else {
-        console.log("\tNumber of non-unique arrangements: " + nonUniqueMatchups);
+        console.log("\tNumber of non-unique arrangements before a success: " + nonUniqueMatchups);
     }
 
     var gameMatchups = [];

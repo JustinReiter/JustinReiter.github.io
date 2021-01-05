@@ -67,12 +67,12 @@
                     <div class="btn-group row">
                         <a target="_blank" href="https://bit.ly/ReiterLinkedin" class="fab fa-linkedin social" aria-label="Linkedin"></a>
                         <a target="_blank" href="https://bit.ly/ReiterGithub" class="fab fa-github social" aria-label="Github"></a>
-                        <a target="_blank" href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-2B-1.pdf" class="fas fa-file-alt social" aria-label="Resume" download="Justin Reiter - Resume"></a>
+                        <a target="_blank" href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-3A-1.pdf" class="fas fa-file-alt social" aria-label="Resume" download="Justin Reiter - Resume"></a>
                         <a target="_blank" href="#contact" class="fas fa-envelope social" aria-label="Email"></a>
                     </div>
                     <div class="hover-coop">
                         <h5 style="text-align: center">
-                            I am currently in search for a co-op position for Sep 2020 - Dec 2020
+                            I am currently in search for a co-op position for May 2021 - Aug 2021
                         </h5>
                     </div>
                 </div>
@@ -82,11 +82,11 @@
                         <div class="col-sm-6">
                             <h4 style="text-align: center;">About Me</h4>
                             <p style="padding-left: 2%">
-                                I am currently a 2B Software Engineering student at the University of Waterloo.
+                                I am currently a 3A Software Engineering student at the University of Waterloo.
                                 <br><br>
-                                I am proficient with C++ and JavaScript, with a lot of prior experience in C#, Python, Java and HTML. Currently I am interested in Artificial Intelligence as well as IoT. My current projects include creating an intelligent bot in C# to play <a target="_blank" href="https://www.warzone.com/" aria-label="Warzone">Warzone</a> and codeveloping a Django platform used by 700 people to integrate events on Warzone.
+                                I am proficient with C++ and JavaScript, with a lot of prior experience in Python, Java, C# and HTML. Currently I am interested in Artificial Intelligence as well as full-stack. My current projects include creating an intelligent bot in C# to play <a target="_blank" href="https://www.warzone.com/" aria-label="Warzone">Warzone</a>, building a platform to track competitive ladders on Warzone in real-time and codeveloping a Django platform used by 700 people to integrate events on Warzone.
                                 <br><br>
-                                Outside of programming, I follow Formula 1 and baseball closely, and am always looking for new things to get involved with.
+                                Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with.
                             </p>
                         </div>
                         <div class="col-sm-6">
@@ -101,15 +101,15 @@
                             <tbody>
                                 <tr>
                                     <td>Proficient in:</td>
-                                    <td>JavaScript, Python, C++, C#, Java, HTML, BASH</td>
+                                    <td>JavaScript, Python, C++, C#, Java, HTML, bash</td>
                                 </tr>
                                 <tr>
                                     <td>Libraries + Frameworks:</td>
-                                    <td>Django, BootStrap, React, Firebase, MongoDB, PostgreSQL, NodeJS</td>
+                                    <td>Django, React, Express, BootStrap, MongoDB, PostgreSQL, MySQL, NodeJS</td>
                                 </tr>
                                 <tr>
                                     <td>Tools:</td>
-                                    <td>OpenShift, Cypress, Jest, Git, Heroku, Jenkins</td>
+                                    <td>Cypress, Jest, Git, Heroku, Google Cloud, Jenkins</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -168,16 +168,26 @@
 <!--    </div>-->
 
     <!-- PROJECTS -->
-    <div class="parallax" style="background-image: url('img/f1.jpg');">
+    <div class="parallax" style="background-image: url('img/f1_compressed.jpg');">
         <div class="container" style="padding-bottom: 2%;" id="projects">
             <div class="project-header">
                 <h4>Projects</h4>
                 <br><h6>For a full list of projects, check out my <a href="http://bit.ly/ReiterRepos">Github profile</a></h6>
             </div>
             <div class="row">
+                <div class ="col-sm-4">
+                    <div class="card" id="card">
+                        <div class="card-header"><h5>WZ Seasonal Tracker <span class="badge badge-primary">JS</span> <span class="badge badge-primary">React</span> <span class="badge badge-primary">Express</span> <span class="badge badge-primary">Heroku</span> <span class="badge badge-primary">PostgreSQL</span></h5></div>
+                        <p class="card-body">
+                            A full-stack platform built on Heroku to summarize and track the 42 seasons of the competitive Seasonal Ladder on <a target="_blank" href="https://www.warzone.com/Ladder?Ladder=Seasonal" aria-label="Warzone">Warzone</a>. The front-end is built with React on JavaScript, utilizing functional hooks to obtain data from the back-end asynchonously. The back-end is built with Express to regularly pull new games from Warzone, and to send data to the front-end for visualization.<br><br>Visit the website <a target="_blank" href="https://warzone-statistics.herokuapp.com/" aria-label="WZClot">here</a>.
+                        </p>
+                        <div class="card-footer"><a target="_blank" href="https://github.com/JustinReiter/warzone-statistics" class="fab fa-github project-links col-sm-12" aria-label="Github"></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-4">
                     <div class="card" id="card">
-                        <div class="card-header"><h5>WZTourney CLOT <span class="badge badge-primary">Python</span> <span class="badge badge-primary">Django</span> <span class="badge badge-primary">PostgreSQL</span> <span class="badge badge-primary">JavaScript</span> <span class="badge badge-primary">Heroku</span></h5></div>
+                        <div class="card-header"><h5>WZTourney CLOT <span class="badge badge-primary">Python</span> <span class="badge badge-primary">Django</span> <span class="badge badge-primary">PostgreSQL</span> <span class="badge badge-primary">JS</span> <span class="badge badge-primary">Heroku</span></h5></div>
                         <p class="card-body">
                             A Django platform built on Heroku to arrange events on <a target="_blank" href="https://www.warzone.com/" aria-label="Warzone">Warzone</a>. Codeveloped new features and aided in bug fixes around Discord integration and back-end API bugs.<br><br>Visit the website <a target="_blank" href="https://bit.ly/ReiterWZCLOT" aria-label="WZClot">here</a>.
                         </p>
@@ -193,6 +203,8 @@
                         <div class="card-footer"><a target="_blank" href="http://bit.ly/ReiterWarlight" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class ="col-sm-4">
                     <div class="card" id="card">
                         <div class="card-header"><h5>Personal Website <span class="badge badge-primary">HTML</span> <span class="badge badge-primary">JS</span> <span class="badge badge-primary">BootStrap4</span> <span class="badge badge-primary">Firebase</span></h5></div>
@@ -203,8 +215,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-4">
                     <div class="card" id="card">
                         <div class="card-header"><h5>Western Blot Parser <span class="badge badge-primary">Java</span></h5></div>
@@ -216,7 +226,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="card" id="card">
-                        <div class="card-header"><h5>Warzone Game Statistical Analysis <span class="badge badge-primary">JavaScript</span> <span class="badge badge-primary">MongoDB</span></h5></div>
+                        <div class="card-header"><h5>Warzone Game Statistical Analysis <span class="badge badge-primary">JS</span> <span class="badge badge-primary">NodeJS</span> <span class="badge badge-primary">MongoDB</span></h5></div>
                         <p class="card-body">
                             A project focused around analyzing games on the competitive 1v1 Ladder for the Risk-like game, Warzone. Developed multiple scripts to download over 300 000 games and managed the data in a database for organized queries. With the data, I was able to analyze the games for patterns and correlation through player tendencies.
                         </p>
@@ -241,15 +251,15 @@
                         <!--<div class="card-footer"><a target="_blank" href="https://bit.ly/ReiterTetris" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>-->
                     <!--</div>-->
                 <!--</div>-->
-                <div class="col-sm-4">
-                    <div class="card" id="card">
-                        <div class="card-header"><h5>Warzone Nations Cup <span class="badge badge-primary">JS</span></h5></div>
-                        <p class="card-body">
-                            Set of scripts hosted on the <a href="https://justinreiter.me/projects/NationsCup/">Nations Cup page</a> to manage automation of an event running on Warzone. The script manages 40 teams from around the world containing a total of 250 players. The scripts will take in an excel file as input, and output the processed results into a separate excel file. The program is capable of creating matchups for teams, creating games directly on Warzone through the use of the Warzone API, as well as check the reults of created games through the use of the Warzone API.
-                        </p>
-                        <div class="card-footer"><a target="_blank" href="https://github.com/JustinReiter/TamperMonkeyScripts/tree/master/NationsCup" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>
-                    </div>
-                </div>
+<!--                <div class="col-sm-4">-->
+<!--                    <div class="card" id="card">-->
+<!--                        <div class="card-header"><h5>Warzone Nations Cup <span class="badge badge-primary">JS</span></h5></div>-->
+<!--                        <p class="card-body">-->
+<!--                            Set of scripts hosted on the <a href="https://justinreiter.me/projects/NationsCup/">Nations Cup page</a> to manage automation of an event running on Warzone. The script manages 40 teams from around the world containing a total of 250 players. The scripts will take in an excel file as input, and output the processed results into a separate excel file. The program is capable of creating matchups for teams, creating games directly on Warzone through the use of the Warzone API, as well as check the reults of created games through the use of the Warzone API.-->
+<!--                        </p>-->
+<!--                        <div class="card-footer"><a target="_blank" href="https://github.com/JustinReiter/TamperMonkeyScripts/tree/master/NationsCup" class="fab fa-github project-links col-sm-12" aria-label="Github"></a></div>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <!--<div class="col-sm-4">-->
                     <!--<div class="card" id="card">-->
                         <!--<div class="card-header"><h5>Short/Cut <span class="badge badge-primary">Java</span></h5></div>-->
@@ -286,7 +296,7 @@
     </div>
 
     <!-- FORM -->
-    <div class="parallax" style="background-image: url('img/montreal.jpg');">
+    <div class="parallax" style="background-image: url('img/montreal_compressed.jpg');">
         <div ng-app="" id="contact">
             <div ng-app="contactForm" id="email-form">
                 <form class="form-group gForm" id="contactForm">

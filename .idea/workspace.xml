@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Finalize scripts for Lynx &amp; Eagle PR League stats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,15 +24,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1U4aUgtifPzzE7Qwacd4BPAxXNF" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/projects/LynxEaglePR" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -159,7 +163,11 @@
       <workItem from="1594699138751" duration="495000" />
       <workItem from="1594750559892" duration="2576000" />
       <workItem from="1594756986561" duration="5612000" />
-      <workItem from="1599784944469" duration="1105000" />
+      <workItem from="1599784944469" duration="1574000" />
+      <workItem from="1607796165685" duration="1013000" />
+      <workItem from="1608077341699" duration="3385000" />
+      <workItem from="1609863361405" duration="2014000" />
+      <workItem from="1609866483823" duration="4844000" />
     </task>
     <task id="LOCAL-00095" summary="Update Readme">
       <created>1568257483312</created>

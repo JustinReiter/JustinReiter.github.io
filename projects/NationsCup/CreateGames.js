@@ -3,16 +3,46 @@ const viewGameUrl = "https://www.warzone.com/MultiPlayer?GameID="
 const proxyurl = "https://warzone-cors-anywhere.herokuapp.com/";
 // curl -ks --data-urlencode "Email=justin.reiter.1@gmail.com" --data-urlencode "APIToken=$apitoken" POST https://www.warzone.com/API/GameIDFeed?LadderID=0
 
+const teamMapping = {
+    "IRE": "1",
+    "GER D": "2",
+    "SP": "3",
+    "SWI": "4",
+    "BEL": "5",
+    "NET A": "6",
+    "NET B": "7",
+    "NET C": "8",
+    "NET D": "9",
+    "ITA": "10",
+    "UK A": "11",
+    "UK B": "12",
+    "UK C": "13",
+    "HEL": "14",
+    "GER A": "15",
+    "GER B": "16",
+    "GER C": "17",
+    "CZ A": "18",
+    "CZ B": "19",
+    "POL A": "20",
+    "POL B": "21",
+    "POL C": "22",
+    "POL D": "23",
+    "FIN": "24",
+    "ANZ A": "25",
+    "ANZ B": "26",
+    "CAN": "27"
+};
+
 
 // Converts game details in packed object
-function createJSONData(playerMatch, team1, team2) {
+function createJSONData(playerMatch, teams) {
     var object = {hostEmail: document.getElementById("emailInput").value, hostAPIToken: document.getElementById("apitokenInput").value.replace(/\\&/g, "\\&")};
     object.templateID = document.getElementById("templateInput").value;
-    object.gameName = "Nations Cup - " + team1 + " vs. " + team2;
-    object.personalMessage = "This game is a part of the Nations Cup, run by Rento (https://docs.google.com/spreadsheets/d/1op7iJ_XRTSNty4ON1xr6WvUJcL8Yp5Y4aI8DnmZIuH4/edit#gid=0). \n\nMatch is between:\n\t" + playerMatch[0].name + " in " + team1 + "\n\t" + playerMatch[1].name + " in " + team2;
+    object.gameName = "Nations' Cup 2021 - " + teams[0] + " vs. " + teams[1];
+    object.personalMessage = "This game is a part of the Nations' Cup, run by Rento (https://docs.google.com/spreadsheets/d/1aIf2fmJF3saG5JKaRF9bgncvlmJ8WpwIntCzGFflXSk/edit?usp=sharing). \n\nMatch is between:\n\t" + playerMatch[0].name + " in " + teams[0] + "\n\t" + playerMatch[1].name + " in " + teams[1];
     object.players = [];
     for (var i = 0; i < playerMatch.length; i++) {
-        object.players.push({token: playerMatch[i].playerId.substr(playerMatch[i].playerId.indexOf("=") + 1), team: "None"});
+        object.players.push({token: playerMatch[i].playerId.substr(playerMatch[i].playerId.indexOf("=") + 1), team: teamMapping[teams[i]] || "100"});
     }
 
     return object;
@@ -39,7 +69,7 @@ function createGame(playerMatch, team1, team2) {
     xmlHttp.open("POST", proxyurl+postUrl, false);
     xmlHttp.setRequestHeader("Content-Type", "application/json");
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, team1, team2)));
+    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, [team1, team2])));
     return gameID;
 }
 
@@ -68,6 +98,6 @@ function testGame() {
     xmlHttp.open("POST", proxyurl+postUrl, false);
     xmlHttp.setRequestHeader("Content-Type", "application/json");
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, "Team A", "Team B")));
+    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, ["Team A", "Team B"])));
     return gameID;
 }
