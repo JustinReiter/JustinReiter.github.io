@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="Finalize scripts for Lynx &amp; Eagle PR League stats">
+    <list default="true" id="612d7c99-f7f5-4fe1-9855-b70e9cef9140" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateGames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/CreateMatchups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" beforeDir="false" afterPath="$PROJECT_DIR$/projects/NationsCup/ExcelGameConverter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,14 +166,10 @@
       <workItem from="1607796165685" duration="1013000" />
       <workItem from="1608077341699" duration="3385000" />
       <workItem from="1609863361405" duration="2014000" />
-      <workItem from="1609866483823" duration="4844000" />
-    </task>
-    <task id="LOCAL-00095" summary="Update Readme">
-      <created>1568257483312</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1568257483312</updated>
+      <workItem from="1609866483823" duration="5160000" />
+      <workItem from="1610039503485" duration="2067000" />
+      <workItem from="1610121008667" duration="1689000" />
+      <workItem from="1610211808208" duration="1231000" />
     </task>
     <task id="LOCAL-00096" summary="Add scripts for Rento's nation cup">
       <created>1570330249223</created>
@@ -512,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594777778305</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Update personal site for 3A term and fix nations cup scripts">
+      <created>1609873967749</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1609873967751</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update proxy api to self-hosted" />
     <MESSAGE value="Add warzone nations cup script to featured projects" />
     <MESSAGE value="Comment code" />
     <MESSAGE value="Fix ambiguous function names" />
@@ -557,6 +558,7 @@
     <MESSAGE value="Update site to 2b without work experience" />
     <MESSAGE value="Add new files for lynx and eagle pr league stats" />
     <MESSAGE value="Finalize scripts for Lynx &amp; Eagle PR League stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize scripts for Lynx &amp; Eagle PR League stats" />
+    <MESSAGE value="Update personal site for 3A term and fix nations cup scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update personal site for 3A term and fix nations cup scripts" />
   </component>
 </project>

@@ -4,15 +4,15 @@ const proxyurl = "https://warzone-cors-anywhere.herokuapp.com/";
 // curl -ks --data-urlencode "Email=justin.reiter.1@gmail.com" --data-urlencode "APIToken=$apitoken" POST https://www.warzone.com/API/GameIDFeed?LadderID=0
 
 const teamMapping = {
-    "IRE": "1",
+    "IRL": "1",
     "GER D": "2",
-    "SP": "3",
+    "SPA&POR": "3",
     "SWI": "4",
     "BEL": "5",
-    "NET A": "6",
-    "NET B": "7",
-    "NET C": "8",
-    "NET D": "9",
+    "NL A": "6",
+    "NL B": "7",
+    "NL C": "8",
+    "NL D": "9",
     "ITA": "10",
     "UK A": "11",
     "UK B": "12",
@@ -21,16 +21,27 @@ const teamMapping = {
     "GER A": "15",
     "GER B": "16",
     "GER C": "17",
-    "CZ A": "18",
-    "CZ B": "19",
+    "CZE A": "18",
+    "CZE B": "19",
     "POL A": "20",
     "POL B": "21",
     "POL C": "22",
     "POL D": "23",
     "FIN": "24",
-    "ANZ A": "25",
-    "ANZ B": "26",
-    "CAN": "27"
+    "AUS&NZ A": "25",
+    "AUS&NZ B": "26",
+    "CAN": "27",
+    "S AME": "28",
+    "USA A": "29",
+    "USA B": "30",
+    "USA C": "31",
+    "USA D": "32",
+    "FRA A": "33",
+    "FRA B": "34",
+    "FRA C": "35",
+    "FRA D": "36",
+    "NOR A": "37",
+    "NOR B": "38"
 };
 
 
@@ -69,7 +80,7 @@ function createGame(playerMatch, team1, team2) {
     xmlHttp.open("POST", proxyurl+postUrl, false);
     xmlHttp.setRequestHeader("Content-Type", "application/json");
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, [team1, team2])));
+    xmlHttp.send(JSON.stringify(createJSONData(playerMatch, [team1.trim(), team2.trim()])));
     return gameID;
 }
 

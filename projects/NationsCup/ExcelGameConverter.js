@@ -27,13 +27,17 @@ function readMatchupsExcel() {
         // Get [[team1, team2, games : [p1, p2, gameurl], ...]
         var matchups = convertMatchupsExcelToObject(sheet);
 
-        for (let i = 0; i < matchups.length; i++) {
-            console.log("TEAM - " + matchups[i].team1 + " vs. " + matchups[i].team2);
+        try {
+            for (let i = 0; i < matchups.length; i++) {
+                console.log("TEAM - " + matchups[i].team1 + " vs. " + matchups[i].team2);
 
-            for (let j = 0; j < matchups[i].games.length; j++) {
-                // Create games for each matchup and append gameid to end of matchups[i].games
-                matchups[i].games[j].push(createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2));
+                for (let j = 0; j < matchups[i].games.length; j++) {
+                    // Create games for each matchup and append gameid to end of matchups[i].games
+                    matchups[i].games[j].push(createGame(matchups[i].games[j], matchups[i].team1, matchups[i].team2));
+                }
             }
+        } catch (err) {
+            console.log(`Encountered an error while creating games... Quitting and outputting current data.\nError: ${err}`);
         }
 
         // Convert and download final output
