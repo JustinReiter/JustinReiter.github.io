@@ -36,21 +36,25 @@ function matchTeamMembers(team1, team2) {
     }
 
     // Include the first two players in team if # of players in team is 5
-    if (extendedTeam1.length == 10) {
+    if (extendedTeam1.length === 10) {
         extendedTeam1.push(team1[0]);
         extendedTeam1.push(team1[1]);
     }
-    if (extendedTeam2.length == 10) {
+    if (extendedTeam2.length === 10) {
         extendedTeam2.push(team2[0]);
         extendedTeam2.push(team2[1]);
     }
 
     // Fill leftover slots if # of players in team is 4
-    for (let i = 0; i < team1.length; i++) {
-        extendedTeam1.push(team1[i]);
+    if (extendedTeam1.length === 8) {
+        for (let i = 0; i < team1.length; i++) {
+            extendedTeam1.push(team1[i]);
+        }
     }
-    for (let i = 0; i < team2.length; i++) {
-        extendedTeam2.push(team2[i]);
+    if (extendedTeam2.length === 8) {
+        for (let i = 0; i < team2.length; i++) {
+            extendedTeam2.push(team2[i]);
+        }
     }
 
     // Shuffle array until unique matchup... Only shuffle for a max of 1000 acceptable collisions
