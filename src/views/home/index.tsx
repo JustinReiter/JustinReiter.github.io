@@ -9,21 +9,21 @@ import {
 import jr from '../../assets/jr.jpg';
 
 
-function Home() {
-
+const Home = () => {
+  console.log("render Home");
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth='md'>
       <Card sx={{ display: 'flex' }}>
         <CardContent>
           Justin Reiter
         </CardContent>
         <CardMedia
-          component="img"
+          component='img'
           image={jr}
         />
       </Card>
     </Container>
   )
-}
+};
 
 export default Home;
