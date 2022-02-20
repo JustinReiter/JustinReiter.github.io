@@ -41,7 +41,7 @@ const renderLinkButton = (link: HTMLLink) => {
 
 const renderKeywords = (keywords: string[]) => {
   return (
-    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1}>
+    <Stack direction={{ xs: 'column', sm: 'column', md: 'row' }} spacing={1}>
       {keywords.map((keyword: string) =>
         <Chip label={keyword} variant="filled" color="primary" key={keyword}/>
       )}
@@ -53,12 +53,12 @@ const renderRow = (projectRow: Project[], index: number) => {
   return (
     <Grid container xs={12} spacing={2} key={index}>
       {projectRow.map((project: Project, index: number) =>
-        <Grid item xs={4} key={index}>
+        <Grid item xs={4} spacing={2} key={index}>
           <Card>
             <CardMedia
               component="img"
               height="140"
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={project.img ? require(`../../assets/${project.img}`) : ''}
               alt="green iguana"
             />
             <CardContent>
@@ -87,7 +87,7 @@ const Projects = () => {
   console.log("render Projects");
   return (
     <Container maxWidth='lg'>
-      <Grid container spacing={2}>
+      <Grid container xs={12} spacing={2} rowSpacing={2}>
         { chunk(projects, 3).map((projectRow: Project[], index: number) => renderRow(projectRow, index))}
       </Grid>
     </Container>

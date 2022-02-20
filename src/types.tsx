@@ -9,11 +9,13 @@ export interface Project {
   links: HTMLLink[];
   description: string;
   keywords: string[];
+  img?: string;
 } 
 
 export interface Experience {
   company: string;
   title: string;
+  date: string;
   description: string;
   keywords: string[];
 }

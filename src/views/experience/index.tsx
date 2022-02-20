@@ -31,7 +31,7 @@ const renderRow = (experienceRow: Experience[], index: number) => {
   return (
     <Grid container xs={12} spacing={2} key={index}>
       {experienceRow.map((experience: Experience, index: number) =>
-        <Grid item xs={4} key={index}>
+        <Grid item xs={6} spacing={2} key={index}>
           <Card>
             <CardMedia
               component="img"
@@ -63,7 +63,7 @@ const WorkExperience = () => {
   return (
     <Container maxWidth='lg'>
       <Grid container spacing={2}>
-        { chunk(experiences, 3).map((experienceRow: Experience[], index: number) => renderRow(experienceRow, index))}
+        { chunk(experiences, 2).map((experienceRow: Experience[], index: number) => renderRow(experienceRow, index))}
       </Grid>
     </Container>
   )
