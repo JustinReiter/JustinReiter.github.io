@@ -95,7 +95,6 @@ const renderProject = (project: Project, index: number) => {
 
 
 const Projects = () => {
-  console.log("render Projects");
   return (
     <Container maxWidth='lg'>
       <Grid container xs={12} spacing={2} rowSpacing={2}>

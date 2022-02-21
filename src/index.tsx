@@ -9,6 +9,7 @@ import {
 import './index.css';
 import App from './App';
 import Home from './views/home';
+import Education from './views/education';
 import WorkExperience from './views/experience';
 import Projects from './views/projects';
 import reportWebVitals from './reportWebVitals';
@@ -19,7 +20,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
-          <Route path='education' element={<Home />} />
+          <Route path='education' element={<Education />} />
           <Route path='experience' element={<WorkExperience />} />
           <Route path='projects' element={<Projects />} />
         </Route>

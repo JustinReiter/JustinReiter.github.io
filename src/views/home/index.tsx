@@ -20,7 +20,6 @@ import jr from '../../assets/jr_compressed.jpg';
 
 
 const Home = () => {
-  console.log("render Home");
   return (
     <Container maxWidth='lg'>
       <Card sx={{ display: 'flex', flexDirection: 'column'}}>

@@ -65,7 +65,6 @@ const renderExperience = (experience: Experience, index: number) => {
 
 
 const WorkExperience = () => {
-  console.log("render Work Experience");
   return (
     <Container maxWidth='lg'>
       <Grid container xs={12} spacing={2} rowSpacing={2}>
