@@ -61,7 +61,7 @@ const Home = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-3A-1.pdf" target="_blank" rel="noreferrer" underline="none">
+              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-4A.pdf" target="_blank" rel="noreferrer" underline="none">
                 <Button variant='outlined' startIcon={<ArticleIcon />}>
                   Resume
                 </Button>

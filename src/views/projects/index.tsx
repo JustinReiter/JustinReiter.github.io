@@ -70,10 +70,13 @@ const renderProject = (project: Project, index: number) => {
             />
           }
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography variant="h5" component="div">
               {project.name}
             </Typography>
-            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} color="text.secondary">
+            <Typography gutterBottom variant="body2" component="div">
+              {project.date}
+            </Typography>
+            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} sx={{pt: 2}} color="text.secondary">
               {project.description}
             </Typography>
             {project?.subdescription && 

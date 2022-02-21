@@ -14,6 +14,7 @@ export const projects : Project[] = [
                 type: 'link'
             }
         ],
+        date: '2020 - Present',
         description: 'WZClot is a Django platform deployed on Azure to manage tournaments and leagues on the Risk-like game, Warzone. The platform boasts +40,000 games played across +500 events with 1,500 players signed onto the site.',
         subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions of the discord integration to manage automated game updates, implement admin commands, create a joinable ladder through the Discord bot.',
         keywords: [
@@ -39,6 +40,7 @@ export const projects : Project[] = [
                 type: 'link'
             }
         ],
+        date: '2021',
         description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
         keywords: [
@@ -63,6 +65,7 @@ export const projects : Project[] = [
                 type: 'devpost'
             }
         ],
+        date: '2021',
         description: 'Developed in the Hack the North 2020++ hackathon, Flock is a mobile app to help friends discover mutually-liked movies. The platform consists of a React Native front-end, Express back-end and CockroachDB database to store 6,860 movies across 27 genres.',
         subdescription: 'This hack won the CockroachDB sponsor prize at the HTN 2020++ hackathon for the best use of the CockroachDB database!',
         keywords: [
@@ -84,6 +87,7 @@ export const projects : Project[] = [
                 type: 'github'
             }
         ],
+        date: '2022',
         description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
         keywords: [
             "Python",
@@ -100,6 +104,7 @@ export const projects : Project[] = [
                 type: 'github'
             }
         ],
+        date: '2020',
         description: "JBot is an artificial intelligence bot developed to play the Risk-like game, Warzone. Among all existing bots, JBot achieves the strongest starting distribution with complex, dynamic decisions.",
         keywords: [
             "C#",
@@ -118,6 +123,7 @@ export const projects : Project[] = [
                 type: 'github'
             }
         ],
+        date: '2022',
         description: "This project is an assortment of scripts created to help manage the Clan League event on Warzone. Clan League is a Promotion/Relegation event where clans compete in different game modes for a trophy. The event spans 6 months, with the involvement of 25 clans and 500 players.",
         subdescription: "The scripts handle all aspects of the event lifecycle. This includes Google App Scripts to manage populating and tallying scores on a Google Sheets, Python scripts for scorekeepers to compose update reports, and JavaScript files to regularly update score results.",
         keywords: [

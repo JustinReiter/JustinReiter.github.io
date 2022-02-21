@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className='App-header'>
         <Alert icon={false} severity="success">
-          I am currently in search for a co-op position for Sep 2022 - Dec 2022
+          I am currently in search of a co-op position for Sep 2022 - Dec 2022
         </Alert>
         <div className='App-content'>
           <Outlet />
