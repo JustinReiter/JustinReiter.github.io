@@ -26,6 +26,14 @@ const renderLinkButton = (link: HTMLLink) => {
         </Button>
       </Link>
     );
+  } else if (link.type === 'devpost') {
+    return (
+      <Link href={link.href} target="_blank" rel="noreferrer" underline="none" key={link.href}>
+        <Button variant='outlined' startIcon={<LinkIcon />}>
+          Devpost
+        </Button>
+      </Link>
+    );
   } else {
     return (
       <Link href={link.href} target="_blank" rel="noreferrer" underline="none" key={link.href}>
@@ -53,19 +61,26 @@ const renderProject = (project: Project, index: number) => {
   return (
       <Grid item  xs={12} md={6} spacing={2} key={index}>
         <Card>
-          <CardMedia
-            component="img"
-            height="140"
-            image={project.img ? require(`../../assets/${project.img.src}`) : ''}
-            alt={project?.img?.alt || ''}
-          />
+          {project?.img && 
+            <CardMedia
+              component="img"
+              height="140"
+              image={project.img ? require(`../../assets/${project.img.src}`) : ''}
+              alt={project?.img?.alt || ''}
+            />
+          }
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {project.name}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} color="text.secondary">
               {project.description}
             </Typography>
+            {project?.subdescription && 
+              <Typography variant="body2" sx={{pt: 2}} color="text.secondary">
+                {project.subdescription}
+              </Typography>
+            }
           </CardContent>
           <CardContent>
             {renderKeywords(project.keywords)}

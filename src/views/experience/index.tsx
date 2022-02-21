@@ -8,11 +8,14 @@ import {
   Chip,
   Container,
   Grid,
+  List,
+  ListItem,
   Link,
   Stack,
   Typography,
-} from '@mui/material'
-import { chunk } from 'lodash';
+} from '@mui/material';
+
+import ListItemText from '@mui/material/ListItemText';
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
@@ -33,19 +36,24 @@ const renderExperience = (experience: Experience, index: number) => {
   return (
     <Grid item xs={12} md={6} spacing={2} key={index}>
       <Card>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography variant="h5" component="div">
             {experience.company} | {experience.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {experience.description}
+          <Typography gutterBottom variant="body2" component="div">
+            {experience.date}
           </Typography>
+          <List dense={true}>
+            { experience.description.map((line, idx) => {
+              return (
+                <ListItem key={idx}>
+                  <ListItemText>
+                    • {line}
+                  </ListItemText>
+                </ListItem>
+              );
+            })}
+          </List>
         </CardContent>
         <CardContent>
           {renderKeywords(experience.keywords)}

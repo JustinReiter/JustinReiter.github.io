@@ -1,7 +1,7 @@
 
 export interface HTMLLink {
   href: string;
-  type: 'github' | 'link';
+  type: 'github' | 'link' | 'devpost';
 }
 
 export interface img {
@@ -13,6 +13,7 @@ export interface Project {
   name: string;
   links: HTMLLink[];
   description: string;
+  subdescription?: string;
   keywords: string[];
   img?: img;
 } 
@@ -21,7 +22,7 @@ export interface Experience {
   company: string;
   title: string;
   date: string;
-  description: string;
+  description: string[];
   keywords: string[];
   img?: img;
 }

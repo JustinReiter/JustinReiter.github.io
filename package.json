@@ -2,6 +2,7 @@
   "name": "justin-reiter-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://justinreiter.me/",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",

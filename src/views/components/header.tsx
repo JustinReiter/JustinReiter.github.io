@@ -70,7 +70,7 @@ const Header = () => {
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={() => setAnchorElNav(null)}>
-                  <Link to={page.path} key={index}>
+                  <Link to={page.path} key={index} >
                     <Typography textAlign="center">{page.name}</Typography>
                   </Link>
                 </MenuItem>
