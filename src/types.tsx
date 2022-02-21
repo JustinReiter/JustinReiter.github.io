@@ -4,12 +4,17 @@ export interface HTMLLink {
   type: 'github' | 'link';
 }
 
+export interface img {
+  src: string;
+  alt: string;
+}
+
 export interface Project {
   name: string;
   links: HTMLLink[];
   description: string;
   keywords: string[];
-  img?: string;
+  img?: img;
 } 
 
 export interface Experience {
@@ -18,4 +23,5 @@ export interface Experience {
   date: string;
   description: string;
   keywords: string[];
+  img?: img;
 }

@@ -58,8 +58,8 @@ const renderRow = (projectRow: Project[], index: number) => {
             <CardMedia
               component="img"
               height="140"
-              image={project.img ? require(`../../assets/${project.img}`) : ''}
-              alt="green iguana"
+              image={project.img ? require(`../../assets/${project.img.src}`) : ''}
+              alt={project?.img?.alt || ''}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

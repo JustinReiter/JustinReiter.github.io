@@ -19,7 +19,10 @@ export const projects : Project[] = [
             'JavaScript',
             'Python'
         ],
-        img: 'wzclot.png'
+        img: { 
+            src: 'wzclot.png',
+            alt: 'WZClot event bracket'
+        }
     },
     {
         name: 'Warzone Statistics',
@@ -39,7 +42,10 @@ export const projects : Project[] = [
             'JavaScript',
             'Python'
         ],
-        img: 'wzstatistics.png'
+        img: { 
+            src: 'wzstatistics.png',
+            alt: 'WZ Statistics graph'
+        }
     },
     {
         name: 'Flock | HTN 2020++ Winner',
@@ -60,7 +66,10 @@ export const projects : Project[] = [
             "JavaScript",
             "CockroachDB"
         ],
-        img: 'flock.jpg'
+        img: { 
+            src: 'flock.jpg',
+            alt: 'Picture of Flock graphic'
+        }
     },
     {
         name: 'Sun King | Rocket League Bot',
@@ -91,6 +100,27 @@ export const projects : Project[] = [
             "C#",
             "Artificial Intelligence"
         ]
+    },
+    {
+        name: 'WZ Clan League Scripts',
+        links: [
+            {
+                href: 'https://github.com/JustinR17/wzcl-scripts',
+                type: 'github'
+            }
+        ],
+        description: "Test hello4",
+        keywords: [
+            "Python",
+            "JavaScript",
+            "Google App Scripts",
+            "Web Scraping",
+            "Automation"
+        ],
+        img: {
+            src: 'wzcl.png',
+            alt: 'Scorekeeper script output'
+        }
     }
 ]
 
