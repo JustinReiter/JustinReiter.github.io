@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Routes
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
@@ -25,7 +25,7 @@ ReactDOM.render(
           <Route path='projects' element={<Projects />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

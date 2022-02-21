@@ -73,14 +73,14 @@ const renderProject = (project: Project, index: number) => {
             <Typography variant="h5" component="div">
               {project.name}
             </Typography>
-            <Typography gutterBottom variant="body2" component="div">
+            <Typography gutterBottom variant="body2" component="div" color="text.secondary">
               {project.date}
             </Typography>
-            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} sx={{pt: 2}} color="text.secondary">
+            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} sx={{pt: 2}}>
               {project.description}
             </Typography>
             {project?.subdescription && 
-              <Typography variant="body2" sx={{pt: 2}} color="text.secondary">
+              <Typography variant="body2" sx={{pt: 2}}>
                 {project.subdescription}
               </Typography>
             }

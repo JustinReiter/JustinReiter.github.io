@@ -40,7 +40,7 @@ const renderExperience = (experience: Experience, index: number) => {
           <Typography variant="h5" component="div">
             {experience.company} | {experience.title}
           </Typography>
-          <Typography gutterBottom variant="body2" component="div">
+          <Typography gutterBottom variant="body2" component="div" color="text.secondary">
             {experience.date}
           </Typography>
           <List dense={true}>

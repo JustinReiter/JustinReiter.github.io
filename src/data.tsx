@@ -16,7 +16,7 @@ export const projects : Project[] = [
         ],
         date: '2020 - Present',
         description: 'WZClot is a Django platform deployed on Azure to manage tournaments and leagues on the Risk-like game, Warzone. The platform boasts +40,000 games played across +500 events with 1,500 players signed onto the site.',
-        subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions of the discord integration to manage automated game updates, implement admin commands, create a joinable ladder through the Discord bot.',
+        subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions to the discord integration to manage automated game updates, implementations of admin commands, and the creation of a joinable ladder through the Discord bot.',
         keywords: [
             'Django',
             'Azure',
@@ -41,7 +41,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2021',
-        description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone.',
+        description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +110,000 games over 45 seasons of the Seasonal ladder.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
         keywords: [
             'React',
