@@ -141,7 +141,8 @@ export const experiences : Experience[] = [
         title: 'Software Engineer Intern',
         date: 'Jan 2022 - Present',
         description: [
-            'React something something',
+            'Ported functionality of support tools to new React platform used by customer service representatives (CSR).',
+            'Fixed and improved automated Jest & Pytest coverage of CSR tools from 30% to 95%.'
         ],
         keywords: [
             'React',
@@ -168,9 +169,10 @@ export const experiences : Experience[] = [
     {
         company: 'Bank of America',
         title: 'Software Developer Intern',
-        date: 'Sep 2020 - Dec 2022',
+        date: 'Sep 2020 - Dec 2020',
         description: [
-            'Java stuff',
+            'Created Java tool to automate Maven dependency versioning across 4 repos with 10 projects',
+            'Updated legacy programs to utilize Kerberos and increased password encryptions',
         ],
         keywords: [
             'Java'
