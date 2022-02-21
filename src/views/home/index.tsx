@@ -7,6 +7,7 @@ import {
   CardContent,
   CardMedia,
   Container,
+  Grid,
   Link,
   Typography,
 } from '@mui/material'
@@ -21,10 +22,10 @@ import jr from '../../assets/jr_compressed.jpg';
 const Home = () => {
   console.log("render Home");
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth='lg'>
       <Card sx={{ display: 'flex', flexDirection: 'column'}}>
-        <Card sx={{ display: 'flex' }}>
-          <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+        <Grid container xs={12} display='flex' sx={{ justifyContent: { xs: 'center', md: 'space-between' } }}>
+          <Grid item xs={12} md={6}>
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
                 Hi! I am Justin Reiter
@@ -36,37 +37,45 @@ const Home = () => {
                 Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with.
               </Typography>
             </CardContent>
-          </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column'}}>
-            <CardMedia
-              component='img'
-              image={jr}
-              height="500"
-              width="375"
+          </Grid>
+          <Grid item xs={12} md={6} display='flex' sx={{ justifyContent: 'center', mt: 2 }}>
+            <img
+              style={{borderRadius: 20}}
+              src={jr}
             />
-          </Box>
-        </Card>
+          </Grid>
+        </Grid>
         <CardActions>
-          <Link href="https://github.com/JustinReiter" target="_blank" rel="noreferrer" underline="none">
-            <Button variant='outlined' startIcon={<GitHubIcon />}>
-              @JustinReiter
-            </Button>
-          </Link>
-          <Link href="https://www.linkedin.com/in/justin-reiter/" target="_blank" rel="noreferrer" underline="none">
-            <Button variant='outlined' startIcon={<LinkedInIcon />}>
-              @Justin-Reiter
-            </Button>
-          </Link>
-          <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-3A-1.pdf" target="_blank" rel="noreferrer" underline="none">
-            <Button variant='outlined' startIcon={<ArticleIcon />}>
-              Resume
-            </Button>
-          </Link>
-          <Link href="mailto:jdreiter@uwaterloo.ca" underline="none">
-            <Button variant='outlined' startIcon={<EmailIcon />}>
-              Email
-            </Button>
-          </Link>
+          <Grid container xs={12} spacing={1}>
+            <Grid item>
+              <Link href="https://github.com/JustinReiter" target="_blank" rel="noreferrer" underline="none">
+                <Button variant='outlined' startIcon={<GitHubIcon />}>
+                  @JustinReiter
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="https://www.linkedin.com/in/justin-reiter/" target="_blank" rel="noreferrer" underline="none">
+                <Button variant='outlined' startIcon={<LinkedInIcon />}>
+                  @Justin-Reiter
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-3A-1.pdf" target="_blank" rel="noreferrer" underline="none">
+                <Button variant='outlined' startIcon={<ArticleIcon />}>
+                  Resume
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="mailto:jdreiter@uwaterloo.ca" underline="none">
+                <Button variant='outlined' startIcon={<EmailIcon />}>
+                  Email
+                </Button>
+              </Link>
+            </Grid>
+          </Grid>
         </CardActions>
       </Card>
     </Container>
