@@ -29,7 +29,7 @@ const Home = () => {
               <Typography gutterBottom variant="h4" component="div">
                 Hi! I am Justin Reiter
               </Typography>
-              <Typography gutterBottom variant="body1" component="div">
+              <Typography gutterBottom variant="body1" component="div" sx={{pt:2}} >
                 I am proficient with JavaScript and Python, with a lot of prior experience in C++, Java, and more. Previously, I have interned with companies such as Uplift, Horizn, Bank of America and IBM in a variety of roles, mainly centered around web development. I am also highly active with side projects spanning open-source contributions in the WZClot platform, to personal platforms exploring statistics in games.
               </Typography>
               <Typography variant="body1" component="div">

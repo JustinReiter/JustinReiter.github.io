@@ -148,7 +148,7 @@ export const experiences : Experience[] = [
         date: 'Jan 2022 - Present',
         description: [
             'Ported functionality of support tools to new React platform used by customer service representatives (CSR).',
-            'Fixed and improved automated Jest & Pytest coverage of CSR tools from 30% to 95%.'
+            'Fixed and improved automated Jest & Pytest coverage of CSR tools from 50% to 95%.'
         ],
         keywords: [
             'React',
