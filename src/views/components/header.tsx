@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import {
   AppBar,
   Button,
@@ -36,7 +36,7 @@ const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
   return (
-    <AppBar position='static'>
+    <AppBar position='sticky'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
