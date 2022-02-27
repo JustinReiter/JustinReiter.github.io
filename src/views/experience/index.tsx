@@ -1,17 +1,11 @@
-import react from 'react';
 import {
-  Button,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
   Chip,
   Container,
   Grid,
   List,
   ListItem,
-  Link,
-  Stack,
   Typography,
 } from '@mui/material';
 

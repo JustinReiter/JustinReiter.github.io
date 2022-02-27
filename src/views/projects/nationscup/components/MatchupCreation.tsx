@@ -90,7 +90,7 @@ const matchTeamMembers = (team1: Player[], team2: Player[]) => {
        shuffleArray(extendedTeam2);
    } while (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups < 1000);
 
-   if (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups == 1000) {
+   if (isNotUniqueMatchup(extendedTeam1, extendedTeam2) && nonUniqueMatchups === 1000) {
        console.log("\tUnresolved matchup collision");
    } else {
        console.log("\tNumber of non-unique arrangements before a success: " + nonUniqueMatchups);
@@ -172,7 +172,9 @@ const MatchupCreation = () => {
         setLoading(false);
       });
     }
-  }, [loading]); // react-hooks/exhaustive-deps @typescript-eslint/no-unused-vars
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
   return (
     <Box sx={{pt: 1}}>

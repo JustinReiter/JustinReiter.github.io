@@ -1,4 +1,3 @@
-import react from 'react';
 import {
   Button,
   Card,
@@ -76,7 +75,7 @@ const renderProject = (project: Project, index: number) => {
             <Typography gutterBottom variant="body2" component="div" color="text.secondary">
               {project.date}
             </Typography>
-            <Typography variant="body2" gutterBottom={project?.subdescription != undefined} sx={{pt: 2}}>
+            <Typography variant="body2" gutterBottom={project?.subdescription !== undefined} sx={{pt: 2}}>
               {project.description}
             </Typography>
             {project?.subdescription && 

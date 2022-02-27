@@ -200,3 +200,46 @@ export const experiences : Experience[] = [
         ]
     }
 ]
+
+
+// NATIONS CUP
+export const NC_TEAM_MAPPING: {[k in string]: string} = {
+    "IRL": "1",
+    "GER D": "2",
+    "SPA&POR": "3",
+    "SWI": "4",
+    "BEL": "5",
+    "NL A": "6",
+    "NL B": "7",
+    "NL C": "8",
+    "NL D": "9",
+    "ITA": "10",
+    "UK A": "11",
+    "UK B": "12",
+    "UK C": "13",
+    "HEL": "14",
+    "GER A": "15",
+    "GER B": "16",
+    "GER C": "17",
+    "CZE A": "18",
+    "CZE B": "19",
+    "POL A": "20",
+    "POL B": "21",
+    "POL C": "22",
+    "POL D": "23",
+    "FIN": "24",
+    "AUS&NZ A": "25",
+    "AUS&NZ B": "26",
+    "CAN": "27",
+    "S AME": "28",
+    "USA A": "29",
+    "USA B": "30",
+    "USA C": "31",
+    "USA D": "32",
+    "FRA A": "33",
+    "FRA B": "34",
+    "FRA C": "35",
+    "FRA D": "36",
+    "NOR A": "37",
+    "NOR B": "38"
+};

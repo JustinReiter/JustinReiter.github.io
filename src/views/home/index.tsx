@@ -1,11 +1,8 @@
-import react from 'react';
 import {
   Button,
-  Box,
   Card,
   CardActions,
   CardContent,
-  CardMedia,
   Container,
   Grid,
   Link,
@@ -41,6 +38,7 @@ const Home = () => {
             <img
               style={{borderRadius: 20}}
               src={jr}
+              alt="Justin Reiter"
             />
           </Grid>
         </Grid>
