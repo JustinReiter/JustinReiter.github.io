@@ -10,6 +10,7 @@ import {
 
 import MatchupCreation from './components/MatchupCreation';
 import WarzoneGameCreation from './components/WarzoneGameCreation';
+import NCStatistics from './components/NCStatistics';
 
 const NationsCup = () => {
   const [tabSelected, setTabSelected] = useState<Number>(0);
@@ -28,9 +29,11 @@ const NationsCup = () => {
         <Tabs value={tabSelected} onChange={handleTabChange}>
           <Tab label="Match-up Schedule Creation" />
           <Tab label="Warzone Game Creation" />
+          <Tab label="Nations Cup Statistics" />
         </Tabs>
-        {tabSelected === 0 && <MatchupCreation/>}
-        {tabSelected === 1 && <WarzoneGameCreation/>}
+        {tabSelected === 0 && <MatchupCreation />}
+        {tabSelected === 1 && <WarzoneGameCreation />}
+        {tabSelected === 2 && <NCStatistics />}
       </Card>
     </Container>
   );
