@@ -26,7 +26,7 @@ const NationsCup = () => {
         Nations Cup
       </Typography>
       <Card sx={{mt: 2, p: 1}}>
-        <Tabs value={tabSelected} onChange={handleTabChange}>
+        <Tabs value={tabSelected} variant="scrollable" scrollButtons="auto" onChange={handleTabChange}>
           <Tab label="Match-up Schedule Creation" />
           <Tab label="Warzone Game Creation" />
           <Tab label="Nations Cup Statistics" />

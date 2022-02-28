@@ -218,7 +218,7 @@ const MatchupCreation = () => {
           sx={{mt: 2}}
           disabled={loading}
         >
-          {loading ? <CircularProgress /> : "Create Games!"}
+          {loading ? <CircularProgress /> : "Create Match-ups!"}
         </Button>
       </FormGroup>
     </Box>
