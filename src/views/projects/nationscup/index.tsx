@@ -10,6 +10,7 @@ import {
 
 import MatchupCreation from './components/MatchupCreation';
 import WarzoneGameCreation from './components/WarzoneGameCreation';
+import WarzoneGameProgress from './components/WarzoneGameProgress';
 import NCStatistics from './components/NCStatistics';
 
 const NationsCup = () => {
@@ -29,11 +30,13 @@ const NationsCup = () => {
         <Tabs value={tabSelected} variant="scrollable" scrollButtons="auto" onChange={handleTabChange}>
           <Tab label="Match-up Schedule Creation" />
           <Tab label="Warzone Game Creation" />
+          <Tab label="Warzone Game Progress" />
           <Tab label="Nations Cup Statistics" />
         </Tabs>
         {tabSelected === 0 && <MatchupCreation />}
         {tabSelected === 1 && <WarzoneGameCreation />}
-        {tabSelected === 2 && <NCStatistics />}
+        {tabSelected === 2 && <WarzoneGameProgress />}
+        {tabSelected === 3 && <NCStatistics />}
       </Card>
     </Container>
   );

@@ -69,45 +69,55 @@ const processStats = async (file: File) => {
 
   // Step 3: create the output rows
   // first sort by win rate
-  const winRatePlayers = Object.values(results).sort((a, b) => a.wins / (a.games || 1) < b.wins / (b.games || 1) ? 1 : -1);
-  const winRateRows: any[][] = [["Rank", "Player URL", "Player Name", "Team", "Wins", "Games", "Win Rate"]];
+  const winRatePlayers = Object.values(results).sort((a, b) => {
+    if (a.wins / (a.games || 1) < b.wins / (b.games || 1)) return 1;
+    if (a.wins / (a.games || 1) > b.wins / (b.games || 1)) return -1;
+    
+    return a.games < b.games ? 1 : -1;
+  });
+  const winRateRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
   for (let i = 0; i < winRatePlayers.length; i++) {
     winRateRows.push([
-      i+1,
-      winRatePlayers[i].token,
-      winRatePlayers[i].name,
-      winRatePlayers[i].team,
-      winRatePlayers[i].wins,
-      winRatePlayers[i].games,
-      winRatePlayers[i].wins / (winRatePlayers[i].games || 1)
+      {value:i+1},
+      {value:winRatePlayers[i].token},
+      {value:winRatePlayers[i].name},
+      {value:winRatePlayers[i].team},
+      {value:winRatePlayers[i].wins},
+      {value:winRatePlayers[i].games},
+      {value:winRatePlayers[i].wins / (winRatePlayers[i].games || 1)}
     ]);
   }
 
   // second sort by wins
-  const winsPlayers = Object.values(results).sort((a, b) => a.wins < b.wins ? 1 : -1);
-  const winsRows: any[][] = [["Rank", "Player URL", "Player Name", "Team", "Wins", "Games", "Win Rate"]];
+  const winsPlayers = Object.values(results).sort((a, b) => {
+    if (a.wins < b.wins) return 1;
+    if (a.wins > b.wins) return -1;
+    
+    return a.games < b.games ? 1 : -1;
+  });
+  const winsRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
   for (let i = 0; i < winsPlayers.length; i++) {
     winsRows.push([
-      i+1,
-      winsPlayers[i].token,
-      winsPlayers[i].name,
-      winsPlayers[i].team,
-      winsPlayers[i].wins,
-      winsPlayers[i].games,
-      winsPlayers[i].wins / (winsPlayers[i].games || 1)
+      {value:i+1},
+      {value:winsPlayers[i].token},
+      {value:winsPlayers[i].name},
+      {value:winsPlayers[i].team},
+      {value:winsPlayers[i].wins},
+      {value:winsPlayers[i].games},
+      {value:winsPlayers[i].wins / (winsPlayers[i].games || 1)}
     ]);
   }
 
   // third sort by undefeated (then by number of wins)
   const undefeatedPlayers = Object.values(results).filter((e) => e.wins === e.games).sort((a, b) => a.wins < b.wins ? 1 : -1);
-  const undefeatedRows: any[][] = [["Rank", "Player URL", "Player Name", "Team", "Wins"]];
+  const undefeatedRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}]];
   for (let i = 0; i < undefeatedPlayers.length; i++) {
     undefeatedRows.push([
-      i+1,
-      undefeatedPlayers[i].token,
-      undefeatedPlayers[i].name,
-      undefeatedPlayers[i].team,
-      undefeatedPlayers[i].wins
+      {value:i+1},
+      {value:undefeatedPlayers[i].token},
+      {value:undefeatedPlayers[i].name},
+      {value:undefeatedPlayers[i].team},
+      {value:undefeatedPlayers[i].wins}
     ]);
   }
 

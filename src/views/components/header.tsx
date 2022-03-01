@@ -83,7 +83,9 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            Justin Reiter
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              Justin Reiter
+            </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) =>(
