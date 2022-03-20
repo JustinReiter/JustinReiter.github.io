@@ -3,6 +3,7 @@ import {
   Card,
   CardActions,
   CardContent,
+  Chip,
   Container,
   Grid,
   Link,
@@ -15,6 +16,18 @@ import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
 import jr from '../../assets/jr_compressed.jpg';
 
+const skills = [
+  "JavaScript",
+  "Python",
+  "C++",
+  "TypeScript",
+  "React",
+  "NoSQL",
+  "Git",
+  "Bash",
+];
+
+const Strong = (props: any) => (<span style={{fontWeight: 'bold'}}>{props.children}</span>);
 
 const Home = () => {
   return (
@@ -27,11 +40,19 @@ const Home = () => {
                 Hi! I am Justin Reiter
               </Typography>
               <Typography gutterBottom variant="body1" component="div" sx={{pt:2}} >
-                I am proficient with JavaScript and Python, with a lot of prior experience in C++, Java, and more. Previously, I have interned with companies such as Uplift, Horizn, Bank of America and IBM in a variety of roles, mainly centered around web development. I am also highly active with side projects spanning open-source contributions in the WZClot platform, to personal platforms exploring statistics in games.
+                I am a passioned developer that constantly looks to taking on new challenges. I have worked previously as a <Strong>full-stack developer</Strong> and continuously experiment with new technologies on side projects. You can view my <Link href="/#/experience" underline="none">past work experiences</Link> such as <Strong>Uplift</Strong>, <Strong>Horizn</Strong> and <Strong>IBM</Strong> in addition to <Link href="/#/projects" underline="none">past & current side projects</Link> such as <Strong>WZClot</Strong> and <Strong>Flock</Strong>!
               </Typography>
               <Typography variant="body1" component="div">
-                Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with.
+                Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with. Feel free to reach out to me!
               </Typography>
+              <Typography variant="h5" component="div" sx={{mt: 2}}>Skills</Typography>
+              <Grid container direction='row' spacing={1}>
+                {skills.map((skill: string) =>
+                  <Grid item key={skill}>
+                    <Chip label={skill} variant="filled" color="primary" />
+                  </Grid>
+                )}
+              </Grid>
             </CardContent>
           </Grid>
           <Grid item xs={12} md={6} display='flex' sx={{ justifyContent: 'center', mt: 2 }}>

@@ -243,3 +243,31 @@ export const NC_TEAM_MAPPING: {[k in string]: string} = {
     "NOR A": "37",
     "NOR B": "38"
 };
+
+export const COURSES = [
+    {
+        "code": "SE350",
+        "name": "Operating Systems",
+        "desc": ""
+    },
+    {
+        "code": "CS240",
+        "name": "Data Structures",
+        "desc": ""
+    },
+    {
+        "code": "CS341",
+        "name": "Algorithms",
+        "desc": ""
+    },
+    {
+        "code": "SE465",
+        "name": "Software Testing & QA",
+        "desc": ""
+    },
+    {
+        "code": "CS343",
+        "name": "Concurrent & Parallel Programming",
+        "desc": ""
+    }
+]
