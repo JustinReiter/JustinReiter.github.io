@@ -15,8 +15,8 @@ export const projects : Project[] = [
             }
         ],
         date: '2020 - Present',
-        description: 'WZClot is a Django platform deployed on Azure to manage tournaments and leagues on the Risk-like game, Warzone. The platform boasts +40,000 games played across +500 events with 1,500 players signed onto the site.',
-        subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions to the discord integration to manage automated game updates, implementations of admin commands, and the creation of a joinable ladder through the Discord bot.',
+        description: 'WZClot is a Django platform deployed on Azure to manage tournaments and leagues on the Risk-like game, Warzone. The platform manages +44,000 games played across +500 events with +1,400 players signed onto the site.',
+        subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions to the discord integration to manage automated game updates, implementations of admin commands, and the creation of a joinable ladder through the Discord bot. I also help lead an annual event that yields 500 players facing off against each other in clan-based games.',
         keywords: [
             'Django',
             'Azure',
@@ -26,7 +26,7 @@ export const projects : Project[] = [
         img: { 
             src: 'wzclot.png',
             alt: 'WZClot event bracket'
-        }
+        },
     },
     {
         name: 'Warzone Statistics',
@@ -41,7 +41,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2021',
-        description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +110,000 games over 45 seasons of the Seasonal ladder.',
+        description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +117,000 games over +45 seasons of the Seasonal ladder. Users can view stats regarding a specific season or player with details of every game.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
         keywords: [
             'React',
@@ -51,7 +51,7 @@ export const projects : Project[] = [
         img: { 
             src: 'wzstatistics.png',
             alt: 'WZ Statistics graph'
-        }
+        },
     },
     {
         name: 'Flock | HTN 2020++ Winner',
@@ -77,7 +77,7 @@ export const projects : Project[] = [
         img: { 
             src: 'flock.jpg',
             alt: 'Picture of Flock graphic'
-        }
+        },
     },
     {
         name: 'Sun King | Rocket League Bot',
@@ -94,7 +94,7 @@ export const projects : Project[] = [
             "Machine Learning",
             "Tensorflow",
             "C++"
-        ]
+        ],
     },
     {
         name: 'JBot | Warlight.AI Bot',
@@ -113,7 +113,7 @@ export const projects : Project[] = [
         img: {
             src: 'jbot.png',
             alt: 'JBot starting picks on Strategic MME'
-        }
+        },
     },
     {
         name: 'WZ Clan League Scripts',
@@ -136,8 +136,8 @@ export const projects : Project[] = [
         img: {
             src: 'wzcl.png',
             alt: 'Scorekeeper script output'
-        }
-    }
+        },
+    },
 ]
 
 // WORK EXPERIENCE
@@ -145,32 +145,36 @@ export const experiences : Experience[] = [
     {
         company: 'Uplift',
         title: 'Software Engineer Intern',
-        date: 'Jan 2022 - Present',
+        date: 'Jan 2022 - Apr 2022',
         description: [
-            'Ported functionality of support tools to new React platform used by customer service representatives (CSR).',
-            'Fixed and improved automated Jest & Pytest coverage of CSR tools from 50% to 95%.'
+            'Ported account & loan functionality of customer support (CSR) tools to new React platform',
+            'Redesigned and maximized automated Jest & Pytest coverage of CSR tools from 50% to 95%',
+            'Implemented new landing page accessing AWS Cognito to streamline developer & CSR on-boarding',
+            'Optimized React platform through Redux store workflow changes & parallel back-end API queries',
         ],
         keywords: [
             'React',
             'JavaScript',
-            'Python'
-        ]
-
+            'Python',
+            'AWS',
+        ],
+        link: 'https://www.uplift.com/',
     },
     {
         company: 'Horizn',
         title: 'Software Developer Intern',
         date: 'May 2021 - Aug 2021',
         description: [
-            'Expanded PHP Laravel digital learning platform with React components used by major banks',
-            'Built new full-stack feature to email subscribed users weekly with new course content',
-            'Developed functionality on React-based learning modules for non-linear story progression',
+            'Developed non-linear story progression functionality on React-based learning modules',
+            'Built full-stack subscription feature to notify customers weekly regarding new course content',
+            'Optimized accessibility of PHP Laravel & React platform used by international major banks',
         ],
         keywords: [
             'PHP',
             'Laravel',
-            'React'
-        ]
+            'React',
+        ],
+        link: 'https://horizn.com/',
     },
     {
         company: 'Bank of America',
@@ -181,24 +185,26 @@ export const experiences : Experience[] = [
             'Updated legacy programs to utilize Kerberos and increased password encryptions',
         ],
         keywords: [
-            'Java'
-        ]
+            'Java',
+        ],
+        link: 'https://www.bankofamerica.com/',
     },
     {
         company: 'IBM',
         title: 'Full-Stack Developer Intern',
         date: 'Jan 2020 - Apr 2020',
         description: [
-            'Improved Anti-Money Laundering (AML) React application with Redux via new homepages generalizing key pipeline performance metrics for bank managers and analysts',
-            'Automated unit and end-to-end testing of application through Cypress and Jest',
+            'Developed homepage generalizing fraud pipeline performance metrics for bank managers & analysts',
+            'Automated unit & end-to-end testing of React application through Cypress and Jest',
         ],
         keywords: [
             'React',
             'JavaScript',
             'Python',
-            'MongoDB'
-        ]
-    }
+            'MongoDB',
+        ],
+        link: 'https://www.ibm.com/ca-en',
+    },
 ]
 
 
@@ -241,33 +247,33 @@ export const NC_TEAM_MAPPING: {[k in string]: string} = {
     "FRA C": "35",
     "FRA D": "36",
     "NOR A": "37",
-    "NOR B": "38"
+    "NOR B": "38",
 };
 
 export const COURSES = [
     {
         "code": "SE350",
         "name": "Operating Systems",
-        "desc": ""
+        "desc": "",
     },
     {
         "code": "CS240",
         "name": "Data Structures",
-        "desc": ""
+        "desc": "",
     },
     {
         "code": "CS341",
         "name": "Algorithms",
-        "desc": ""
+        "desc": "",
     },
     {
         "code": "SE465",
         "name": "Software Testing & QA",
-        "desc": ""
+        "desc": "",
     },
     {
         "code": "CS343",
         "name": "Concurrent & Parallel Programming",
-        "desc": ""
-    }
+        "desc": "",
+    },
 ]

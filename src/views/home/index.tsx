@@ -40,7 +40,7 @@ const Home = () => {
                 Hi! I am Justin Reiter
               </Typography>
               <Typography gutterBottom variant="body1" component="div" sx={{pt:2}} >
-                I am a passioned developer that constantly looks to taking on new challenges. I have worked previously as a <Strong>full-stack developer</Strong> and continuously experiment with new technologies on side projects. You can view my <Link href="/#/experience" underline="none">past work experiences</Link> such as <Strong>Uplift</Strong>, <Strong>Horizn</Strong> and <Strong>IBM</Strong> in addition to <Link href="/#/projects" underline="none">past & current side projects</Link> such as <Strong>WZClot</Strong> and <Strong>Flock</Strong>!
+                I am a passionate developer that is always looking for new challenges. I have previously worked as a <Strong>full-stack developer</Strong> and continuously experiment with new technologies on side projects. You can view my <Link href="/#/experience" underline="none">past work experiences</Link> such as <Link href="https://www.uplift.com/" rel="noopener" target="_blank" underline="none">Uplift</Link>, <Link href="https://horizn.com/" rel="noopener" target="_blank" underline="none">Horizn</Link> and <Link href="https://www.ibm.com/ca-en" rel="noopener" target="_blank" underline="none">IBM</Link> in addition to <Link href="/#/projects" underline="none">past & current side projects</Link> such as <Strong>WZClot</Strong> and <Strong>Flock</Strong>!
               </Typography>
               <Typography variant="body1" component="div">
                 Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with. Feel free to reach out to me!

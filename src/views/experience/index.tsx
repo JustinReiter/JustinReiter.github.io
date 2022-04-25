@@ -4,6 +4,7 @@ import {
   Chip,
   Container,
   Grid,
+  Link,
   List,
   ListItem,
   Typography,
@@ -13,6 +14,12 @@ import ListItemText from '@mui/material/ListItemText';
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
+
+const renderLink = (link: string, name: string) => {
+  return (
+    <Link href={link} target="_blank" rel="noopener" underline="none">{name}</Link>
+  )
+}
 
 const renderKeywords = (keywords: string[]) => {
   return (
@@ -32,7 +39,7 @@ const renderExperience = (experience: Experience, index: number) => {
       <Card>
         <CardContent>
           <Typography variant="h5" component="div">
-            {experience.company} | {experience.title}
+            {experience.link ? renderLink(experience.link, experience.company) : experience.company} | {experience.title}
           </Typography>
           <Typography gutterBottom variant="body2" component="div" color="text.secondary">
             {experience.date}
