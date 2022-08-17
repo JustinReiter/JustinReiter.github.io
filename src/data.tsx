@@ -80,23 +80,6 @@ export const projects : Project[] = [
         },
     },
     {
-        name: 'Sun King | Rocket League Bot',
-        links: [
-            {
-                href: 'https://github.com/JustinReiter/RL-JBot',
-                type: 'github'
-            }
-        ],
-        date: '2022',
-        description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
-        keywords: [
-            "Python",
-            "Machine Learning",
-            "Tensorflow",
-            "C++"
-        ],
-    },
-    {
         name: 'JBot | Warlight.AI Bot',
         links: [
             {
@@ -114,6 +97,38 @@ export const projects : Project[] = [
             src: 'jbot.png',
             alt: 'JBot starting picks on Strategic MME'
         },
+    },
+    {
+        name: 'Wombat SymX (Capstone Project)',
+        links: [
+            {
+                href: 'https://github.com/JustinReiter/wombat-symx',
+                type: 'github',
+            }
+        ],
+        date: '2022',
+        description: 'Wombat SymX is a symbolic execution tool for LLVM bytecode that is written in Rust. The project performs static analysis on languages that compile to LLVM bytecode to determine function safety.',
+        subdescription: 'This project is developed as the fourth-year design capstone project for the Software Engineering program at the University of Waterloo.',
+        keywords: [
+            'Rust',
+        ],
+    },
+    {
+        name: 'Sun King | Rocket League Bot',
+        links: [
+            {
+                href: 'https://github.com/JustinReiter/RL-JBot',
+                type: 'github'
+            }
+        ],
+        date: '2022',
+        description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
+        keywords: [
+            "Python",
+            "Machine Learning",
+            "Tensorflow",
+            "C++"
+        ],
     },
     {
         name: 'WZ Clan League Scripts',
@@ -267,8 +282,23 @@ export const COURSES = [
         "desc": "",
     },
     {
+        "code": "CS486",
+        "name": "Introduction to Artificial Intelligence",
+        "desc": "",
+    },
+    {
+        "code": "CS370",
+        "name": "Numerical Computation",
+        "desc": "",
+    },
+    {
         "code": "SE465",
         "name": "Software Testing & QA",
+        "desc": "",
+    },
+    {
+        "code": "SE463",
+        "name": "Software Requirements Specification",
         "desc": "",
     },
     {
