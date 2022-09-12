@@ -23,6 +23,7 @@ export interface Experience {
   company: string;
   title: string;
   date: string;
+  location: string;
   description: string[];
   keywords: string[];
   img?: img;

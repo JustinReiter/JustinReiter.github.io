@@ -158,9 +158,24 @@ export const projects : Project[] = [
 // WORK EXPERIENCE
 export const experiences : Experience[] = [
     {
+        company: 'Splunk',
+        title: 'Software Engineer Intern',
+        date: 'Sep 2022 - Present',
+        location: 'San Jose, CA',
+        description: [
+            'Member of the Enterprise UI team supporting the Search & Dashboards page',
+        ],
+        keywords: [
+            'React',
+            'JavaScript',
+        ],
+        link: 'https://www.splunk.com/',
+    },
+    {
         company: 'Uplift',
         title: 'Software Engineer Intern',
         date: 'Jan 2022 - Apr 2022',
+        location: 'Toronto, ON',
         description: [
             'Ported account & loan functionality of customer support (CSR) tools to new React platform',
             'Redesigned and maximized automated Jest & Pytest coverage of CSR tools from 50% to 95%',
@@ -179,6 +194,7 @@ export const experiences : Experience[] = [
         company: 'Horizn',
         title: 'Software Developer Intern',
         date: 'May 2021 - Aug 2021',
+        location: 'Toronto, ON',
         description: [
             'Developed non-linear story progression functionality on React-based learning modules',
             'Built full-stack subscription feature to notify customers weekly regarding new course content',
@@ -195,6 +211,7 @@ export const experiences : Experience[] = [
         company: 'Bank of America',
         title: 'Software Developer Intern',
         date: 'Sep 2020 - Dec 2020',
+        location: 'Toronto, ON',
         description: [
             'Created Java tool to automate Maven dependency versioning across 4 repos with 10 projects',
             'Updated legacy programs to utilize Kerberos and increased password encryptions',
@@ -208,6 +225,7 @@ export const experiences : Experience[] = [
         company: 'IBM',
         title: 'Full-Stack Developer Intern',
         date: 'Jan 2020 - Apr 2020',
+        location: 'Toronto, ON',
         description: [
             'Developed homepage generalizing fraud pipeline performance metrics for bank managers & analysts',
             'Automated unit & end-to-end testing of React application through Cypress and Jest',

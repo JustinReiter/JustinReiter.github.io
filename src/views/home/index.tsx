@@ -57,7 +57,7 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={6} display='flex' sx={{ justifyContent: 'center', mt: 2 }}>
             <img
-              style={{borderRadius: 20}}
+              style={{borderRadius: 20, height: "500px"}}
               src={jr}
               alt="Justin Reiter"
             />
@@ -80,7 +80,7 @@ const Home = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/ReiterResume-4A.pdf" target="_blank" rel="noreferrer" underline="none">
+              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/JustinReiterResume-4B.pdf" target="_blank" rel="noreferrer" underline="none">
                 <Button variant='outlined' startIcon={<ArticleIcon />}>
                   Resume
                 </Button>

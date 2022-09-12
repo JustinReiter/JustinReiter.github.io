@@ -42,7 +42,7 @@ const renderExperience = (experience: Experience, index: number) => {
             {experience.link ? renderLink(experience.link, experience.company) : experience.company} | {experience.title}
           </Typography>
           <Typography gutterBottom variant="body2" component="div" color="text.secondary">
-            {experience.date}
+            {experience.date} | {experience.location}
           </Typography>
           <List dense={true}>
             { experience.description.map((line, idx) => {
