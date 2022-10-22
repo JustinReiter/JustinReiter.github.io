@@ -7,57 +7,186 @@ import {
   Container,
   Grid,
   Link,
+  List,
+  ListItem,
   Typography,
-} from '@mui/material'
+} from "@mui/material";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ArticleIcon from '@mui/icons-material/Article';
-import EmailIcon from '@mui/icons-material/Email';
-import jr from '../../assets/jr_compressed.jpg';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ArticleIcon from "@mui/icons-material/Article";
+import EmailIcon from "@mui/icons-material/Email";
+import jr from "../../assets/jr_compressed.jpg";
 
 const skills = [
   "JavaScript",
   "Python",
   "C++",
   "TypeScript",
-  "React",
+  "SQL",
   "NoSQL",
+  "GCP",
+  "AWS",
   "Git",
   "Bash",
 ];
 
-const Strong = (props: any) => (<span style={{fontWeight: 'bold'}}>{props.children}</span>);
+const frameworks = ["React", "Redux", "Django", "Backbone"];
+
+const Strong = (props: any) => (
+  <span style={{ fontWeight: "bold" }}>{props.children}</span>
+);
 
 const Home = () => {
   return (
-    <Container maxWidth='lg'>
-      <Card sx={{ display: 'flex', flexDirection: 'column'}}>
-        <Grid container xs={12} display='flex' sx={{ justifyContent: { xs: 'center', md: 'space-between' } }}>
+    <Container maxWidth="lg">
+      <Card sx={{ display: "flex", flexDirection: "column" }}>
+        <Grid
+          container
+          xs={12}
+          display="flex"
+          sx={{ justifyContent: { xs: "center", md: "space-between" } }}
+        >
           <Grid item xs={12} md={6}>
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
                 Hi! I am Justin Reiter
               </Typography>
-              <Typography gutterBottom variant="body1" component="div" sx={{pt:2}} >
-                I am a passionate developer that is always looking for new challenges. I have previously worked as a <Strong>full-stack developer</Strong> and continuously experiment with new technologies on side projects. You can view my <Link href="/#/experience" underline="none">past work experiences</Link> such as <Link href="https://www.uplift.com/" rel="noopener" target="_blank" underline="none">Uplift</Link>, <Link href="https://horizn.com/" rel="noopener" target="_blank" underline="none">Horizn</Link> and <Link href="https://www.ibm.com/ca-en" rel="noopener" target="_blank" underline="none">IBM</Link> in addition to <Link href="/#/projects" underline="none">past & current side projects</Link> such as <Strong>WZClot</Strong> and <Strong>Flock</Strong>!
+              
+              <Typography
+                variant="body1"
+                component="div"
+                sx={{ pt: 2 }}
+              >
+                Currently I am working for{" "}
+                <Link
+                  href="https://www.splunk.com/"
+                  rel="noopener"
+                  target="_blank"
+                  underline="none"
+                >
+                  Splunk
+                </Link>{" "} as a SWE Intern in the Bay area.
+              </Typography>
+              <Typography
+                gutterBottom
+                variant="body1"
+                component="div"
+                sx={{ pt: 1 }}
+              >
+                I am a passionate developer that is always looking for new
+                challenges. I have previously worked as a{" "}
+                <Strong>full-stack developer</Strong> and continuously
+                experiment with new technologies on side projects. You can view
+                my{" "}
+                <Link href="/#/experience" underline="none">
+                  past work experiences
+                </Link>{" "}
+                such as{" "}
+                <Link
+                  href="https://www.uplift.com/"
+                  rel="noopener"
+                  target="_blank"
+                  underline="none"
+                >
+                  Uplift
+                </Link>
+                ,{" "}
+                <Link
+                  href="https://horizn.com/"
+                  rel="noopener"
+                  target="_blank"
+                  underline="none"
+                >
+                  Horizn
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://www.ibm.com/ca-en"
+                  rel="noopener"
+                  target="_blank"
+                  underline="none"
+                >
+                  IBM
+                </Link>.
+              </Typography>
+              <Typography variant="h5" component="div" sx={{ mt: 2 }}>
+                Interests
               </Typography>
               <Typography variant="body1" component="div">
-                Outside of programming, I follow Formula 1 and baseball closely, and I am always looking for new things to get involved with. Feel free to reach out to me!
+                <List>
+                  <ListItem>
+                    🏎 Formula 1 - Unfortunately a Ferrari fan{" "}
+                  </ListItem>
+                  <ListItem>⚾️ Baseball - Go Jays!</ListItem>
+                  <ListItem sx={{ display: "block"}}>
+                    🎧 Podcasts - Current favourite is&nbsp;
+                    <Link
+                      href="https://darknetdiaries.com/"
+                      rel="noopener"
+                      target="_blank"
+                      underline="none"
+                    >
+                      Darknet Diaries
+                    </Link>
+                  </ListItem>
+                  <ListItem sx={{ display: "block"}}>
+                    🧑‍💻 Side projects - I am always busy with new projects. Currently working on&nbsp;
+                    <Link
+                      href="https://github.com/brendanfly/wzclot"
+                      rel="noopener"
+                      target="_blank"
+                      underline="none"
+                    >
+                      WZClot
+                    </Link> (a Django platform to create richer events for a Risk-like game,&nbsp;
+                    <Link
+                      href="https://www.warzone.com/"
+                      rel="noopener"
+                      target="_blank"
+                      underline="none"
+                    >
+                      Warzone
+                    </Link>
+                    ) and&nbsp;
+                    <Link
+                      href="https://github.com/JustinReiter/wombat-symx"
+                      rel="noopener"
+                      target="_blank"
+                      underline="none"
+                    >
+                      Wombat SymX
+                    </Link>
+                    &nbsp;(a symbolic execution engine for Rust as my fourth year capstone project).
+                  </ListItem>
+                </List>
               </Typography>
-              <Typography variant="h5" component="div" sx={{mt: 2}}>Skills</Typography>
-              <Grid container direction='row' spacing={1}>
-                {skills.map((skill: string) =>
+              <Typography variant="h5" component="div" sx={{ mt: 2 }}>
+                Skills
+              </Typography>
+              <Grid container direction="row" spacing={1}>
+                {skills.map((skill: string) => (
                   <Grid item key={skill}>
                     <Chip label={skill} variant="filled" color="primary" />
                   </Grid>
-                )}
+                ))}
+                {frameworks.map((framework: string) => (
+                  <Grid item key={framework}>
+                    <Chip label={framework} variant="filled" color="secondary" />
+                  </Grid>
+                ))}
               </Grid>
             </CardContent>
           </Grid>
-          <Grid item xs={12} md={6} display='flex' sx={{ justifyContent: 'center', mt: 2 }}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            display="flex"
+            sx={{ justifyContent: "center", mt: 2 }}
+          >
             <img
-              style={{borderRadius: 20, height: "500px"}}
+              style={{ borderRadius: 20, height: "500px" }}
               src={jr}
               alt="Justin Reiter"
             />
@@ -66,29 +195,44 @@ const Home = () => {
         <CardActions>
           <Grid container xs={12} spacing={1}>
             <Grid item>
-              <Link href="https://github.com/JustinReiter" target="_blank" rel="noreferrer" underline="none">
-                <Button variant='outlined' startIcon={<GitHubIcon />}>
+              <Link
+                href="https://github.com/JustinReiter"
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                <Button variant="outlined" startIcon={<GitHubIcon />}>
                   @JustinReiter
                 </Button>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://www.linkedin.com/in/justin-reiter/" target="_blank" rel="noreferrer" underline="none">
-                <Button variant='outlined' startIcon={<LinkedInIcon />}>
+              <Link
+                href="https://www.linkedin.com/in/justin-reiter/"
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                <Button variant="outlined" startIcon={<LinkedInIcon />}>
                   @Justin-Reiter
                 </Button>
               </Link>
             </Grid>
             <Grid item>
-              <Link href="https://www.student.cs.uwaterloo.ca/~jdreiter/JustinReiterResume-4B.pdf" target="_blank" rel="noreferrer" underline="none">
-                <Button variant='outlined' startIcon={<ArticleIcon />}>
+              <Link
+                href="https://www.student.cs.uwaterloo.ca/~jdreiter/JustinReiterResume-4B.pdf"
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                <Button variant="outlined" startIcon={<ArticleIcon />}>
                   Resume
                 </Button>
               </Link>
             </Grid>
             <Grid item>
               <Link href="mailto:jdreiter@uwaterloo.ca" underline="none">
-                <Button variant='outlined' startIcon={<EmailIcon />}>
+                <Button variant="outlined" startIcon={<EmailIcon />}>
                   Email
                 </Button>
               </Link>
@@ -97,7 +241,7 @@ const Home = () => {
         </CardActions>
       </Card>
     </Container>
-  )
+  );
 };
 
 export default Home;

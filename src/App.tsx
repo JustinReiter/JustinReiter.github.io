@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className='App-header'>
         <Alert icon={false} severity="success">
-          I am currently in search of new grad positions in Spring 2023!
+          I am currently in search of new grad SWE positions beginning Spring 2023!
         </Alert>
         <div className='App-content'>
           <Outlet />

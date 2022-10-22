@@ -10,7 +10,7 @@ export const projects : Project[] = [
                 type: 'github',
             },
             {
-                href: 'http://wzclot.com/',
+                href: 'http://wzclot.eastus.cloudapp.azure.com/',
                 type: 'link'
             }
         ],
