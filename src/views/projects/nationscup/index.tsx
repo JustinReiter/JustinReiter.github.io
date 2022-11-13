@@ -14,7 +14,7 @@ import WarzoneGameProgress from './components/WarzoneGameProgress';
 import NCStatistics from './components/NCStatistics';
 
 const NationsCup = () => {
-  const [tabSelected, setTabSelected] = useState<Number>(0);
+  const [tabSelected, setTabSelected] = useState<number>(0);
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setTabSelected(newValue);

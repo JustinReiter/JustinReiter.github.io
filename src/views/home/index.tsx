@@ -17,6 +17,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/jr_compressed.jpg";
+import { FC, ReactNode } from "react";
 
 const skills = [
   "JavaScript",
@@ -33,8 +34,12 @@ const skills = [
 
 const frameworks = ["React", "Redux", "Django", "Backbone"];
 
-const Strong = (props: any) => (
-  <span style={{ fontWeight: "bold" }}>{props.children}</span>
+interface StrongProps {
+  children: ReactNode;
+}
+
+const Strong: FC<StrongProps> = ({ children }) => (
+  <span style={{ fontWeight: "bold" }}>{children}</span>
 );
 
 const Home = () => {

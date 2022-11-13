@@ -17,8 +17,8 @@ const processGameProgress = async (email: string, token: string, file: File, isD
   const rows: any[][] = await readXlsxFile(file);
 
   // Step 2: form the results dictionary
-  let team1: string = '';
-  let team2: string = '';
+  let team1 = '';
+  let team2 = '';
   for (const row of rows) {
     if (row[0] && !row[1]) {
       // new teams
@@ -101,7 +101,6 @@ const WarzoneGameProgress = () => {
       });
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   return (

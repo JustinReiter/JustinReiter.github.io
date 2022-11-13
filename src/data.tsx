@@ -164,10 +164,14 @@ export const experiences : Experience[] = [
         location: 'San Jose, CA',
         description: [
             'Member of the Enterprise UI team supporting the Search & Dashboards page',
+            'Upgrading Reports page in Enterprise platform from Backbone.js to React for improved readability & speed',
+            'Improved team vulnerability response via Gitlab pipeline jobs for security scans & dependency updates',
         ],
         keywords: [
             'React',
-            'JavaScript',
+            'TypeScript',
+            'Backbone.js',
+            'Gitlab CI',
         ],
         link: 'https://www.splunk.com/',
     },

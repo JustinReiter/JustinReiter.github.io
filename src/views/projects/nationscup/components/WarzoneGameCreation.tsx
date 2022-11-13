@@ -18,19 +18,19 @@ const viewGameUrl = "https://www.warzone.com/MultiPlayer?GameID=";
 interface Player {
   name: string;
   token: string;
-};
+}
 
 interface GameMatchup {
   p1: Player;
   p2: Player;
   link: string;
-};
+}
 
 interface TeamMatchup {
   team1: string;
   team2: string;
   games: GameMatchup[];
-};
+}
 
 const parseRowsToObject = (rows: any[]): TeamMatchup[] => {
   const matchups : TeamMatchup[] = [];
@@ -68,7 +68,7 @@ const parseRowsToObject = (rows: any[]): TeamMatchup[] => {
 interface RequestPlayer {
   token: string;
   team: string;
-};
+}
 
 interface Request {
   hostEmail: string;
@@ -77,11 +77,11 @@ interface Request {
   gameName: string;
   personalMessage: string;
   players: RequestPlayer[];
-};
+}
 
 // Converts game details in packed object
 const createJSONData = (game: GameMatchup, team1: string, team2: string, email: string, token: string, template: string) => {
-  let obj = {} as Request;
+  const obj = {} as Request;
   
   obj.hostEmail = email;
   obj.hostAPIToken = token.replace(/\\&/g, "\\&");
@@ -229,7 +229,6 @@ const WarzoneGameCreation = () => {
       });
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   return (

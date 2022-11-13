@@ -17,16 +17,16 @@ interface Player {
   team: string;
   wins: number;
   games: number;
-};
+}
 
 const processStats = async (file: File) => {
   // Step 1: parse sheet to object
   const inputRows = await readXlsxFile(file);
   
   // Step 2: form the results dictionary
-  let team1: string = '';
-  let team2: string = '';
-  let results: {[k in string]: Player} = {};
+  let team1 = '';
+  let team2 = '';
+  const results: {[k in string]: Player} = {};
   for (const row of inputRows) {
     if (!row[0]) {
       // empty row
@@ -159,7 +159,6 @@ const NCStatistics = () => {
         });
       }
       
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [loading]);
 
     return (

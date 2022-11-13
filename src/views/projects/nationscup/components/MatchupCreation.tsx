@@ -16,12 +16,12 @@ import writeXlsxFile from 'write-excel-file';
 interface Player {
   name: string;
   url: string;
-};
+}
 
 interface Team {
   name: string;
   players: Player[];
-};
+}
 
 const shuffleArray = (array: Player[]) => {
   // Swap elements in array randomly
@@ -33,7 +33,7 @@ const shuffleArray = (array: Player[]) => {
 
 const isNotUniqueMatchup = (team1: Player[], team2: Player[]) => {
   // Check if matchup is unique (ie. players do not face the same opponent
-  let seenNames : {[key: string]: string[]} = {};
+  const seenNames : {[key: string]: string[]} = {};
   for (let i = 0; i < team1.length; i++) {
       // If not unique, return true, else add match to seenNames
       if (team1[i].url in seenNames && seenNames[team1[i].url].includes(team2[i].url)) {
@@ -49,8 +49,8 @@ const isNotUniqueMatchup = (team1: Player[], team2: Player[]) => {
 
 const matchTeamMembers = (team1: Player[], team2: Player[]) => {
    // Create game matchups
-   let extendedTeam1 = [];
-   let extendedTeam2 = [];
+   const extendedTeam1 = [];
+   const extendedTeam2 = [];
 
    // Populate final matchup arrays
    for (let i = 0; i < team1.length * 2; i++) {
@@ -127,7 +127,7 @@ const processMatchups = async (file: File) => {
   }
 
   // Second part, create the matchups
-  var matchups: any[][] = [];
+  const matchups: any[][] = [];
   // Create matchups based on adjacent teams being matched
   for (let i = 0; i < teams.length - 1; i+=2) {
     console.log(teams[i].name + " vs. " + teams[i+1].name);
@@ -173,7 +173,6 @@ const MatchupCreation = () => {
       });
     }
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   return (
