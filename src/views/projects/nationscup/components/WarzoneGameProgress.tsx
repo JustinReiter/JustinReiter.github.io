@@ -1,8 +1,10 @@
 import { Box, Typography, FormGroup, TextField, FormControlLabel, Checkbox, Button, CircularProgress } from "@mui/material";
+import _ from "lodash";
 import { useState, useEffect } from "react";
 
 import readXlsxFile from "read-excel-file";
-import writeXlsxFile from "write-excel-file";
+import { Cell } from "read-excel-file/types";
+import writeXlsxFile, { Row } from "write-excel-file";
 
 const checkGame = async (gameUrl: string, p1Id: string, p2Id: string, email: string, token: string, isDryRun: boolean) => {
   console.log(`The following parameters will be used:\nGame URL: ${gameUrl}\nEmail: ${email}\nToken: ${token}\nIs Dry-Run? ${isDryRun}`);
@@ -14,16 +16,17 @@ const checkGame = async (gameUrl: string, p1Id: string, p2Id: string, email: str
 
 const processGameProgress = async (email: string, token: string, file: File, isDryRun: boolean) => {
   // Step 1: read the input file
-  const rows: any[][] = await readXlsxFile(file);
+  const rows: Cell[][] = await readXlsxFile(file);
+  const outputRows = _.cloneDeep(rows) as Row[];
 
   // Step 2: form the results dictionary
-  let team1 = '';
-  let team2 = '';
-  for (const row of rows) {
+  // let team1 = '';
+  // let team2 = '';
+  rows.forEach(async (row, idx) => {
     if (row[0] && !row[1]) {
       // new teams
-      team1 = row[0] as string;
-      team2 = row[2] as string;
+      // team1 = row[0] as string;
+      // team2 = row[2] as string;
     } else {
       if (row.length < 6 || row[5] !== "Finished") {
 
@@ -34,7 +37,7 @@ const processGameProgress = async (email: string, token: string, file: File, isD
             error: "isDryRun set to true... No game created as a result"
           };
         } else {
-          response = await checkGame(row[4], row[1], row[3], email, token, isDryRun);
+          response = await checkGame(String(row[4]), String(row[1]), String(row[3]), email, token, isDryRun);
         }
 
         console.log(response);
@@ -42,13 +45,13 @@ const processGameProgress = async (email: string, token: string, file: File, isD
     }
 
     for (let i = 0; i < row.length; i++) {
-      row[i] = {value: row[i]};
+      outputRows[idx][i] = {value: String(row[i])};
     }
-  }
+  });
 
   console.log(rows);
   // Step 3: write the results to new excel file
-  await writeXlsxFile(rows, {fileName: "NationsCupGameReport.xlsx"});
+  await writeXlsxFile(outputRows, {fileName: "NationsCupGameReport.xlsx"});
 }
 
 const WarzoneGameProgress = () => {

@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
-import readXlsxFile from 'read-excel-file';
+import readXlsxFile, { Row } from 'read-excel-file';
 import writeXlsxFile from 'write-excel-file';
 import { NC_TEAM_MAPPING } from '../../../../data';
 const viewGameUrl = "https://www.warzone.com/MultiPlayer?GameID=";
@@ -32,7 +32,7 @@ interface TeamMatchup {
   games: GameMatchup[];
 }
 
-const parseRowsToObject = (rows: any[]): TeamMatchup[] => {
+const parseRowsToObject = (rows: Row[]): TeamMatchup[] => {
   const matchups : TeamMatchup[] = [];
   let newMatchup = {} as TeamMatchup;
 
@@ -43,19 +43,19 @@ const parseRowsToObject = (rows: any[]): TeamMatchup[] => {
       newMatchup = {} as TeamMatchup;
     } else if (!row[1]) {
       // Team declaration row
-      newMatchup.team1 = row[0];
-      newMatchup.team2 = row[2];
+      newMatchup.team1 = String(row[0]);
+      newMatchup.team2 = String(row[2]);
       newMatchup.games = [];
     } else {
       // Game matchup declaration row
       newMatchup.games.push({
         p1: {
-          name: row[0],
-          token: row[1]
+          name: String(row[0]),
+          token: String(row[1]),
         },
         p2: {
-          name: row[2],
-          token: row[3]
+          name: String(row[2]),
+          token: String(row[3]),
         },
         link: ''
       });
@@ -98,7 +98,12 @@ const createJSONData = (game: GameMatchup, team1: string, team2: string, email: 
   return obj;
 };
 
-const createWZGame = async (req: Request): Promise<any> => {
+interface WZCreateGameResponse {
+  error?: string;
+  gameID?: string;
+}
+
+const createWZGame = async (req: Request): Promise<WZCreateGameResponse> => {
   console.log(`Creating game with the following parameters:\n${JSON.stringify(req, null, 4)}`);
   return {
     error: "createGame has not been implemented yet and no game has been created"

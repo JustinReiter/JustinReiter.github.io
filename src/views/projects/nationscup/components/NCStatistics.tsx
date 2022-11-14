@@ -10,6 +10,7 @@ import {
 
 import readXlsxFile from 'read-excel-file';
 import writeXlsxFile from 'write-excel-file';
+import { ExcelCell } from '../types';
 
 interface Player {
   name: string;
@@ -75,7 +76,7 @@ const processStats = async (file: File) => {
     
     return a.games < b.games ? 1 : -1;
   });
-  const winRateRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
+  const winRateRows: ExcelCell[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
   for (let i = 0; i < winRatePlayers.length; i++) {
     winRateRows.push([
       {value:i+1},
@@ -95,7 +96,7 @@ const processStats = async (file: File) => {
     
     return a.games < b.games ? 1 : -1;
   });
-  const winsRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
+  const winsRows: ExcelCell[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}, {value:"Games"}, {value:"Win Rate"}]];
   for (let i = 0; i < winsPlayers.length; i++) {
     winsRows.push([
       {value:i+1},
@@ -110,7 +111,7 @@ const processStats = async (file: File) => {
 
   // third sort by undefeated (then by number of wins)
   const undefeatedPlayers = Object.values(results).filter((e) => e.wins === e.games).sort((a, b) => a.wins < b.wins ? 1 : -1);
-  const undefeatedRows: any[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}]];
+  const undefeatedRows: ExcelCell[][] = [[{value:"Rank"}, {value:"Player URL"}, {value:"Player Name"}, {value:"Team"}, {value:"Wins"}]];
   for (let i = 0; i < undefeatedPlayers.length; i++) {
     undefeatedRows.push([
       {value:i+1},

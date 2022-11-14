@@ -11,6 +11,7 @@ import {
 
 import readXlsxFile from 'read-excel-file';
 import writeXlsxFile from 'write-excel-file';
+import { ExcelCell } from '../types';
 
 
 interface Player {
@@ -127,7 +128,7 @@ const processMatchups = async (file: File) => {
   }
 
   // Second part, create the matchups
-  const matchups: any[][] = [];
+  const matchups: ExcelCell[][] = [];
   // Create matchups based on adjacent teams being matched
   for (let i = 0; i < teams.length - 1; i+=2) {
     console.log(teams[i].name + " vs. " + teams[i+1].name);
