@@ -16,6 +16,7 @@ export interface Project {
   description: string;
   subdescription?: string;
   keywords: string[];
+  priority: number;
   img?: img;
 } 
 

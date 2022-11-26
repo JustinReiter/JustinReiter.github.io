@@ -100,7 +100,7 @@ const Projects = () => {
   return (
     <Container maxWidth='lg'>
       <Grid container xs={12} spacing={2} rowSpacing={2}>
-        { projects.map((project: Project, index: number) => renderProject(project, index)) }
+        { projects.sort((a: Project, b: Project) => b.priority - a.priority).map((project: Project, index: number) => renderProject(project, index)) }
       </Grid>
     </Container>
   )

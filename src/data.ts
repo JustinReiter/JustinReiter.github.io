@@ -23,6 +23,7 @@ export const projects : Project[] = [
             'Python',
             'PostgreSQL'
         ],
+        priority: 7,
         img: { 
             src: 'wzclot.png',
             alt: 'WZClot event bracket'
@@ -43,6 +44,7 @@ export const projects : Project[] = [
         date: '2021',
         description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +117,000 games over +45 seasons of the Seasonal ladder. Users can view stats regarding a specific season or player with details of every game.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
+        priority: 3,
         keywords: [
             'React',
             'JavaScript',
@@ -68,6 +70,7 @@ export const projects : Project[] = [
         date: '2021',
         description: 'Developed in the Hack the North 2020++ hackathon, Flock is a mobile app to help friends discover mutually-liked movies. The platform consists of a React Native front-end, Express back-end and CockroachDB database to store 6,860 movies across 27 genres.',
         subdescription: 'This hack won the CockroachDB sponsor prize at the HTN 2020++ hackathon for the best use of the CockroachDB database!',
+        priority: 2,
         keywords: [
             "React Native",
             "Express",
@@ -89,6 +92,7 @@ export const projects : Project[] = [
         ],
         date: '2020',
         description: "JBot is an artificial intelligence bot developed to play the Risk-like game, Warzone. Among all existing bots, JBot achieves the strongest starting distribution with complex, dynamic decisions.",
+        priority: 1,
         keywords: [
             "C#",
             "Artificial Intelligence"
@@ -109,6 +113,7 @@ export const projects : Project[] = [
         date: '2022',
         description: 'Wombat SymX is a symbolic execution tool for LLVM bytecode that is written in Rust. The project performs static analysis on languages that compile to LLVM bytecode to determine function safety.',
         subdescription: 'This project is developed as the fourth-year design capstone project for the Software Engineering program at the University of Waterloo.',
+        priority: 5,
         keywords: [
             'Rust',
         ],
@@ -123,6 +128,7 @@ export const projects : Project[] = [
         ],
         date: '2022',
         description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
+        priority: 4,
         keywords: [
             "Python",
             "Machine Learning",
@@ -141,6 +147,7 @@ export const projects : Project[] = [
         date: '2022',
         description: "This project is an assortment of scripts created to help manage the Clan League event on Warzone. Clan League is a Promotion/Relegation event where clans compete in different game modes for a trophy. The event spans 6 months, with the involvement of 25 clans and 500 players.",
         subdescription: "The scripts handle all aspects of the event lifecycle. This includes Google App Scripts to manage populating and tallying scores on a Google Sheets, Python scripts for scorekeepers to compose update reports, and JavaScript files to regularly update score results.",
+        priority: 6,
         keywords: [
             "Python",
             "JavaScript",

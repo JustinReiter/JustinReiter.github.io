@@ -16,7 +16,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
-import jr from "../../assets/jr_compressed.jpg";
+import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
 import { FC, ReactNode } from "react";
 
 const skills = [
@@ -52,7 +52,7 @@ const Home = () => {
           display="flex"
           sx={{ justifyContent: { xs: "center", md: "space-between" } }}
         >
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
                 Hi! I am Justin Reiter
@@ -166,21 +166,6 @@ const Home = () => {
                   </ListItem>
                 </List>
               </Typography>
-              <Typography variant="h5" component="div" sx={{ mt: 2 }}>
-                Skills
-              </Typography>
-              <Grid container direction="row" spacing={1}>
-                {skills.map((skill: string) => (
-                  <Grid item key={skill}>
-                    <Chip label={skill} variant="filled" color="primary" />
-                  </Grid>
-                ))}
-                {frameworks.map((framework: string) => (
-                  <Grid item key={framework}>
-                    <Chip label={framework} variant="filled" color="secondary" />
-                  </Grid>
-                ))}
-              </Grid>
             </CardContent>
           </Grid>
           <Grid
@@ -189,6 +174,7 @@ const Home = () => {
             md={6}
             display="flex"
             sx={{ justifyContent: "center", mt: 2 }}
+            order={{ xs: 1, md: 2 }}
           >
             <img
               style={{ borderRadius: 20, height: "500px" }}
@@ -197,6 +183,25 @@ const Home = () => {
             />
           </Grid>
         </Grid>
+        <CardContent>
+          <Grid container xs={12} spacing={1}>
+            <Typography variant="h5" component="div" sx={{ mt: 2, pb: 1 }}>
+              Skills
+            </Typography>
+            <Grid container direction="row" spacing={1} sx={{ p: 1 }}>
+              {skills.map((skill: string) => (
+                <Grid item key={skill}>
+                  <Chip label={skill} variant="filled" color="primary" />
+                </Grid>
+              ))}
+              {frameworks.map((framework: string) => (
+                <Grid item key={framework}>
+                  <Chip label={framework} variant="filled" color="secondary" />
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+        </CardContent>
         <CardActions>
           <Grid container xs={12} spacing={1}>
             <Grid item>

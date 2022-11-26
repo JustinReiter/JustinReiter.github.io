@@ -70,7 +70,7 @@ const Header = () => {
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={() => setAnchorElNav(null)}>
-                  <Link to={page.path} key={index} >
+                  <Link to={page.path} key={index} style={{ textDecoration: 'none', color: '#1976d2' }}>
                     <Typography textAlign="center">{page.name}</Typography>
                   </Link>
                 </MenuItem>
@@ -83,13 +83,13 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: '#1976d2' }}>
               Justin Reiter
             </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) =>(
-              <Link to={page.path} key={index}>
+              <Link to={page.path} key={index} style={{ textDecoration: 'none' }}>
                 <Button
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
