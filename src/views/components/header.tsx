@@ -83,7 +83,7 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <Link to="/" style={{ textDecoration: 'none', color: '#1976d2' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
               Justin Reiter
             </Link>
           </Typography>
