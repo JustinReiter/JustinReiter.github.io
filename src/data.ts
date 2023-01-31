@@ -167,12 +167,12 @@ export const experiences : Experience[] = [
     {
         company: 'Splunk',
         title: 'Software Engineer Intern',
-        date: 'Sep 2022 - Present',
+        date: 'Sep 2022 - Dec 2022',
         location: 'San Jose, CA',
         description: [
-            'Member of the Enterprise UI team supporting the Search & Dashboards page',
-            'Upgrading Reports page in Enterprise platform from Backbone.js to React for improved readability & speed',
-            'Improved team vulnerability response via Gitlab pipeline jobs for security scans & dependency updates',
+            'Upgraded page in the Core Enterprise platform from Backbone.js to React for improved accessibility & unified experience',
+            'Improved team dependency vulnerability response via Gitlab pipeline jobs for security scans & dependency updates',
+            'Fixed severe accessibility bugs in the Core platform preventing users from navigating table views',
         ],
         keywords: [
             'React',

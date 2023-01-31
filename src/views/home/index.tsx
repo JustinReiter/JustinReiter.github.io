@@ -57,22 +57,7 @@ const Home = () => {
               <Typography gutterBottom variant="h4" component="div">
                 Hi! I am Justin Reiter
               </Typography>
-              
-              <Typography
-                variant="body1"
-                component="div"
-                sx={{ pt: 2 }}
-              >
-                Currently I am working for{" "}
-                <Link
-                  href="https://www.splunk.com/"
-                  rel="noopener"
-                  target="_blank"
-                  underline="none"
-                >
-                  Splunk
-                </Link>{" "} as a SWE Intern in the Bay area.
-              </Typography>
+
               <Typography
                 gutterBottom
                 variant="body1"
@@ -80,15 +65,16 @@ const Home = () => {
                 sx={{ pt: 1 }}
               >
                 I am a passionate developer that is always looking for new
-                challenges. I have previously worked as a{" "}
-                <Strong>full-stack developer</Strong> and continuously
-                experiment with new technologies on side projects. You can view
-                my{" "}
-                <Link href="/#/experience" underline="none">
-                  past work experiences
-                </Link>{" "}
-                such as{" "}
+                challenges. My most recent work experience was working at{" "}
                 <Link
+                  href="https://www.splunk.com/"
+                  rel="noopener"
+                  target="_blank"
+                  underline="none"
+                >
+                  Splunk
+                </Link>{" "} as a SWE Intern in the Bay area. I have also previously worked as a{" "}
+                <Strong>full-stack developer</Strong>  for various companies such as <Link
                   href="https://www.uplift.com/"
                   rel="noopener"
                   target="_blank"
@@ -97,14 +83,6 @@ const Home = () => {
                   Uplift
                 </Link>
                 ,{" "}
-                <Link
-                  href="https://horizn.com/"
-                  rel="noopener"
-                  target="_blank"
-                  underline="none"
-                >
-                  Horizn
-                </Link>{" "}
                 and{" "}
                 <Link
                   href="https://www.ibm.com/ca-en"
@@ -113,7 +91,20 @@ const Home = () => {
                   underline="none"
                 >
                   IBM
-                </Link>.
+                </Link> in Toronto.
+              </Typography>
+              <Typography
+                gutterBottom
+                variant="body1"
+                component="div"
+                sx={{ pt: 1 }}
+              >
+                You can view my past work experiences <Link href="/#/experience" underline="none">
+                  here
+                </Link>{" "} or view my side projects{" "}
+                <Link href="/#/projects" underline="none">
+                  here
+                </Link>!
               </Typography>
               <Typography variant="h5" component="div" sx={{ mt: 2 }}>
                 Interests
