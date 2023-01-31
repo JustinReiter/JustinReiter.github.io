@@ -20,7 +20,7 @@ const Home = () => {
             Sep 2018 - Present
           </Typography>
           <Typography gutterBottom sx={{ pt: 2 }} variant="body1" component="div">
-            I am currently in my 4A term of Software Engineering at the University of Waterloo and will be graduating in April 2023.
+            I am currently in my 4B term of Software Engineering at the University of Waterloo and will be graduating in April this year.
           </Typography>
         </CardContent>
       </Card>
