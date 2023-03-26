@@ -113,9 +113,25 @@ export const projects : Project[] = [
         date: '2022',
         description: 'Wombat SymX is a symbolic execution tool for LLVM bytecode that is written in Rust. The project performs static analysis on languages that compile to LLVM bytecode to determine function safety.',
         subdescription: 'This project is developed as the fourth-year design capstone project for the Software Engineering program at the University of Waterloo.',
-        priority: 5,
+        priority: 8,
         keywords: [
             'Rust',
+        ],
+    },
+    {
+        name: 'Warzone Game Engine',
+        links: [
+            {
+                href: 'https://github.com/JustinReiter/WarzoneEngine',
+                type: 'github',
+            }
+        ],
+        date: '2023 - Present',
+        description: 'Warzone Game Engine is a project designed at emulating Warzone games across a variety of settings with the intent on being used for creating an ML bot. Warzone currently does not have an effective way to train on real games as this relies on an API to progress turns.',
+        subdescription: 'Currently in-progress.',
+        priority: 9,
+        keywords: [
+            'Python',
         ],
     },
     {
@@ -295,6 +311,21 @@ export const NC_TEAM_MAPPING: {[k in string]: string} = {
 };
 
 export const COURSES = [
+    {
+        "code": "CS451",
+        "name": "Data-Intensive Distributed Computing",
+        "desc": "",
+    },
+    {
+        "code": "ECE459",
+        "name": "Programming for Performance",
+        "desc": "",
+    },
+    {
+        "code": "CO487",
+        "name": "Applied Cryptography",
+        "desc": "",
+    },
     {
         "code": "SE350",
         "name": "Operating Systems",
