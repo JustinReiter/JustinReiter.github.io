@@ -2,7 +2,6 @@ import {
   Card,
   CardContent,
   Chip,
-  Container,
   Grid,
   Link,
   List,
@@ -14,6 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
+import SnapScrollContainer from '../components/SnapScrollContainer';
 
 const renderLink = (link: string, name: string) => {
   return (
@@ -67,11 +67,11 @@ const renderExperience = (experience: Experience, index: number) => {
 
 const WorkExperience = () => {
   return (
-    <Container maxWidth='lg'>
+    <SnapScrollContainer style={{}} className="experience">
       <Grid container xs={12} spacing={2} rowSpacing={2}>
         { experiences.map((experience: Experience, index: number) => renderExperience(experience, index))}
       </Grid>
-    </Container>
+    </SnapScrollContainer>
   )
 };
 

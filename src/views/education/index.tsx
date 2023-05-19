@@ -1,16 +1,16 @@
 import {
   Card,
   CardContent,
-  Container,
   Grid,
   Typography,
 } from '@mui/material'
 
 import { COURSES } from '../../data';
+import SnapScrollContainer from '../components/SnapScrollContainer';
 
 const Home = () => {
   return (
-    <Container maxWidth='lg'>
+    <SnapScrollContainer style={{}} className="education">
       <Card sx={{ display: 'flex', flexDirection: 'column', mb: 2}}>
         <CardContent>
           <Typography variant="h4" component="div">
@@ -40,7 +40,7 @@ const Home = () => {
           </Grid>
         </CardContent>
       </Card>
-    </Container>
+    </SnapScrollContainer>
   )
 };
 

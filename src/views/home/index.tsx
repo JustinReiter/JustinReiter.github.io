@@ -4,7 +4,6 @@ import {
   CardActions,
   CardContent,
   Chip,
-  Container,
   Grid,
   Link,
   List,
@@ -18,6 +17,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
 import { FC, ReactNode } from "react";
+import SnapScrollContainer from "../components/SnapScrollContainer";
 
 const skills = [
   "JavaScript",
@@ -44,7 +44,7 @@ const Strong: FC<StrongProps> = ({ children }) => (
 
 const Home = () => {
   return (
-    <Container maxWidth="lg">
+    <SnapScrollContainer style={{}} className="home">
       <Card sx={{ display: "flex", flexDirection: "column" }}>
         <Grid
           container
@@ -241,7 +241,7 @@ const Home = () => {
           </Grid>
         </CardActions>
       </Card>
-    </Container>
+    </SnapScrollContainer>
   );
 };
 

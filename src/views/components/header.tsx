@@ -9,26 +9,28 @@ import {
   MenuItem,
   Toolbar,
   Typography,
+  Grid,
 } from '@mui/material';
+import LinearProgress from '@mui/material/LinearProgress';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
 const pages = [
   {
     name: 'About',
-    path: '/'
+    path: '#home'
   },
   {
     name: 'Education',
-    path: '/education'
+    path: '#education'
   },
   {
     name: 'Work Experience',
-    path: '/experience'
+    path: '#experience'
   },
   {
     name: 'Projects',
-    path: '/projects'
+    path: '#projects'
   }
 ]
 
@@ -38,7 +40,7 @@ const Header = () => {
   return (
     <AppBar position='sticky'>
       <Container maxWidth='xl'>
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{xs: 'flex', flexDirection: 'column'}}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -87,7 +89,7 @@ const Header = () => {
               Justin Reiter
             </Link>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, width: "1000px" }}>
             {pages.map((page, index) =>(
               <Link to={page.path} key={index} style={{ textDecoration: 'none' }}>
                 <Button
@@ -97,7 +99,11 @@ const Header = () => {
                 </Button>
               </Link>
             ))}
+            
           </Box>
+          <Grid xs item width={100}>
+            <LinearProgress variant="determinate" value={100} />
+          </Grid>
         </Toolbar>
       </Container>
     </AppBar>

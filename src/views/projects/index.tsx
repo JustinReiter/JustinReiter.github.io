@@ -5,7 +5,6 @@ import {
   CardContent,
   CardMedia,
   Chip,
-  Container,
   Grid,
   Link,
   Typography,
@@ -15,6 +14,7 @@ import LinkIcon from '@mui/icons-material/Link';
 
 import { Project, HTMLLink } from '../../types';
 import { projects } from '../../data';
+import SnapScrollContainer from '../components/SnapScrollContainer';
 
 const renderLinkButton = (link: HTMLLink) => {
   if (link.type === 'link') {
@@ -98,11 +98,11 @@ const renderProject = (project: Project, index: number) => {
 
 const Projects = () => {
   return (
-    <Container maxWidth='lg'>
+    <SnapScrollContainer style={{}} className="projects">
       <Grid container xs={12} spacing={2} rowSpacing={2}>
         { projects.sort((a: Project, b: Project) => b.priority - a.priority).map((project: Project, index: number) => renderProject(project, index)) }
       </Grid>
-    </Container>
+      </SnapScrollContainer>
   )
 };
 
