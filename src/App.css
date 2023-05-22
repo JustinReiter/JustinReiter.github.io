@@ -22,18 +22,12 @@
 
 .App-header {
   background-color: #282c34;
-  padding-top: 2%;
-  padding-bottom: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-content {
-  padding-top: 4%;
 }
 
 .App-link {

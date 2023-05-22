@@ -2,7 +2,7 @@ import React from 'react';
 import {
   HashRouter,
   Route,
-  Routes
+  Routes,
 } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
@@ -14,6 +14,8 @@ import WorkExperience from './views/experience';
 import Projects from './views/projects';
 import NationsCup from './views/projects/nationscup';
 import reportWebVitals from './reportWebVitals';
+import Header from './views/components/header';
+import HomePage from './views/homepage';
 
 const domNode = document.getElementById('root');
 if (domNode == null) {
@@ -27,18 +29,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path='/' element={<App />}>
-          <Route index element={
-            <>
-              <Home />
-              <Education />
-              <WorkExperience />
-              <Projects />
-              <div style={{scrollSnapAlign: "end", paddingTop: "24px"}}></div>
-            </>
-          }/>
-          {/* <Route path='education' element={<Education />} />
-          <Route path='experience' element={<WorkExperience />} />
-          <Route path='projects' element={<Projects />} /> */}
+          <Route index element={<HomePage/>}/>
           <Route path='projects/nc' element={<NationsCup />} />
         </Route>
       </Routes>

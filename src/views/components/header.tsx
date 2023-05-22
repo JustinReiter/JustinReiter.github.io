@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   AppBar,
   Button,
@@ -14,6 +14,7 @@ import {
 import LinearProgress from '@mui/material/LinearProgress';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
 
 const pages = [
   {
@@ -34,8 +35,30 @@ const pages = [
   }
 ]
 
+const useStyles = makeStyles({
+  root: {
+    "& .MuiLinearProgress-barColorPrimary": {
+      backgroundImage: "linear-gradient(to right, red , yellow)",
+    },
+    color: "rgb(167, 202, 237)",
+    height: "200px"
+  }
+});
+
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const [progress, setProgress] = useState<number>(0);
+
+  const classes = useStyles();
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress((progress) => progress == 100 ? 0 : progress+1)
+    }, 500)
+
+    return () => clearInterval(timer);
+  }, [])
+  
 
   return (
     <AppBar position='sticky'>
@@ -89,7 +112,8 @@ const Header = () => {
               Justin Reiter
             </Link>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, width: "1000px" }}>
+          <div>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between' }}>
             {pages.map((page, index) =>(
               <Link to={page.path} key={index} style={{ textDecoration: 'none' }}>
                 <Button
@@ -99,11 +123,14 @@ const Header = () => {
                 </Button>
               </Link>
             ))}
-            
-          </Box>
-          <Grid xs item width={100}>
-            <LinearProgress variant="determinate" value={100} />
-          </Grid>
+            </Box>
+            <Grid md item width="100%">
+              <LinearProgress className={classes.root} sx={{height: 12, mb: 1}} variant="determinate" value={progress}/>
+            </Grid>
+          </div>
+          
+          
+          
         </Toolbar>
       </Container>
     </AppBar>

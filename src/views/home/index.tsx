@@ -174,7 +174,7 @@ const Home = () => {
             />
           </Grid>
         </Grid>
-        <CardContent>
+        {/* <CardContent>
           <Grid container xs={12} spacing={1}>
             <Typography variant="h5" component="div" sx={{ mt: 2, pb: 1 }}>
               Skills
@@ -192,7 +192,7 @@ const Home = () => {
               ))}
             </Grid>
           </Grid>
-        </CardContent>
+        </CardContent> */}
         <CardActions>
           <Grid container xs={12} spacing={1}>
             <Grid item>

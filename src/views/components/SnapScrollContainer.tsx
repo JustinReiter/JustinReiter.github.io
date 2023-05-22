@@ -13,7 +13,9 @@ interface SnapScrollContainerProps {
 const SnapScrollContainer = ({children, style, className}: SnapScrollContainerProps) => {
   const styleObj = {
     scrollSnapAlign: "start",
-    paddingTop: "88px",
+    paddingTop: "12vh",
+    height: "100vh",
+    width: "100vw",
     ...style
   };
   
