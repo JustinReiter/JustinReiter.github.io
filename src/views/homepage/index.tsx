@@ -15,7 +15,6 @@ const HomePage = () => {
       <Education />
       <WorkExperience />
       <Projects />
-      <div style={{scrollSnapAlign: "start", paddingTop: "24px"}}></div>
     </>
   );
 };

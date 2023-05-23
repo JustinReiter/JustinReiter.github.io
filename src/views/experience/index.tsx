@@ -10,10 +10,12 @@ import {
 } from '@mui/material';
 
 import ListItemText from '@mui/material/ListItemText';
+import { Chrono } from "react-chrono";
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
+import { MediaType } from 'react-chrono/dist/models/TimelineMediaModel';
 
 const renderLink = (link: string, name: string) => {
   return (
@@ -66,8 +68,9 @@ const renderExperience = (experience: Experience, index: number) => {
 
 
 const WorkExperience = () => {
+
   return (
-    <SnapScrollContainer style={{}} className="experience">
+    <SnapScrollContainer style={{}} className="experience" isLastSection>
       <Grid container xs={12} spacing={2} rowSpacing={2}>
         { experiences.map((experience: Experience, index: number) => renderExperience(experience, index))}
       </Grid>

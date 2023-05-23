@@ -41,7 +41,6 @@ const useStyles = makeStyles({
       backgroundImage: "linear-gradient(to right, red , yellow)",
     },
     color: "rgb(167, 202, 237)",
-    height: "200px"
   }
 });
 
@@ -54,10 +53,10 @@ const Header = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((progress) => progress == 100 ? 0 : progress+1)
-    }, 500)
+    }, 500);
 
     return () => clearInterval(timer);
-  }, [])
+  }, []);
   
 
   return (
@@ -67,7 +66,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="justin reiter sections"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               color="inherit"

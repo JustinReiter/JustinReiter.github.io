@@ -8,6 +8,7 @@ import {
   Link,
   List,
   ListItem,
+  Popover,
   Typography,
 } from "@mui/material";
 
@@ -16,7 +17,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useEffect, useState } from "react";
 import SnapScrollContainer from "../components/SnapScrollContainer";
 
 const skills = [
@@ -42,7 +43,45 @@ const Strong: FC<StrongProps> = ({ children }) => (
   <span style={{ fontWeight: "bold" }}>{children}</span>
 );
 
+const TITLE_TEXT = "Hi! I am Justin Reiter!";
+
 const Home = () => {
+  const [titleText, setTitleText] = useState<string>("Hi!");
+  const [podcastPopoverOpen, setPodcastPopoverOpen] = useState<boolean>(false);
+  const [cursor, setCursor] = useState<string>("|");
+  let initialDelay = 0;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTitleText((titleText) => {
+        if (initialDelay < 9) {
+          initialDelay++;
+          return titleText;
+        }
+        if (titleText == TITLE_TEXT) {
+          clearInterval(timer);
+          return TITLE_TEXT;
+        }
+
+        if (TITLE_TEXT.at(titleText.length) == " ") {
+          return titleText + TITLE_TEXT.at(titleText.length) + TITLE_TEXT.at(titleText.length+1);
+        } else {
+          return titleText + TITLE_TEXT.at(titleText.length);
+        }
+      })
+    }, 100);
+
+    const cursorTimer = setInterval(() => {
+      setCursor((cursor) => cursor ? "" : "|");
+    }, 400);
+
+    return () => {
+      clearInterval(timer);
+      clearInterval(cursorTimer);
+    };
+  }, []);
+
+
   return (
     <SnapScrollContainer style={{}} className="home">
       <Card sx={{ display: "flex", flexDirection: "column" }}>
@@ -52,10 +91,10 @@ const Home = () => {
           display="flex"
           sx={{ justifyContent: { xs: "center", md: "space-between" } }}
         >
-          <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
+          <Grid item xs={12} md={7} lg={8} order={{ xs: 2, md: 1 }}>
             <CardContent>
               <Typography gutterBottom variant="h4" component="div">
-                Hi! I am Justin Reiter
+                {titleText+cursor}
               </Typography>
 
               <Typography
@@ -65,7 +104,7 @@ const Home = () => {
                 sx={{ pt: 1 }}
               >
                 I am a passionate developer that is always looking for new
-                challenges. My most recent work experience was working at{" "}
+                challenges and projects. My most recent work experience was working at{" "}
                 <Link
                   href="https://www.splunk.com/"
                   rel="noopener"
@@ -73,25 +112,7 @@ const Home = () => {
                   underline="none"
                 >
                   Splunk
-                </Link>{" "} as a SWE Intern in the Bay area. I have also previously worked as a{" "}
-                <Strong>full-stack developer</Strong>  for various companies such as <Link
-                  href="https://www.uplift.com/"
-                  rel="noopener"
-                  target="_blank"
-                  underline="none"
-                >
-                  Uplift
-                </Link>
-                ,{" "}
-                and{" "}
-                <Link
-                  href="https://www.ibm.com/ca-en"
-                  rel="noopener"
-                  target="_blank"
-                  underline="none"
-                >
-                  IBM
-                </Link> in Toronto.
+                </Link>{" "} as a SWE Intern in the Bay area.
               </Typography>
               <Typography
                 gutterBottom
@@ -99,61 +120,60 @@ const Home = () => {
                 component="div"
                 sx={{ pt: 1 }}
               >
-                You can view my past work experiences <Link href="/#/experience" underline="none">
-                  here
-                </Link>{" "} or view my side projects{" "}
-                <Link href="/#/projects" underline="none">
-                  here
-                </Link>!
+                You can view my past work experiences and view my side projects below!
               </Typography>
               <Typography variant="h5" component="div" sx={{ mt: 2 }}>
                 Interests
               </Typography>
               <Typography variant="body1" component="div">
-                <List>
+                <List sx={{mb: -5}}>
                   <ListItem>
-                    🏎 Formula 1 - Unfortunately a Ferrari fan{" "}
+                    🏎 Formula 1 - unfortunately a Ferrari fan{" "}
                   </ListItem>
-                  <ListItem>⚾️ Baseball - Go Jays!</ListItem>
+                  <ListItem>⚾️ Baseball - go Jays!</ListItem>
                   <ListItem sx={{ display: "block"}}>
-                    🎧 Podcasts - Current favourite is&nbsp;
-                    <Link
-                      href="https://darknetdiaries.com/"
-                      rel="noopener"
-                      target="_blank"
-                      underline="none"
-                    >
-                      Darknet Diaries
+                    🎧 Podcasts - View my favourites&nbsp;
+                    <Link href="#" onClick={() => setPodcastPopoverOpen(!podcastPopoverOpen)}>
+                      here!
                     </Link>
+                    { podcastPopoverOpen && (
+                      <List sx={{ml:6, listStyleType: 'disc'}} dense={true}>
+                        <ListItem sx={{display: 'list-item', pl: 1}}>
+                          <Link
+                            href="https://darknetdiaries.com/"
+                            rel="noopener"
+                            target="_blank"
+                            underline="none"
+                          >
+                            Darknet Diaries
+                          </Link> - follows stories from the dark side of the Internet
+                        </ListItem>
+                        <ListItem sx={{display: 'list-item', pl: 1}}>
+                          <Link
+                            href="https://www.behindthebastards.com"
+                            rel="noopener"
+                            target="_blank"
+                            underline="none"
+                          >
+                            Behind the Bastards
+                          </Link> - exposes the bizarre realities behind the worst humans in history
+                        </ListItem>
+                        <ListItem sx={{display: 'list-item', pl: 1}}>
+                          <Link
+                            href="https://www.formula1.com/en/latest/tags.beyond-the-grid.63HGi6Q0grEg1ToZBtPNQ9.html#default"
+                            rel="noopener"
+                            target="_blank"
+                            underline="none"
+                          >
+                            F1: Beyond the Grid
+                          </Link>
+                        </ListItem>
+                      </List>
+                      
+                      )}
                   </ListItem>
                   <ListItem sx={{ display: "block"}}>
-                    🧑‍💻 Side projects - I am always busy with new projects. Currently working on&nbsp;
-                    <Link
-                      href="https://github.com/brendanfly/wzclot"
-                      rel="noopener"
-                      target="_blank"
-                      underline="none"
-                    >
-                      WZClot
-                    </Link> (a Django platform to create richer events for a Risk-like game,&nbsp;
-                    <Link
-                      href="https://www.warzone.com/"
-                      rel="noopener"
-                      target="_blank"
-                      underline="none"
-                    >
-                      Warzone
-                    </Link>
-                    ) and&nbsp;
-                    <Link
-                      href="https://github.com/JustinReiter/wombat-symx"
-                      rel="noopener"
-                      target="_blank"
-                      underline="none"
-                    >
-                      Wombat SymX
-                    </Link>
-                    &nbsp;(a symbolic execution engine for Rust as my fourth year capstone project).
+                    🧑‍💻 Side projects - always looking for new projects
                   </ListItem>
                 </List>
               </Typography>
@@ -162,13 +182,14 @@ const Home = () => {
           <Grid
             item
             xs={12}
-            md={6}
+            md={5}
+            lg={4}
             display="flex"
             sx={{ justifyContent: "center", mt: 2 }}
             order={{ xs: 1, md: 2 }}
           >
             <img
-              style={{ borderRadius: 20, height: "500px" }}
+              style={{ borderRadius: 20, height: 450 }}
               src={jr}
               alt="Justin Reiter"
             />
