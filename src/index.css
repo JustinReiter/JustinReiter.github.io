@@ -15,4 +15,5 @@ code {
 html {
   scroll-snap-type: y mandatory;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }

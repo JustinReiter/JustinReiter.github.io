@@ -83,7 +83,7 @@ const Home = () => {
 
 
   return (
-    <SnapScrollContainer style={{}} className="home">
+    <SnapScrollContainer style={{}} id="home" nextId="education">
       <Card sx={{ display: "flex", flexDirection: "column" }}>
         <Grid
           container

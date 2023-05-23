@@ -10,12 +10,10 @@ import {
 } from '@mui/material';
 
 import ListItemText from '@mui/material/ListItemText';
-import { Chrono } from "react-chrono";
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
-import { MediaType } from 'react-chrono/dist/models/TimelineMediaModel';
 
 const renderLink = (link: string, name: string) => {
   return (
@@ -37,28 +35,15 @@ const renderKeywords = (keywords: string[]) => {
 
 const renderExperience = (experience: Experience, index: number) => {
   return (
-    <Grid item xs={12} md={6} spacing={2} key={index}>
+    <Grid item xs={12} md={6} key={index}>
       <Card>
         <CardContent>
-          <Typography variant="h5" component="div">
+          <Typography variant="h6" component="div">
             {experience.link ? renderLink(experience.link, experience.company) : experience.company} | {experience.title}
           </Typography>
           <Typography gutterBottom variant="body2" component="div" color="text.secondary">
             {experience.date} | {experience.location}
           </Typography>
-          <List dense={true}>
-            { experience.description.map((line, idx) => {
-              return (
-                <ListItem key={idx}>
-                  <ListItemText>
-                    • {line}
-                  </ListItemText>
-                </ListItem>
-              );
-            })}
-          </List>
-        </CardContent>
-        <CardContent>
           {renderKeywords(experience.keywords)}
         </CardContent>
       </Card>
@@ -70,8 +55,8 @@ const renderExperience = (experience: Experience, index: number) => {
 const WorkExperience = () => {
 
   return (
-    <SnapScrollContainer style={{}} className="experience" isLastSection>
-      <Grid container xs={12} spacing={2} rowSpacing={2}>
+    <SnapScrollContainer style={{}} id="experience" nextId="projects">
+      <Grid container xs={12} spacing={2} alignContent="start">
         { experiences.map((experience: Experience, index: number) => renderExperience(experience, index))}
       </Grid>
     </SnapScrollContainer>

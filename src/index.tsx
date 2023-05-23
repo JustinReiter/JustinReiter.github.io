@@ -2,7 +2,9 @@ import React from 'react';
 import {
   HashRouter,
   Route,
+  RouterProvider,
   Routes,
+  createBrowserRouter,
 } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
@@ -23,18 +25,22 @@ if (domNode == null) {
   throw 'root node not found';
 }
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
+
 const root = createRoot(domNode);
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<App />}>
-          <Route index element={<HomePage/>}/>
-          {/* <Route path='projects/nc' element={<NationsCup />} /> */}
-        </Route>
-      </Routes>
-    </HashRouter>
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function

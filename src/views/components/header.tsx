@@ -114,7 +114,7 @@ const Header = () => {
           <div>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between' }}>
             {pages.map((page, index) =>(
-              <Link to={page.path} key={index} style={{ textDecoration: 'none' }}>
+              <Link to={page.path} key={index} style={{ textDecoration: 'none' }} reloadDocument>
                 <Button
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
@@ -127,9 +127,6 @@ const Header = () => {
               <LinearProgress className={classes.root} sx={{height: 12, mb: 1}} variant="determinate" value={progress}/>
             </Grid>
           </div>
-          
-          
-          
         </Toolbar>
       </Container>
     </AppBar>

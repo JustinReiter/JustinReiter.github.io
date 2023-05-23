@@ -10,7 +10,7 @@ import SnapScrollContainer from '../components/SnapScrollContainer';
 
 const Home = () => {
   return (
-    <SnapScrollContainer style={{}} className="education">
+    <SnapScrollContainer style={{}} id="education" nextId="experience">
       <div>
         <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: "start", mb: 2}}>
           <CardContent>

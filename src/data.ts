@@ -41,7 +41,7 @@ export const projects : Project[] = [
                 type: 'link'
             }
         ],
-        date: '2021',
+        date: '2021 - 2022',
         description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +117,000 games over +45 seasons of the Seasonal ladder. Users can view stats regarding a specific season or player with details of every game.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
         priority: 3,
@@ -55,53 +55,53 @@ export const projects : Project[] = [
             alt: 'WZ Statistics graph'
         },
     },
-    {
-        name: 'Flock | HTN 2020++ Winner',
-        links: [
-            {
-                href: 'https://github.com/SPriyaJain/movie-night-htn',
-                type: 'github'
-            },
-            {
-                href: 'https://devpost.com/software/flock-figure-out-what-film-to-watch-with-friends',
-                type: 'devpost'
-            }
-        ],
-        date: '2021',
-        description: 'Developed in the Hack the North 2020++ hackathon, Flock is a mobile app to help friends discover mutually-liked movies. The platform consists of a React Native front-end, Express back-end and CockroachDB database to store 6,860 movies across 27 genres.',
-        subdescription: 'This hack won the CockroachDB sponsor prize at the HTN 2020++ hackathon for the best use of the CockroachDB database!',
-        priority: 2,
-        keywords: [
-            "React Native",
-            "Express",
-            "JavaScript",
-            "CockroachDB"
-        ],
-        img: { 
-            src: 'flock.jpg',
-            alt: 'Picture of Flock graphic'
-        },
-    },
-    {
-        name: 'JBot | Warlight.AI Bot',
-        links: [
-            {
-                href: 'https://github.com/JustinReiter/WarLight.AI',
-                type: 'github'
-            }
-        ],
-        date: '2020',
-        description: "JBot is an artificial intelligence bot developed to play the Risk-like game, Warzone. Among all existing bots, JBot achieves the strongest starting distribution with complex, dynamic decisions.",
-        priority: 1,
-        keywords: [
-            "C#",
-            "Artificial Intelligence"
-        ],
-        img: {
-            src: 'jbot.png',
-            alt: 'JBot starting picks on Strategic MME'
-        },
-    },
+    // {
+    //     name: 'Flock | HTN 2020++ Winner',
+    //     links: [
+    //         {
+    //             href: 'https://github.com/SPriyaJain/movie-night-htn',
+    //             type: 'github'
+    //         },
+    //         {
+    //             href: 'https://devpost.com/software/flock-figure-out-what-film-to-watch-with-friends',
+    //             type: 'devpost'
+    //         }
+    //     ],
+    //     date: '2021',
+    //     description: 'Developed in the Hack the North 2020++ hackathon, Flock is a mobile app to help friends discover mutually-liked movies. The platform consists of a React Native front-end, Express back-end and CockroachDB database to store 6,860 movies across 27 genres.',
+    //     subdescription: 'This hack won the CockroachDB sponsor prize at the HTN 2020++ hackathon for the best use of the CockroachDB database!',
+    //     priority: 2,
+    //     keywords: [
+    //         "React Native",
+    //         "Express",
+    //         "JavaScript",
+    //         "CockroachDB"
+    //     ],
+    //     img: { 
+    //         src: 'flock.jpg',
+    //         alt: 'Picture of Flock graphic'
+    //     },
+    // },
+    // {
+    //     name: 'JBot | Warlight.AI Bot',
+    //     links: [
+    //         {
+    //             href: 'https://github.com/JustinReiter/WarLight.AI',
+    //             type: 'github'
+    //         }
+    //     ],
+    //     date: '2020',
+    //     description: "JBot is an artificial intelligence bot developed to play the Risk-like game, Warzone. Among all existing bots, JBot achieves the strongest starting distribution with complex, dynamic decisions.",
+    //     priority: 1,
+    //     keywords: [
+    //         "C#",
+    //         "Artificial Intelligence"
+    //     ],
+    //     img: {
+    //         src: 'jbot.png',
+    //         alt: 'JBot starting picks on Strategic MME'
+    //     },
+    // },
     {
         name: 'Wombat SymX (Capstone Project)',
         links: [
@@ -110,7 +110,7 @@ export const projects : Project[] = [
                 type: 'github',
             }
         ],
-        date: '2022',
+        date: '2022 - 2023',
         description: 'Wombat SymX is a symbolic execution tool for LLVM bytecode that is written in Rust. The project performs static analysis on languages that compile to LLVM bytecode to determine function safety.',
         subdescription: 'This project is developed as the fourth-year design capstone project for the Software Engineering program at the University of Waterloo.',
         priority: 8,
@@ -134,48 +134,48 @@ export const projects : Project[] = [
             'Python',
         ],
     },
-    {
-        name: 'Sun King | Rocket League Bot',
-        links: [
-            {
-                href: 'https://github.com/JustinReiter/RL-JBot',
-                type: 'github'
-            }
-        ],
-        date: '2022',
-        description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
-        priority: 4,
-        keywords: [
-            "Python",
-            "Machine Learning",
-            "Tensorflow",
-            "C++"
-        ],
-    },
-    {
-        name: 'WZ Clan League Scripts',
-        links: [
-            {
-                href: 'https://github.com/JustinR17/wzcl-scripts',
-                type: 'github'
-            }
-        ],
-        date: '2022',
-        description: "This project is an assortment of scripts created to help manage the Clan League event on Warzone. Clan League is a Promotion/Relegation event where clans compete in different game modes for a trophy. The event spans 6 months, with the involvement of 25 clans and 500 players.",
-        subdescription: "The scripts handle all aspects of the event lifecycle. This includes Google App Scripts to manage populating and tallying scores on a Google Sheets, Python scripts for scorekeepers to compose update reports, and JavaScript files to regularly update score results.",
-        priority: 6,
-        keywords: [
-            "Python",
-            "JavaScript",
-            "Google App Scripts",
-            "Web Scraping",
-            "Automation"
-        ],
-        img: {
-            src: 'wzcl.png',
-            alt: 'Scorekeeper script output'
-        },
-    },
+    // {
+    //     name: 'Sun King | Rocket League Bot',
+    //     links: [
+    //         {
+    //             href: 'https://github.com/JustinReiter/RL-JBot',
+    //             type: 'github'
+    //         }
+    //     ],
+    //     date: '2022',
+    //     description: "A machine learning bot created to play 1v1 games in Rocket League with supervised learning consisting of data from human players. The models were created with Tensorflow and required custom plugins to extract data from players in-game to construct the training datasets.",
+    //     priority: 4,
+    //     keywords: [
+    //         "Python",
+    //         "Machine Learning",
+    //         "Tensorflow",
+    //         "C++"
+    //     ],
+    // },
+    // {
+    //     name: 'WZ Clan League Scripts',
+    //     links: [
+    //         {
+    //             href: 'https://github.com/JustinR17/wzcl-scripts',
+    //             type: 'github'
+    //         }
+    //     ],
+    //     date: '2022',
+    //     description: "This project is an assortment of scripts created to help manage the Clan League event on Warzone. Clan League is a Promotion/Relegation event where clans compete in different game modes for a trophy. The event spans 6 months, with the involvement of 25 clans and 500 players.",
+    //     subdescription: "The scripts handle all aspects of the event lifecycle. This includes Google App Scripts to manage populating and tallying scores on a Google Sheets, Python scripts for scorekeepers to compose update reports, and JavaScript files to regularly update score results.",
+    //     priority: 6,
+    //     keywords: [
+    //         "Python",
+    //         "JavaScript",
+    //         "Google App Scripts",
+    //         "Web Scraping",
+    //         "Automation"
+    //     ],
+    //     img: {
+    //         src: 'wzcl.png',
+    //         alt: 'Scorekeeper script output'
+    //     },
+    // },
 ]
 
 // WORK EXPERIENCE

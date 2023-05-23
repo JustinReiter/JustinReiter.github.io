@@ -75,16 +75,14 @@ const renderProject = (project: Project, index: number) => {
             <Typography gutterBottom variant="body2" component="div" color="text.secondary">
               {project.date}
             </Typography>
-            <Typography variant="body2" gutterBottom={project?.subdescription !== undefined} sx={{pt: 2}}>
+            {/* <Typography variant="body2" gutterBottom={project?.subdescription !== undefined} sx={{pt: 2}}>
               {project.description}
             </Typography>
             {project?.subdescription && 
               <Typography variant="body2" sx={{pt: 2}}>
                 {project.subdescription}
               </Typography>
-            }
-          </CardContent>
-          <CardContent>
+            } */}
             {renderKeywords(project.keywords)}
           </CardContent>
           <CardActions>
@@ -98,8 +96,8 @@ const renderProject = (project: Project, index: number) => {
 
 const Projects = () => {
   return (
-    <SnapScrollContainer style={{}} className="projects">
-      <Grid container xs={12} spacing={2} rowSpacing={2}>
+    <SnapScrollContainer style={{}} id="projects">
+      <Grid container xs={12} spacing={2}  alignContent="start">
         { projects.sort((a: Project, b: Project) => b.priority - a.priority).map((project: Project, index: number) => renderProject(project, index)) }
       </Grid>
       </SnapScrollContainer>
