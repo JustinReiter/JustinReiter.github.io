@@ -111,7 +111,7 @@ const Header = ({focusedDiv}: HeaderProps) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+            <Link to="/#home" style={{ textDecoration: 'none', color: 'white' }} reloadDocument>
               Justin Reiter
             </Link>
           </Typography>

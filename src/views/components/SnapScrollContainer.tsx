@@ -1,4 +1,4 @@
-import { Box, Button, Container, Fab } from "@mui/material";
+import { Box, Container, Fab } from "@mui/material";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -26,14 +26,15 @@ const SnapScrollContainer = ({
         flexDirection: "column",
         justifyContent: "space-between",
         scrollSnapAlign: "start",
-        paddingTop: "12vh",
-      height: "100vh",
+        paddingTop: { xs: "6vh", md: "12vh" },
+        paddingBottom: { xs: "4vh", md: "0" },
+      height: {md: "100vh"},
       width: "100vw",
       }}
     >
       {children}
       {nextId && (
-        <Box textAlign="center" sx={{ mb: 6 }}>
+        <Box textAlign="center" sx={{ mb: 6, display: {xs: 'none', md: 'block'} }}>
           <Fab color="primary" aria-label="next-section" href={"#" + nextId}>
             <KeyboardArrowDownIcon fontSize="large" />
           </Fab>
