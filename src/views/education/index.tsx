@@ -8,7 +8,11 @@ import {
 import { COURSES } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
 
-const Home = () => {
+interface EducationProps {
+  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Education = ({setFocusedDiv}: EducationProps) => {
   return (
     <SnapScrollContainer style={{}} id="education" nextId="experience">
       <div>
@@ -46,4 +50,4 @@ const Home = () => {
   )
 };
 
-export default Home;
+export default Education;

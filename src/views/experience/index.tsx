@@ -4,12 +4,9 @@ import {
   Chip,
   Grid,
   Link,
-  List,
-  ListItem,
   Typography,
 } from '@mui/material';
 
-import ListItemText from '@mui/material/ListItemText';
 
 import { Experience } from '../../types';
 import { experiences } from '../../data';
@@ -51,9 +48,11 @@ const renderExperience = (experience: Experience, index: number) => {
   );
 };
 
+interface WorkExperienceProps {
+  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
+}
 
-const WorkExperience = () => {
-
+const WorkExperience = ({setFocusedDiv}: WorkExperienceProps) => {
   return (
     <SnapScrollContainer style={{}} id="experience" nextId="projects">
       <Grid container xs={12} spacing={2} alignContent="start">

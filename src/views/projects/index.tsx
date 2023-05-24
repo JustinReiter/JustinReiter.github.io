@@ -93,8 +93,11 @@ const renderProject = (project: Project, index: number) => {
   );
 };
 
+interface ProjectsProps {
+  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
+}
 
-const Projects = () => {
+const Projects = ({setFocusedDiv}: ProjectsProps) => {
   return (
     <SnapScrollContainer style={{}} id="projects">
       <Grid container xs={12} spacing={2}  alignContent="start">

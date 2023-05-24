@@ -3,12 +3,10 @@ import {
   Card,
   CardActions,
   CardContent,
-  Chip,
   Grid,
   Link,
   List,
   ListItem,
-  Popover,
   Typography,
 } from "@mui/material";
 
@@ -17,37 +15,17 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
-import { FC, ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SnapScrollContainer from "../components/SnapScrollContainer";
-
-const skills = [
-  "JavaScript",
-  "Python",
-  "C++",
-  "TypeScript",
-  "SQL",
-  "NoSQL",
-  "GCP",
-  "AWS",
-  "Git",
-  "Bash",
-];
-
-const frameworks = ["React", "Redux", "Django", "Backbone"];
-
-interface StrongProps {
-  children: ReactNode;
-}
-
-const Strong: FC<StrongProps> = ({ children }) => (
-  <span style={{ fontWeight: "bold" }}>{children}</span>
-);
 
 const TITLE_TEXT = "Hi! I am Justin Reiter!";
 
-const Home = () => {
+interface HomeProps {
+  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Home = ({setFocusedDiv}: HomeProps) => {
   const [titleText, setTitleText] = useState<string>("Hi!");
-  const [podcastPopoverOpen, setPodcastPopoverOpen] = useState<boolean>(false);
   const [cursor, setCursor] = useState<string>("|");
   let initialDelay = 0;
 
@@ -120,7 +98,7 @@ const Home = () => {
                 component="div"
                 sx={{ pt: 1 }}
               >
-                You can view my past work experiences and view my side projects below!
+                You can view my past work experiences and projects below!
               </Typography>
               <Typography variant="h5" component="div" sx={{ mt: 2 }}>
                 Interests
@@ -132,45 +110,39 @@ const Home = () => {
                   </ListItem>
                   <ListItem>⚾️ Baseball - go Jays!</ListItem>
                   <ListItem sx={{ display: "block"}}>
-                    🎧 Podcasts - View my favourites&nbsp;
-                    <Link href="#" onClick={() => setPodcastPopoverOpen(!podcastPopoverOpen)}>
-                      here!
-                    </Link>
-                    { podcastPopoverOpen && (
-                      <List sx={{ml:6, listStyleType: 'disc'}} dense={true}>
-                        <ListItem sx={{display: 'list-item', pl: 1}}>
-                          <Link
-                            href="https://darknetdiaries.com/"
-                            rel="noopener"
-                            target="_blank"
-                            underline="none"
-                          >
-                            Darknet Diaries
-                          </Link> - follows stories from the dark side of the Internet
-                        </ListItem>
-                        <ListItem sx={{display: 'list-item', pl: 1}}>
-                          <Link
-                            href="https://www.behindthebastards.com"
-                            rel="noopener"
-                            target="_blank"
-                            underline="none"
-                          >
-                            Behind the Bastards
-                          </Link> - exposes the bizarre realities behind the worst humans in history
-                        </ListItem>
-                        <ListItem sx={{display: 'list-item', pl: 1}}>
-                          <Link
-                            href="https://www.formula1.com/en/latest/tags.beyond-the-grid.63HGi6Q0grEg1ToZBtPNQ9.html#default"
-                            rel="noopener"
-                            target="_blank"
-                            underline="none"
-                          >
-                            F1: Beyond the Grid
-                          </Link>
-                        </ListItem>
-                      </List>
-                      
-                      )}
+                    🎧 Podcasts - here are my favourites:
+                    <List sx={{ml:6, listStyleType: 'disc'}} dense={true}>
+                      <ListItem sx={{display: 'list-item', pl: 1}}>
+                        <Link
+                          href="https://darknetdiaries.com/"
+                          rel="noopener"
+                          target="_blank"
+                          underline="none"
+                        >
+                          Darknet Diaries
+                        </Link> - follows stories from the dark side of the Internet
+                      </ListItem>
+                      <ListItem sx={{display: 'list-item', pl: 1}}>
+                        <Link
+                          href="https://www.behindthebastards.com"
+                          rel="noopener"
+                          target="_blank"
+                          underline="none"
+                        >
+                          Behind the Bastards
+                        </Link> - exposes the bizarre realities behind the worst humans in history
+                      </ListItem>
+                      <ListItem sx={{display: 'list-item', pl: 1}}>
+                        <Link
+                          href="https://www.formula1.com/en/latest/tags.beyond-the-grid.63HGi6Q0grEg1ToZBtPNQ9.html#default"
+                          rel="noopener"
+                          target="_blank"
+                          underline="none"
+                        >
+                          F1: Beyond the Grid
+                        </Link> - interviews F1 drivers, engineers and more about their journey & experiences
+                      </ListItem>
+                    </List>
                   </ListItem>
                   <ListItem sx={{ display: "block"}}>
                     🧑‍💻 Side projects - always looking for new projects

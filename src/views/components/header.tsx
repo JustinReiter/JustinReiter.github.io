@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   AppBar,
   Button,
@@ -44,19 +44,23 @@ const useStyles = makeStyles({
   }
 });
 
-const Header = () => {
+interface HeaderProps {
+  focusedDiv: string;
+}
+
+const Header = ({focusedDiv}: HeaderProps) => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const [progress, setProgress] = useState<number>(0);
 
   const classes = useStyles();
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((progress) => progress == 100 ? 0 : progress+1)
-    }, 500);
-
-    return () => clearInterval(timer);
-  }, []);
+  let progressPercent = 10;
+  if (focusedDiv == "education") {
+    progressPercent = 35;
+  } else if (focusedDiv == "work_experience") {
+    progressPercent = 60;
+  } else if (focusedDiv == "projects") {
+    progressPercent = 100;
+  }
   
 
   return (
@@ -124,7 +128,7 @@ const Header = () => {
             ))}
             </Box>
             <Grid md item width="100%">
-              <LinearProgress className={classes.root} sx={{height: 12, mb: 1}} variant="determinate" value={progress}/>
+              <LinearProgress className={classes.root} sx={{height: 12, mb: 1}} variant="determinate" value={progressPercent}/>
             </Grid>
           </div>
         </Toolbar>
