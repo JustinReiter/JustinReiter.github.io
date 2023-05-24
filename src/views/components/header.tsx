@@ -66,7 +66,7 @@ const Header = ({focusedDiv}: HeaderProps) => {
   return (
     <AppBar position='sticky'>
       <Container maxWidth='xl'>
-        <Toolbar disableGutters sx={{xs: 'flex', flexDirection: 'column'}}>
+        <Toolbar disableGutters sx={{xs: 'flex', flexDirection: { xs: 'row', md: 'column' }}}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -98,7 +98,7 @@ const Header = ({focusedDiv}: HeaderProps) => {
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={() => setAnchorElNav(null)}>
-                  <Link to={page.path} key={index} style={{ textDecoration: 'none', color: '#1976d2' }}>
+                  <Link to={page.path} key={index} style={{ textDecoration: 'none', color: '#1976d2' }} reloadDocument>
                     <Typography textAlign="center">{page.name}</Typography>
                   </Link>
                 </MenuItem>
