@@ -1,22 +1,12 @@
-import React from 'react';
 import {
-  HashRouter,
-  Route,
   RouterProvider,
-  Routes,
   createBrowserRouter,
 } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
 import './index.css';
 import App from './App';
-import Home from './views/home';
-import Education from './views/education';
-import WorkExperience from './views/experience';
-import Projects from './views/projects';
-import NationsCup from './views/projects/nationscup';
 import reportWebVitals from './reportWebVitals';
-import Header from './views/components/header';
 import HomePage from './views/homepage';
 
 const domNode = document.getElementById('root');
