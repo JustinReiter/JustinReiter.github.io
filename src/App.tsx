@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 // import { Alert } from '@mui/material';
 
 import './App.css';
-import Header from './views/components/header';
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useMemo, useState } from "react";
+import { useState } from "react";
 import Header from "../components/header";
 import Education from "../education";
 import WorkExperience from "../experience";
