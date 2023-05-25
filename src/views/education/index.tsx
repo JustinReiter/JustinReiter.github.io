@@ -7,14 +7,24 @@ import {
 
 import { COURSES } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
+import { useRef, useEffect } from 'react';
+import useOnScreen from '../../utils/UseOnScreen';
 
 interface EducationProps {
   setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Education = ({setFocusedDiv}: EducationProps) => {
+
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref);
+
+  useEffect(() => {
+    setFocusedDiv("education");
+  }, [isVisible]);
+  
   return (
-    <SnapScrollContainer style={{}} id="education" nextId="experience">
+    <SnapScrollContainer style={{}} innerRef={ref} id="education" nextId="experience">
       <div>
         <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: "start", mb: 2}}>
           <CardContent>

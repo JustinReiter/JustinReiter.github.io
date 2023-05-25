@@ -38,7 +38,7 @@ const pages = [
 const useStyles = makeStyles({
   root: {
     "& .MuiLinearProgress-barColorPrimary": {
-      backgroundImage: "linear-gradient(to right, red , yellow)",
+      backgroundImage: "linear-gradient(to right, purple , blue)",
     },
     color: "rgb(167, 202, 237)",
   }
@@ -53,11 +53,11 @@ const Header = ({focusedDiv}: HeaderProps) => {
 
   const classes = useStyles();
 
-  let progressPercent = 10;
+  let progressPercent = 8;
   if (focusedDiv == "education") {
-    progressPercent = 35;
+    progressPercent = 28;
   } else if (focusedDiv == "work_experience") {
-    progressPercent = 60;
+    progressPercent = 58;
   } else if (focusedDiv == "projects") {
     progressPercent = 100;
   }

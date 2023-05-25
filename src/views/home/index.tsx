@@ -15,8 +15,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SnapScrollContainer from "../components/SnapScrollContainer";
+import useOnScreen from "../../utils/UseOnScreen";
 
 const TITLE_TEXT = "Hi! I am Justin Reiter!";
 
@@ -28,6 +29,9 @@ const Home = ({setFocusedDiv}: HomeProps) => {
   const [titleText, setTitleText] = useState<string>("Hi!");
   const [cursor, setCursor] = useState<string>("|");
   let initialDelay = 0;
+
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useOnScreen(ref);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -59,9 +63,13 @@ const Home = ({setFocusedDiv}: HomeProps) => {
     };
   }, []);
 
+  useEffect(() => {
+    setFocusedDiv("home");
+  }, [isVisible]);
+
 
   return (
-    <SnapScrollContainer style={{}} id="home" nextId="education">
+    <SnapScrollContainer style={{}} innerRef={ref} id="home" nextId="education">
       <Card sx={{ display: "flex", flexDirection: "column" }}>
         <Grid
           container

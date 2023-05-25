@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 // import { Alert } from '@mui/material';
 
 import './App.css';
+import Header from './views/components/header';
 
 function App() {
   return (
@@ -11,9 +12,7 @@ function App() {
         {/* <Alert icon={false} severity="success">
           I am currently in search of new grad SWE positions beginning Spring 2023!
         </Alert> */}
-        <div className='App-content'>
           <Outlet />
-        </div>
       </div>
     </div>
   );

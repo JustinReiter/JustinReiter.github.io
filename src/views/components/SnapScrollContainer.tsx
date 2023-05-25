@@ -1,12 +1,14 @@
 import { Box, Container, Fab } from "@mui/material";
 
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { RefObject } from "react";
 
 interface SnapScrollContainerProps {
   children?: React.ReactNode;
   style?: object;
   id: string;
   nextId?: string;
+  innerRef?: RefObject<HTMLDivElement>;
 }
 
 const SnapScrollContainer = ({
@@ -14,6 +16,7 @@ const SnapScrollContainer = ({
   style,
   id,
   nextId,
+  innerRef,
 }: SnapScrollContainerProps) => {
 
   return (
@@ -21,6 +24,7 @@ const SnapScrollContainer = ({
       style={style}
       maxWidth="lg"
       id={id}
+      ref={innerRef}
       sx={{
         display: "flex",
         flexDirection: "column",
