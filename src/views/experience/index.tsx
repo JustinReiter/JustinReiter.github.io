@@ -64,7 +64,7 @@ const WorkExperience = ({setFocusedDiv}: WorkExperienceProps) => {
 
   return (
     <SnapScrollContainer style={{}} innerRef={ref} id="experience" nextId="projects">
-      <Grid container xs={12} spacing={2} alignContent="start">
+      <Grid container xs={12} spacing={2} alignContent="start" sx={{ marginTop: { xs: "2vh" } }}>
         { experiences.map((experience: Experience, index: number) => renderExperience(experience, index))}
       </Grid>
     </SnapScrollContainer>

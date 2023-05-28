@@ -26,7 +26,7 @@ const Education = ({setFocusedDiv}: EducationProps) => {
   return (
     <SnapScrollContainer style={{}} innerRef={ref} id="education" nextId="experience">
       <div>
-        <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: "start", mb: 2}}>
+        <Card sx={{ display: 'flex', flexDirection: 'column', justifyContent: "start", mb: 2, marginTop: { xs: "3vh" },}}>
           <CardContent>
             <Typography variant="h4" component="div">
               University of Waterloo | Honours Software Engineering

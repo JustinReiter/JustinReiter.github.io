@@ -74,13 +74,13 @@ const renderProject = (project: Project, index: number) => {
             <Typography variant="h5" component="div">
               {project.name}
             </Typography>
-            <Typography gutterBottom variant="body2" component="div" color="text.secondary">
+            <Typography variant="body2" component="div" color="text.secondary">
               {project.date}
             </Typography>
-            {/* <Typography variant="body2" gutterBottom={project?.subdescription !== undefined} sx={{pt: 2}}>
-              {project.description}
+            {<Typography variant="body1" gutterBottom={project?.subdescription !== undefined} sx={{pt: 2}}>
+              {project.short_desc}
             </Typography>
-            {project?.subdescription && 
+            /* {project?.subdescription && 
               <Typography variant="body2" sx={{pt: 2}}>
                 {project.subdescription}
               </Typography>
@@ -109,7 +109,7 @@ const Projects = ({setFocusedDiv}: ProjectsProps) => {
 
   return (
     <SnapScrollContainer style={{}} innerRef={ref} id="projects">
-      <Grid container xs={12} spacing={2}  alignContent="start">
+      <Grid container xs={12} spacing={2}  alignContent="start" sx={{ marginTop: { xs: "2vh" } }}>
         { projects.sort((a: Project, b: Project) => b.priority - a.priority).map((project: Project, index: number) => renderProject(project, index)) }
       </Grid>
       </SnapScrollContainer>

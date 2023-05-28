@@ -69,8 +69,8 @@ const Home = ({setFocusedDiv}: HomeProps) => {
 
 
   return (
-    <SnapScrollContainer style={{}} innerRef={ref} id="home" nextId="education">
-      <Card sx={{ display: "flex", flexDirection: "column" }}>
+    <SnapScrollContainer innerRef={ref} id="home" nextId="education">
+      <Card sx={{ display: "flex", flexDirection: "column", marginTop: { xs: "4vh" }, }}>
         <Grid
           container
           xs={12}

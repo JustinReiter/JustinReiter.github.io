@@ -15,6 +15,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2020 - Present',
+        short_desc: 'A platform for running complex tournaments & leagues for Warzone. Incorporates a Discord bot and platform that integrates with Warzone through APIs.',
         description: 'WZClot is a Django platform deployed on Azure to manage tournaments and leagues on the Risk-like game, Warzone. The platform manages +44,000 games played across +500 events with +1,400 players signed onto the site.',
         subdescription: 'Personal contributions to the site include significant changes to the largest regularly-run event — Clan League, extensions to the discord integration to manage automated game updates, implementations of admin commands, and the creation of a joinable ladder through the Discord bot. I also help lead an annual event that yields 500 players facing off against each other in clan-based games.',
         keywords: [
@@ -42,6 +43,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2021 - 2022',
+        short_desc: 'Site aggregating statistics and data across the Seasonal ladder on Warzone.',
         description: 'WZ Statistics is platform to aggregate and track statistics covering the official ladders on the Risk-like game, Warzone. The platform contains data spanning 3,000 players and +117,000 games over +45 seasons of the Seasonal ladder. Users can view stats regarding a specific season or player with details of every game.',
         subdescription: 'The front-end is created with React, while the back-end uses Express and CockroachDB to create a data-driven platform.',
         priority: 3,
@@ -111,6 +113,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2022 - 2023',
+        short_desc: 'A Rust symbolic executor for LLVM bytecode to verify program safety.',
         description: 'Wombat SymX is a symbolic execution tool for LLVM bytecode that is written in Rust. The project performs static analysis on languages that compile to LLVM bytecode to determine function safety.',
         subdescription: 'This project is developed as the fourth-year design capstone project for the Software Engineering program at the University of Waterloo.',
         priority: 8,
@@ -127,6 +130,7 @@ export const projects : Project[] = [
             }
         ],
         date: '2023 - Present',
+        short_desc: 'A game engine to run customizable Warzone games without APIs.',
         description: 'Warzone Game Engine is a project designed at emulating Warzone games across a variety of settings with the intent on being used for creating an ML bot. Warzone currently does not have an effective way to train on real games as this relies on an API to progress turns.',
         subdescription: 'Currently in-progress.',
         priority: 9,

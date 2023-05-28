@@ -13,6 +13,7 @@ export interface Project {
   name: string;
   links: HTMLLink[];
   date: string;
+  short_desc: string;
   description: string;
   subdescription?: string;
   keywords: string[];
