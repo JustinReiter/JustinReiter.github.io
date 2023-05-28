@@ -189,6 +189,7 @@ export const experiences : Experience[] = [
         title: 'Software Engineer Intern',
         date: 'Sep 2022 - Dec 2022',
         location: 'San Jose, CA',
+        short_desc: 'Member of the Core Enterprise UI team. Migrated existing Backbone.js to React and patched severe & critical accessibility bugs.',
         description: [
             'Upgraded page in the Core Enterprise platform from Backbone.js to React for improved accessibility & unified experience',
             'Improved team dependency vulnerability response via Gitlab pipeline jobs for security scans & dependency updates',
@@ -207,6 +208,7 @@ export const experiences : Experience[] = [
         title: 'Software Engineer Intern',
         date: 'Jan 2022 - Apr 2022',
         location: 'Toronto, ON',
+        short_desc: 'Member of the Consumer Products Squad. Developed new homepage for customer support portal to improve on-boarding. Patched bugs in customer portal & added functionality to new customer support portal.',
         description: [
             'Ported account & loan functionality of customer support (CSR) tools to new React platform',
             'Redesigned and maximized automated Jest & Pytest coverage of CSR tools from 50% to 95%',
@@ -226,6 +228,7 @@ export const experiences : Experience[] = [
         title: 'Software Developer Intern',
         date: 'May 2021 - Aug 2021',
         location: 'Toronto, ON',
+        short_desc: 'Implemented non-linear story progression to learning modules & worked with product managers and clients to update content. Migrated content for major banks to new universal platform.',
         description: [
             'Developed non-linear story progression functionality on React-based learning modules',
             'Built full-stack subscription feature to notify customers weekly regarding new course content',
@@ -238,25 +241,27 @@ export const experiences : Experience[] = [
         ],
         link: 'https://horizn.com/',
     },
-    {
-        company: 'Bank of America',
-        title: 'Software Developer Intern',
-        date: 'Sep 2020 - Dec 2020',
-        location: 'Toronto, ON',
-        description: [
-            'Created Java tool to automate Maven dependency versioning across 4 repos with 10 projects',
-            'Updated legacy programs to utilize Kerberos and increased password encryptions',
-        ],
-        keywords: [
-            'Java',
-        ],
-        link: 'https://www.bankofamerica.com/',
-    },
+    // {
+    //     company: 'Bank of America',
+    //     title: 'Software Developer Intern',
+    //     date: 'Sep 2020 - Dec 2020',
+    //     location: 'Toronto, ON',
+    //     short_desc: '',
+    //     description: [
+    //         'Created Java tool to automate Maven dependency versioning across 4 repos with 10 projects',
+    //         'Updated legacy programs to utilize Kerberos and increased password encryptions',
+    //     ],
+    //     keywords: [
+    //         'Java',
+    //     ],
+    //     link: 'https://www.bankofamerica.com/',
+    // },
     {
         company: 'IBM',
         title: 'Full-Stack Developer Intern',
         date: 'Jan 2020 - Apr 2020',
         location: 'Toronto, ON',
+        short_desc: 'Developed homepage for new fraud detection program to summarize performance metrics.',
         description: [
             'Developed homepage generalizing fraud pipeline performance metrics for bank managers & analysts',
             'Automated unit & end-to-end testing of React application through Cypress and Jest',

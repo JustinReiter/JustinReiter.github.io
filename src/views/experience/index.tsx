@@ -43,6 +43,9 @@ const renderExperience = (experience: Experience, index: number) => {
           <Typography gutterBottom variant="body2" component="div" color="text.secondary">
             {experience.date} | {experience.location}
           </Typography>
+          <Typography gutterBottom variant="body1" component="div" color="text.secondary">
+            {experience.short_desc}
+          </Typography>
           {renderKeywords(experience.keywords)}
         </CardContent>
       </Card>

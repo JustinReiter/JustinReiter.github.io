@@ -26,6 +26,7 @@ export interface Experience {
   title: string;
   date: string;
   location: string;
+  short_desc: string;
   description: string[];
   keywords: string[];
   img?: img;
