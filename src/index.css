@@ -14,7 +14,6 @@ code {
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 
   @media only screen and (min-width: 600px) {
     scroll-snap-type: y mandatory;
