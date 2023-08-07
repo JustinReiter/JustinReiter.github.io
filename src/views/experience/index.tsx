@@ -11,8 +11,6 @@ import {
 import { Experience } from '../../types';
 import { experiences } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
-import { useRef, useEffect } from 'react';
-import useOnScreen from '../../utils/UseOnScreen';
 
 const renderLink = (link: string, name: string) => {
   return (
@@ -53,20 +51,10 @@ const renderExperience = (experience: Experience, index: number) => {
   );
 };
 
-interface WorkExperienceProps {
-  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
-}
-
-const WorkExperience = ({setFocusedDiv}: WorkExperienceProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(ref);
-
-  useEffect(() => {
-    setFocusedDiv("work_experience");
-  }, [isVisible]);
+const WorkExperience = () => {
 
   return (
-    <SnapScrollContainer style={{}} innerRef={ref} id="experience" nextId="projects">
+    <SnapScrollContainer style={{}} id="experience" nextId="projects">
       <Grid container xs={12} spacing={2} alignContent="start" sx={{ marginTop: { xs: "2vh" } }}>
         { experiences.map((experience: Experience, index: number) => renderExperience(experience, index))}
       </Grid>

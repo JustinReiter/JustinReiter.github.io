@@ -9,12 +9,9 @@ import {
   MenuItem,
   Toolbar,
   Typography,
-  Grid,
 } from '@mui/material';
-import LinearProgress from '@mui/material/LinearProgress';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 
 const pages = [
   {
@@ -35,33 +32,8 @@ const pages = [
   }
 ]
 
-const useStyles = makeStyles({
-  root: {
-    "& .MuiLinearProgress-barColorPrimary": {
-      backgroundImage: "linear-gradient(to right, purple , blue)",
-    },
-    color: "rgb(167, 202, 237)",
-  }
-});
-
-interface HeaderProps {
-  focusedDiv: string;
-}
-
-const Header = ({focusedDiv}: HeaderProps) => {
+const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-
-  const classes = useStyles();
-
-  let progressPercent = 8;
-  if (focusedDiv == "education") {
-    progressPercent = 28;
-  } else if (focusedDiv == "work_experience") {
-    progressPercent = 58;
-  } else if (focusedDiv == "projects") {
-    progressPercent = 100;
-  }
-  
 
   return (
     <AppBar position='sticky'>
@@ -127,9 +99,6 @@ const Header = ({focusedDiv}: HeaderProps) => {
               </Link>
             ))}
             </Box>
-            <Grid md item width="100%">
-              <LinearProgress className={classes.root} sx={{height: 12, mb: 1}} variant="determinate" value={progressPercent}/>
-            </Grid>
           </div>
         </Toolbar>
       </Container>

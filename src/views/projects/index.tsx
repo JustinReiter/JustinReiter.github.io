@@ -15,8 +15,6 @@ import LinkIcon from '@mui/icons-material/Link';
 import { Project, HTMLLink } from '../../types';
 import { projects } from '../../data';
 import SnapScrollContainer from '../components/SnapScrollContainer';
-import { useRef, useEffect } from 'react';
-import useOnScreen from '../../utils/UseOnScreen';
 
 const renderLinkButton = (link: HTMLLink) => {
   if (link.type === 'link') {
@@ -95,20 +93,9 @@ const renderProject = (project: Project, index: number) => {
   );
 };
 
-interface ProjectsProps {
-  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
-}
-
-const Projects = ({setFocusedDiv}: ProjectsProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(ref);
-
-  useEffect(() => {
-    setFocusedDiv("projects");
-  }, [isVisible]);
-
+const Projects = () => {
   return (
-    <SnapScrollContainer style={{}} innerRef={ref} id="projects">
+    <SnapScrollContainer style={{}} id="projects">
       <Grid container xs={12} spacing={2}  alignContent="start" sx={{ marginTop: { xs: "2vh" } }}>
         { projects.sort((a: Project, b: Project) => b.priority - a.priority).map((project: Project, index: number) => renderProject(project, index)) }
       </Grid>

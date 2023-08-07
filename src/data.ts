@@ -186,6 +186,18 @@ export const projects : Project[] = [
 export const experiences : Experience[] = [
     {
         company: 'Splunk',
+        title: 'Software Engineer',
+        date: 'Aug 2023 - Present',
+        location: 'San Francisco, CA',
+        short_desc: '',
+        description: [
+        ],
+        keywords: [
+        ],
+        link: 'https://www.splunk.com/',
+    },
+    {
+        company: 'Splunk',
         title: 'Software Engineer Intern',
         date: 'Sep 2022 - Dec 2022',
         location: 'San Jose, CA',

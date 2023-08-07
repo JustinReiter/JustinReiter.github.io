@@ -15,23 +15,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import SnapScrollContainer from "../components/SnapScrollContainer";
-import useOnScreen from "../../utils/UseOnScreen";
 
 const TITLE_TEXT = "Hi! I am Justin Reiter!";
 
-interface HomeProps {
-  setFocusedDiv: React.Dispatch<React.SetStateAction<string>>;
-}
-
-const Home = ({setFocusedDiv}: HomeProps) => {
+const Home = () => {
   const [titleText, setTitleText] = useState<string>("Hi!");
   const [cursor, setCursor] = useState<string>("|");
   let initialDelay = 0;
 
-  const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useOnScreen(ref);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -63,13 +56,9 @@ const Home = ({setFocusedDiv}: HomeProps) => {
     };
   }, []);
 
-  useEffect(() => {
-    setFocusedDiv("home");
-  }, [isVisible]);
-
 
   return (
-    <SnapScrollContainer innerRef={ref} id="home" nextId="education">
+    <SnapScrollContainer id="home" nextId="education">
       <Card sx={{ display: "flex", flexDirection: "column", marginTop: { xs: "4vh" }, }}>
         <Grid
           container
@@ -90,7 +79,7 @@ const Home = ({setFocusedDiv}: HomeProps) => {
                 sx={{ pt: 1 }}
               >
                 I am a passionate developer that is always looking for new
-                challenges and projects. My most recent work experience was working at{" "}
+                challenges and projects. I am currently working at{" "}
                 <Link
                   href="https://www.splunk.com/"
                   rel="noopener"
@@ -98,7 +87,7 @@ const Home = ({setFocusedDiv}: HomeProps) => {
                   underline="none"
                 >
                   Splunk
-                </Link>{" "} as a SWE Intern in the Bay area.
+                </Link>{" "} as a SWE in the Bay area.
               </Typography>
               <Typography
                 gutterBottom
@@ -205,6 +194,18 @@ const Home = ({setFocusedDiv}: HomeProps) => {
               >
                 <Button variant="outlined" startIcon={<GitHubIcon />}>
                   @JustinReiter
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link
+                href="https://github.com/JustinR17"
+                target="_blank"
+                rel="noreferrer"
+                underline="none"
+              >
+                <Button variant="outlined" startIcon={<GitHubIcon />}>
+                  @JustinR17
                 </Button>
               </Link>
             </Grid>
