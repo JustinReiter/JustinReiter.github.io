@@ -37,10 +37,10 @@ export const projects : Project[] = [
                 href: 'https://github.com/JustinReiter/warzone-statistics',
                 type: 'github',
             },
-            {
-                href: 'https://warzone-statistics.herokuapp.com/',
-                type: 'link'
-            }
+            // {
+            //     href: 'https://warzone-statistics.herokuapp.com/',
+            //     type: 'link'
+            // }
         ],
         date: '2021 - 2022',
         short_desc: 'Site aggregating statistics and data across the Seasonal ladder on Warzone.',
@@ -189,10 +189,16 @@ export const experiences : Experience[] = [
         title: 'Software Engineer',
         date: 'Aug 2023 - Present',
         location: 'San Francisco, CA',
-        short_desc: '',
+        // team: 'Core Enterprise UI',
+        short_desc: 'Led the modernization rewrite of one of the most visited pages in the product, the Jobs Manager page. Contributed to a shared AI component library used by UI teams across the company. Core contributor to Search page integration for the Splunk AI chatbot and led post-GA improvements.',
         description: [
+            ''
         ],
         keywords: [
+            'React',
+            'TypeScript',
+            'Python',
+            'Puppet'
         ],
         link: 'https://www.splunk.com/',
     },
@@ -332,6 +338,11 @@ export const NC_TEAM_MAPPING: {[k in string]: string} = {
 };
 
 export const COURSES = [
+    {
+        "code": "SE491",
+        "name": "Capstone",
+        "desc": "",
+    },
     {
         "code": "CS451",
         "name": "Data-Intensive Distributed Computing",

@@ -15,6 +15,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArticleIcon from "@mui/icons-material/Article";
 import EmailIcon from "@mui/icons-material/Email";
 import jr from "../../assets/JustinReiter_BigSur_cropped-min.jpg";
+import resume from "../../assets/resume.pdf";
 import { useEffect, useState } from "react";
 import SnapScrollContainer from "../components/SnapScrollContainer";
 
@@ -87,7 +88,7 @@ const Home = () => {
                   underline="none"
                 >
                   Splunk
-                </Link>{" "} as a SWE in the Bay area.
+                </Link>{" "} as a software engineer in San Francisco.
               </Typography>
               <Typography
                 gutterBottom
@@ -105,6 +106,7 @@ const Home = () => {
                   <ListItem>
                     🏎 Formula 1 - unfortunately a Ferrari fan{" "}
                   </ListItem>
+                  <ListItem>🎾 Tennis - currently using the Babalot Pure Aero</ListItem>
                   <ListItem>⚾️ Baseball - go Jays!</ListItem>
                   <ListItem sx={{ display: "block"}}>
                     🎧 Podcasts - here are my favourites:
@@ -223,7 +225,7 @@ const Home = () => {
             </Grid>
             <Grid item>
               <Link
-                href="https://www.student.cs.uwaterloo.ca/~jdreiter/JustinReiterResume-4B.pdf"
+                href={resume}
                 target="_blank"
                 rel="noreferrer"
                 underline="none"
@@ -234,7 +236,7 @@ const Home = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="mailto:jdreiter@uwaterloo.ca" underline="none">
+              <Link href="mailto:justin.reiter.1@gmail.com" underline="none">
                 <Button variant="outlined" startIcon={<EmailIcon />}>
                   Email
                 </Button>
